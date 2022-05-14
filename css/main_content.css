@@ -4,7 +4,7 @@
 
 #themes_container {
     display: grid;
-    gap: 3rem;
+    gap: 20px;
     grid-template: auto/repeat(auto-fit, minmax(360px, 1fr));
 }
 
@@ -16,7 +16,8 @@
     background: var(--body-background-lighter);
     box-shadow: 0 0.5rem 2rem 0 rgba(0,0,0,0.2);
     overflow: hidden;
-    width: 400px;
+    width: 380px;
+    flex-flow: wrap;
 }
 
 .card header {
@@ -28,4 +29,9 @@
 
 .card img {
     width: inherit;
+    border-radius: inherit;
+}
+
+.theme-title {
+    font-family: 'Jost';
 }
