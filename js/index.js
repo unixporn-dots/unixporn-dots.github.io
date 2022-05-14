@@ -12,6 +12,17 @@ dotfiles.forEach(dotfile => {
     image = document.createElement('img')
     image.src = dotfile.image
 
+    // link
+    link = document.createElement('a')
+    link.href = dotfile.link
+    link.target = '_blank'
+    header.appendChild(link)
+
+    // link-icon
+    linkIcon = document.createElement('i')
+    linkIcon.classList.add('fas', 'fa-external-link-alt')
+    link.appendChild(linkIcon)
+
     // Card
     dotfile_div = document.createElement('div')
     dotfile_div.classList.add('card')
