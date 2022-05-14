@@ -16,6 +16,7 @@
     background: var(--body-background-lighter);
     box-shadow: 0 0.5rem 2rem 0 rgba(0,0,0,0.2);
     overflow: hidden;
+    width: 400px;
 }
 
 .card header {
@@ -23,4 +24,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.card img {
+    width: inherit;
 }
