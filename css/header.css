@@ -1,0 +1,41 @@
+#main_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.4rem 0;
+    padding: 0 3rem;
+}
+
+.header-branding {
+    font-size: 150%;
+    font-weight: 600;
+    /* font family jost semibold */
+    font-family: 'Jost', sans-serif;
+}
+
+#main_nav {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+    font-family: 'Jost';
+}
+
+.inputgroup {
+    display: flex;
+    height: 100%;
+}
+
+
+.searchinput {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+
+.searchsubmit {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+    background: var(--body-background-darker);
+}

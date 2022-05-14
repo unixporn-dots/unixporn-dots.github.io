@@ -1,0 +1,29 @@
+:root {
+    --body-background : #303035;
+    --font-color : #fff;
+    --body-background-lighter: #404045;
+    --body-background-darker: #202025;
+}
+
+html {
+    color: var(--font-color);
+}
+
+body {
+    background-color: var(--body-background);
+}
+
+input, .btn-submit {
+    padding: .6rem 1.2rem;
+    border-radius: 3px;
+    border: 1px solid var(--body-background-darker);
+    background: var(--body-background-lighter);
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--font-colour);
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
