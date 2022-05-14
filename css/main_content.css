@@ -1,0 +1,26 @@
+#main_content {
+    padding: 3rem;
+}
+
+#themes_container {
+    display: grid;
+    gap: 3rem;
+    grid-template: auto/repeat(auto-fit, minmax(360px, 1fr));
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background: var(--body-background-lighter);
+    box-shadow: 0 0.5rem 2rem 0 rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.card header {
+    padding: 0 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
