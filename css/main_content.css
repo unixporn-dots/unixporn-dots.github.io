@@ -16,7 +16,9 @@
   background: var(--body-background-lighter);
   box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: -webkit-fill-available;
+  width: -webkit-fill-available; /* Webkit browsers */
+  width: -moz-available; /* Mozilla Firefox */
+  width: fill-available;
   flex-flow: wrap;
 }
 
@@ -67,11 +69,13 @@
     margin: 12px 0px 0px 0px;
     font-size: 15px;
     opacity: 0;
-      z-index: 2;
+    z-index: 2;
     transform: translateY(-50%);
     background-color: #404045;
     transition: 0.2s ease-in-out;
-    width: -webkit-fill-available;
+    width: -webkit-fill-available; /* Webkit browsers */
+    width: -moz-available; /* Mozilla Firefox */
+    width: fill-available;
     border-radius: 14px;
 }
 
