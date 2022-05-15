@@ -12,6 +12,7 @@ html {
 
 body {
     background-color: var(--body-background);
+    transition: background-color 0.5s ease;
 }
 
 input, .btn-submit {
