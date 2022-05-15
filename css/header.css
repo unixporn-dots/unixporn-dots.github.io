@@ -7,6 +7,12 @@
     padding: 0 3rem;
 }
 
+@media only screen and (max-width: 850px) {
+    #main_header {
+      flex-direction: column;
+    }
+}
+
 .header-branding {
     font-size: 150%;
     font-weight: 600;
@@ -31,6 +37,7 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right: none;
+    padding: 6px 12px;
 }
 
 .searchsubmit {
@@ -38,4 +45,5 @@
     border-bottom-left-radius: 0;
     border-left: none;
     background: var(--body-background-darker);
+    padding: 6px 12px;
 }
