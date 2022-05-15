@@ -1,38 +1,99 @@
 #main_content {
-    padding: 3rem;
+  padding: 3rem;
 }
 
 #themes_container {
-    display: grid;
-    gap: 20px;
-    grid-template: auto/repeat(auto-fit, minmax(360px, 1fr));
+  display: grid;
+  gap: 20px;
+  grid-template: auto/repeat(auto-fit, minmax(360px, 1fr));
 }
 
 .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
-    background: var(--body-background-lighter);
-    box-shadow: 0 0.5rem 2rem 0 rgba(0,0,0,0.2);
-    overflow: hidden;
-    width: 380px;
-    flex-flow: wrap;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background: var(--body-background-lighter);
+  box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: -webkit-fill-available;
+  flex-flow: wrap;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .buttons {
+    opacity: 1;
+}
+
+.card:hover .theme-desc {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .card header {
-    padding: 0 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: inherit;
+  padding: 0 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: inherit;
 }
 
 .card img {
-    width: inherit;
-    border-radius: inherit;
+  width: inherit;
+  border-radius: inherit;
+  transform: translate(0px, 0px);
+  transition: 0.2s ease-in-out;
+  z-index: 0;
+}
+
+.card:focus-within img, .card:hover img {
+  transform: translate(0px, 15px);
 }
 
 .theme-title {
-    font-family: 'Jost';
+  font-family: "Jost";
+  margin: 12px 0px;
+}
+
+.theme-desc {
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    padding: 2px 15px 15px 20px;
+    font-weight: 400;
+    margin: 12px 0px 0px 0px;
+    font-size: 15px;
+    opacity: 0;
+      z-index: 2;
+    transform: translateY(-50%);
+    background-color: #404045;
+    transition: 0.2s ease-in-out;
+    width: -webkit-fill-available;
+    border-radius: 14px;
+}
+
+.button-child {
+  padding: 8px 16px;
+  border-radius: 12px;
+  margin: 0px;
+  font-size: 16px;
+  background-color: #303035;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+.button-child:hover {
+    cursor: pointer;
+    background-color: #222225;
+}
+
+.buttons {
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  bottom: 16px;
+  right: 10px;
 }
