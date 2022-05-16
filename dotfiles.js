@@ -103,4 +103,12 @@ const dotfiles = [
         image: "assets/rashad-707's-dotfiles.png",
         tags: ['dwm', 'kde', 'dunst','eww','polybar','rofi']
     },
+    {
+        title: "Aether Desktop",
+        author: 'ilham25',
+        link: 'https://github.com/ilham25/dotfiles-openbox',
+        description: 'Here is my aether dotfiles openbox version ',
+        image: "assets/aether-desktop.png",
+        tags: ['openbox', 'urxvt', 'dunst', 'tint2', 'rofi']
+    },
 ]
