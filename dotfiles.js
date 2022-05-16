@@ -87,4 +87,20 @@ const dotfiles = [
         image: "assets/rxyhn's-dotfiles.png",
         tags: ['awesomewm', 'alacritty', 'rofi', 'ncmpcpp']
     },
+    {
+        title: "ChocolateBread799's dotfiles",
+        author: 'ChocolateBread799',
+        link: 'https://github.com/ChocolateBread799/dotfiles',
+        description: 'My Awesomewm dotfiles',
+        image: "assets/chocolatebread799's-dotfiles.png",
+        tags: ['awesomewm', 'hilbish', 'wezterm']
+    },
+    {
+        title: "Rashad-707's dotfiles",
+        author: 'Rashad-707',
+        link: 'https://github.com/Rashad-707/dotfiles',
+        description: 'A backup of my Linux setup',
+        image: "assets/rashad-707's-dotfiles.png",
+        tags: ['dwm', 'kde', 'dunst','eww','polybar','rofi']
+    },
 ]
