@@ -20,6 +20,8 @@
   width: -moz-available; /* Mozilla Firefox */
   width: fill-available;
   flex-flow: wrap;
+  min-height: 250px;
+  max-height: 275px;
 }
 
 .card:hover {
