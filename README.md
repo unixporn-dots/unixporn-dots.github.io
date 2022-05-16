@@ -4,7 +4,7 @@
 <img width="100px" src="assets/unixporn.png"> <br>
 A collection of dotfiles from the r/unixporn community
 <br>
-<a href="https://unixporn-store.github.io">Visit Site</a>
+<a href="https://unixporn-dots.github.io">Visit Site</a>
 </div>
 
 ---
