@@ -50,7 +50,7 @@ random.forEach((dotfile) => {
 
   // link-icon
   linkIcon = document.createElement("i");
-  linkIcon.classList.add("fas", "fa-chevron-circle-down");
+  linkIcon.classList.add("fas", "fa-external-link-alt");
   link.appendChild(linkIcon);
 
   // Buttons Thingy
