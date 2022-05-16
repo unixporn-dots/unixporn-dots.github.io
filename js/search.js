@@ -5,7 +5,7 @@ var fuzzy = function(items, key) {
     var words  = query.toLowerCase().split(' ');
 
     return items.filter(function(item) {
-      var normalizedTerm = item[key].toLowerCase();
+      var normalizedTerm = item[key].toString().toLowerCase();
 
       return words.every(function(word) {
         return (normalizedTerm.indexOf(word) > -1);
@@ -20,8 +20,18 @@ var searchByTitle = fuzzy(dotfiles, 'title');
 load = false;
 
 document.getElementById('searchInput').onkeyup = function() {
-  result = searchByTitle(document.getElementById('searchInput').value)
- 
+searchByTags = fuzzy(dotfiles, 'tags')
+searchByAuthor = fuzzy(dotfiles, 'author')
+
+value = document.getElementById('searchInput').value
+
+  result = searchByTitle(value)
+  tagy = searchByTags(value)
+  author = searchByAuthor(value)
+
+ result = tagy.concat(result)
+ result = result.concat(author)
+
 document.getElementById("themes_container").style.opacity = 0
 
 if(!load){
