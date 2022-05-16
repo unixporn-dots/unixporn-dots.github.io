@@ -19,4 +19,5 @@ var searchByTitle = fuzzy(dotlists, 'title');
 
 document.getElementById('searchInput').onkeyup = function() {
   result = searchByTitle(document.getElementById('searchInput').value)
+ console.log(result)
 }
