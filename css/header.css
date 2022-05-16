@@ -11,6 +11,13 @@
     #main_header {
       flex-direction: column;
     }
+   .searchinput {
+     width: 80%;
+     padding: 4px 8px;
+   }
+   .searchsubmit {
+     padding: 4px 8px;
+   }
 }
 
 .header-branding {
