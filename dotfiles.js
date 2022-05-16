@@ -39,6 +39,7 @@ const dotfiles = [
         title: 'Nebula',
         author: 'Barbaross93',
         link: 'https://github.com/Barbaross93/Nebula',
+        reddit: 'https://www.reddit.com/r/unixporn/comments/kzd6zt/qtile_genome/?utm_source=share&utm_medium=web2x&context=3',
         description: 'Desktop setup',
         image: 'assets/nebula.png',
         tags: ['qtile', 'alacritty', 'zsh', 'eww', 'dunst']
@@ -92,6 +93,7 @@ const dotfiles = [
         title: "rxyhn's dotfiles",
         author: 'rxyhn',
         link: 'https://github.com/rxyhn/dotfiles',
+        reddit: 'https://www.reddit.com/r/unixporn/comments/ual8w7/awesome_aesthetic_beautiful_pastel/?utm_source=share&utm_medium=web2x&context=3',
         description: 'Beautiful & Aesthetic AwesomeWM Configuration Files!',
         image: "assets/rxyhn's-dotfiles.png",
         tags: ['awesomewm', 'alacritty', 'rofi', 'ncmpcpp']
@@ -109,6 +111,7 @@ const dotfiles = [
         title: "Rashad-707's dotfiles",
         author: 'Rashad-707',
         link: 'https://github.com/Rashad-707/dotfiles',
+        reddit: 'https://www.reddit.com/r/unixporn/comments/pq8m5r/dwm_widgets_two_layout_do_you_like_light_theme/?utm_source=share&utm_medium=web2x&context=3',
         description: 'A backup of my Linux setup',
         image: "assets/rashad-707's-dotfiles.png",
         tags: ['dwm', 'kde', 'dunst','eww','polybar','rofi']
