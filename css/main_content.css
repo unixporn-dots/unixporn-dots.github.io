@@ -2,7 +2,7 @@
   padding: 3rem;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 850px) {
  #main_content {
   padding: 10px;
  }
@@ -101,8 +101,7 @@
 
 .button-child:hover {
     cursor: pointer;
-    background: var(--body-background-lighter);
-    background-blend-mode: darken;
+    background: var(--body-background-darker);
 }
 
 .buttons {
