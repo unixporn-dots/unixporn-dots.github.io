@@ -64,7 +64,7 @@ const dotfiles = [
         tags: ['awesomewm', 'rofi', 'kitty', 'fish']
     },
     {
-        title: 'Floppy',
+        title: 'Surreal',
         author: 'manilarome',
         link: 'https://github.com/manilarome/the-glorious-dotfiles',
         description: "Yes, I copied the macOS Big Sur design. Many linux elitists will hate it but I don't care. Cry me a river.",
