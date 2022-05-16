@@ -32,6 +32,8 @@ value = document.getElementById('searchInput').value
  result = tagy.concat(result)
  result = result.concat(author)
 
+ result = [...new Set(result)];
+
 document.getElementById("themes_container").style.opacity = 0
 
 if(!load){
