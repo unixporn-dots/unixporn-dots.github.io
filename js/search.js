@@ -32,7 +32,16 @@ value = document.getElementById('searchInput').value
  result = tagy.concat(result)
  result = result.concat(author)
 
- result = [...new Set(result)];
+ result = removeDup(result, 'title')
+
+ removeDup = function(arr, field) {
+    var u = [];
+    arr.reduce(function (a, b) {
+        if (a[field] !== b[field]) u.push(b);
+        return b;
+    }, []);
+    return u;
+}
 
 document.getElementById("themes_container").style.opacity = 0
 
