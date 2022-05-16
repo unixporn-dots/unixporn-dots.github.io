@@ -33,3 +33,4 @@ A collection of dotfiles from the r/unixporn community
     tags: ['xmonad', 'polybar']
 }
 ```
+NOTE: Please try to make sure the image has a 16:10 aspect ratio for consistency
