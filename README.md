@@ -1,4 +1,4 @@
-<h2 align=center>UnixpornCSS-Store</h2>
+<h2 align=center>Unixporn-dots</h2>
 
 <div align=center>
 <img width="100px" src="assets/unixporn.png"> <br>
