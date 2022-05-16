@@ -29,6 +29,7 @@
   flex-flow: wrap;
   /* min-height: 250px;
   max-height: 275px; */
+  max-width: 500px;
 }
 
 .card:hover {
