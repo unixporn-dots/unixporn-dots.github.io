@@ -1,6 +1,6 @@
 const dotfiles = [
     {
-        title: 'Dotfiles',
+        title: 'Dotfiles-1',
         author: 'Armoredvortex',
         link: 'https://github.com/armoredvortex',
         description: 'My dotfiles',
@@ -8,7 +8,7 @@ const dotfiles = [
         tags: ['i3', 'polybar']
     },
     {
-        title: 'Dotfiles',
+        title: 'Dotfiles-2',
         author: 'Armoredvortex',
         link: 'https://github.com/armoredvortex',
         description: 'My dotfiles',
@@ -16,7 +16,7 @@ const dotfiles = [
         tags: ['i3', 'polybar']
     },
     {
-        title: 'Dotfiles',
+        title: 'Dotfiles-3',
         author: 'Armoredvortex',
         link: 'https://github.com/armoredvortex',
         description: 'My dotfiles',
@@ -24,7 +24,7 @@ const dotfiles = [
         tags: ['i3', 'polybar']
     },
     {
-        title: 'Dotfiles',
+        title: 'Dotfiles-4',
         author: 'Armoredvortex',
         link: 'https://github.com/armoredvortex',
         description: 'My dotfiles',

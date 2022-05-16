@@ -1,23 +1,37 @@
+load = false;
+
+document.getElementById('js-sortSwitcher').onclick = function() {
+
+document.getElementById("themes_container").style.opacity = 0
+
+setTimeout (() => {
+  document.getElementById("themes_container").innerHTML = ""
+}, 200)
+
+if(!load){
+ load = true;
+
+ setTimeout(() => {
+  document.getElementById("themes_container").style.opacity = 1
+  load = false
+
+ }, 1000)
+}
+
+
 random = randomize(dotfiles)
 
 function randomize(sourceArray) {
-
     for (var i = 0; i < sourceArray.length - 1; i++) {
-
         var j = i + Math.floor(Math.random() * (sourceArray.length - i));
 
         var temp = sourceArray[j];
-
         sourceArray[j] = sourceArray[i];
-
         sourceArray[i] = temp;
-
     }
-
     return sourceArray;
-
 }
-
+setTimeout(() => {
 random.forEach((dotfile) => {
   header = document.createElement("header");
 
@@ -65,5 +79,9 @@ random.forEach((dotfile) => {
   dotfile_div.appendChild(image);
   dotfile_div.appendChild(buttonz);
 
-  document.getElementById("themes_container").appendChild(dotfile_div);
+document.getElementById("themes_container").appendChild(dotfile_div)
+
 });
+}, 900)
+
+}
