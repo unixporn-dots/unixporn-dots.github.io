@@ -38,5 +38,37 @@ const dotfiles = [
         description: 'Desktop setup',
         image: 'assets/nebula.png',
         tags: ['qtile', 'alacritty', 'zsh', 'eww', 'dunst']
+    },
+    {
+        title: 'Floppy',
+        author: 'manilarome',
+        link: 'https://github.com/manilarome/the-glorious-dotfiles',
+        description: 'Floppy was meant to be a clone of the infamous Flurry Desktop. I named it Floppy because I thought it would flop when I first posted it on r/unixporn. This is my favorite.',
+        image: 'assets/floppy.webp',
+        tags: ['awesomewm', 'rofi', 'kitty', 'fish']
+    },
+    {
+        title: 'GNawesoME',
+        author: 'manilarome',
+        link: 'https://github.com/manilarome/the-glorious-dotfiles',
+        description: "Yes, GNawesOME is a weird name. GNawesOME was meant to be a GNOME clone. Instead, it became a hybrid of macOS, iOS, GNOME, and Deepin. I regret nothing.",
+        image: 'assets/gnawesome.webp',
+        tags: ['awesomewm', 'rofi', 'kitty', 'fish']
+    },
+    {
+        title: 'Linear',
+        author: 'manilarome',
+        link: 'https://github.com/manilarome/the-glorious-dotfiles',
+        description: 'A setup full of borders and lines. Awesome right?',
+        image: 'assets/linear.webp',
+        tags: ['awesomewm', 'rofi', 'kitty', 'fish']
+    },
+    {
+        title: 'Floppy',
+        author: 'manilarome',
+        link: 'https://github.com/manilarome/the-glorious-dotfiles',
+        description: "Yes, I copied the macOS Big Sur design. Many linux elitists will hate it but I don't care. Cry me a river.",
+        image: 'assets/surreal.webp',
+        tags: ['awesomewm', 'rofi', 'kitty', 'fish']
     }
 ]
