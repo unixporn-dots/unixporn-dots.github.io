@@ -15,7 +15,7 @@ var fuzzy = function(items, key) {
 };
 
 
-var searchByTitle = fuzzy(dotlists, 'title');
+var searchByTitle = fuzzy(dotfiles, 'title');
 
 document.getElementById('searchInput').onkeyup = function() {
   result = searchByTitle(document.getElementById('searchInput').value)
