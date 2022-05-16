@@ -30,6 +30,6 @@ A collection of dotfiles from the r/unixporn community
     link: "https://github.com/armoredvortex",
     description: 'My dotfiles',
     image: 'assets/bridge.png',
-    tage: ['xmonad', 'polybar']
+    tags: ['xmonad', 'polybar']
 }
 ```

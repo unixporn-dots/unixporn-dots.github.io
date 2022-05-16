@@ -5,7 +5,7 @@ const dotfiles = [
         link: 'https://github.com/armoredvortex',
         description: 'My dotfiles',
         image: 'assets/bridge.png',
-        tage: ['i3', 'polybar']
+        tags: ['i3', 'polybar']
     },
     {
         title: 'Dotfiles',
@@ -13,7 +13,7 @@ const dotfiles = [
         link: 'https://github.com/armoredvortex',
         description: 'My dotfiles',
         image: 'assets/bridge.png',
-        tage: ['i3', 'polybar']
+        tags: ['i3', 'polybar']
     },
     {
         title: 'Dotfiles',
@@ -21,7 +21,7 @@ const dotfiles = [
         link: 'https://github.com/armoredvortex',
         description: 'My dotfiles',
         image: 'assets/bridge.png',
-        tage: ['i3', 'polybar']
+        tags: ['i3', 'polybar']
     },
     {
         title: 'Dotfiles',
@@ -29,6 +29,6 @@ const dotfiles = [
         link: 'https://github.com/armoredvortex',
         description: 'My dotfiles',
         image: 'assets/bridge.png',
-        tage: ['i3', 'polybar']
+        tags: ['i3', 'polybar']
     }
 ]
