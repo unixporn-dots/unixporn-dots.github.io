@@ -58,6 +58,9 @@
   transform: translate(0px, 0px);
   transition: 0.2s ease-in-out;
   z-index: 0;
+  width: -webkit-fill-available; /* Webkit browsers */
+  width: -moz-available; /* Mozilla Firefox */
+  width: fill-available;
 }
 
 .card:focus-within img, .card:hover img {
