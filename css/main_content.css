@@ -81,7 +81,7 @@
     opacity: 0;
     z-index: 2;
     transform: translateY(-50%);
-    background-color: background: var(--body-background-lighter);
+    background: var(--body-background-lighter);
     transition: 0.2s ease-in-out;
     width: -webkit-fill-available; /* Webkit browsers */
     width: -moz-available; /* Mozilla Firefox */
