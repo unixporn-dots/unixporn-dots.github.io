@@ -48,10 +48,11 @@ random.forEach((dotfile) => {
   link.target = "_blank";
   header.appendChild(link);
 
-  // link-icon
-  linkIcon = document.createElement("i");
-  linkIcon.classList.add("fas", "fa-external-link-alt");
-  link.appendChild(linkIcon);
+  // tags
+  tag = document.createElement("h3");
+  tag.innerHTML = dotfile.tags[0];
+  tag.classList.add("tags");
+  link.appendChild(tag);
 
   // Buttons Thingy
   buttonz = document.createElement("div");
