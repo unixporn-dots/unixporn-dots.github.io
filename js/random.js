@@ -5,16 +5,6 @@ document.getElementById('js-sortSwitcher').onclick = function() {
 document.getElementById("themes_container").innerHTML = ""
 document.getElementById("themes_container").style.opacity = 0
 
-
-if(!load){
- load = true;
-
- setTimeout(() => {
-  document.getElementById("themes_container").style.opacity = 1
-  load = false
- }, 20)
-}
-
 random = randomize(dotfiles)
 
 function randomize(sourceArray) {
@@ -75,6 +65,19 @@ random.forEach((dotfile) => {
   dotfile_div.appendChild(image);
   dotfile_div.appendChild(buttonz);
 
+
+if(!load){
+ load = true;
+
+ setTimeout(() => {
+  document.getElementById("themes_container").style.opacity = 1
+ 
   document.getElementById("themes_container").appendChild(dotfile_div);
+
+  load = false
+
+ }, 1000)
+}
+
 });
 }
