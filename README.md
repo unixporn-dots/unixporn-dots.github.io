@@ -23,7 +23,7 @@ A collection of dotfiles from the r/unixporn community
     1. Use the template provided and fill in the necessary details
     2. Open an Issue and you're done!
 
-```json
+```js
 {
     title: 'Dotfiles',
     author: 'Armoredvortex',
