@@ -5,7 +5,7 @@ const dotfiles = [
         link: 'https://github.com/Amog-OS/AmogOS',
         description: 'A parody OS inspired by Among Us',
         image: 'assets/AmogOS.webp',
-        tags: ['i3', 'polybar']
+        tags: ['openbox', 'lxde', 'xfce4-panel']
     },
     {
         title: "CodeHeister's Dotfiles",
