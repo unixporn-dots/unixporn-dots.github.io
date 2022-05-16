@@ -26,8 +26,8 @@
   width: -moz-available; /* Mozilla Firefox */
   width: fill-available;
   flex-flow: wrap;
-  min-height: 250px;
-  max-height: 275px;
+  /* min-height: 250px;
+  max-height: 275px; */
 }
 
 .card:hover {
@@ -52,8 +52,10 @@
 }
 
 .card img {
-  min-height: 250px;
-  max-height: 275px;
+  /* min-height: 250px;
+  max-height: 275px; */
+  min-width: 300px;
+  max-width: 736px;
   border-radius: inherit;
   transform: translate(0px, 0px);
   transition: 0.2s ease-in-out;
