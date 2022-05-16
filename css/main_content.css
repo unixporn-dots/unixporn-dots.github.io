@@ -115,6 +115,7 @@
   background: var(--body-background-lighter);
   transition: 0.2s ease-in-out;
   font-weight: bold;
+  text-align: center;
 }
 
 .button-child:hover {
@@ -128,4 +129,6 @@
   position: absolute;
   bottom: 16px;
   right: 10px;
+  display: grid;
+  grid-gap: 10px;
 }

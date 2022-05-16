@@ -21,10 +21,15 @@ function randomize(sourceArray) {
 random.forEach((dotfile) => {
   header = document.createElement("header");
 
-  downld = document.createElement("a");
-  downld.classList.add("button-child");
-  downld.href = dotfile.link;
-  downld.innerHTML = "Download";
+  repo = document.createElement("a");
+  repo.classList.add("button-child");
+  repo.href = dotfile.link;
+  repo.innerHTML = "Repository";
+
+  reddit = document.createElement("a");
+  reddit.classList.add("button-child");
+  reddit.href = dotfile.reddit;
+  reddit.innerHTML = "Reddit";
 
   // Desc
   desc = document.createElement("h3");
@@ -57,7 +62,8 @@ random.forEach((dotfile) => {
   // Buttons Thingy
   buttonz = document.createElement("div");
   buttonz.classList.add("buttons");
-  buttonz.appendChild(downld);
+  buttonz.appendChild(repo);
+  buttonz.appendChild(reddit);
 
   // Card
   dotfile_div = document.createElement("div");
