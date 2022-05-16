@@ -70,5 +70,21 @@ const dotfiles = [
         description: "Yes, I copied the macOS Big Sur design. Many linux elitists will hate it but I don't care. Cry me a river.",
         image: 'assets/surreal.webp',
         tags: ['awesomewm', 'rofi', 'kitty', 'fish']
-    }
+    },
+    {
+        title: 'M3 Dotfiles',
+        author: 'saimoomedits',
+        link: 'https://github.com/saimoomedits/dotfiles',
+        description: 'This an awesomewm rice/setup inspired by the infamous "material you."',
+        image: 'assets/m3-dotfiles.png',
+        tags: ['awesomewm', 'alacritty', 'wibar', 'mpd']
+    },
+    {
+        title: "rxyhn's dotfiles",
+        author: 'rxyhn',
+        link: 'https://github.com/rxyhn/dotfiles',
+        description: 'Beautiful & Aesthetic AwesomeWM Configuration Files!',
+        image: "assets/rxyhn's-dotfiles.png",
+        tags: ['awesomewm', 'alacritty', 'rofi', 'ncmpcpp']
+    },
 ]
