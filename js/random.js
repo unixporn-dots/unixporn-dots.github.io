@@ -2,8 +2,11 @@ load = false;
 
 document.getElementById('js-sortSwitcher').onclick = function() {
 
-document.getElementById("themes_container").innerHTML = ""
 document.getElementById("themes_container").style.opacity = 0
+
+setTimeout (() => {
+  document.getElementById("themes_container").innerHTML = ""
+}, 200)
 
 if(!load){
  load = true;
@@ -28,7 +31,7 @@ function randomize(sourceArray) {
     }
     return sourceArray;
 }
-
+setTimeout(() => {
 random.forEach((dotfile) => {
   header = document.createElement("header");
 
@@ -79,4 +82,6 @@ random.forEach((dotfile) => {
 document.getElementById("themes_container").appendChild(dotfile_div)
 
 });
+}, 900)
+
 }
