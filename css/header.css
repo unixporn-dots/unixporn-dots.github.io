@@ -41,6 +41,7 @@
 
 
 .searchinput {
+    border-radius: 10px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right: none;
@@ -48,6 +49,7 @@
 }
 
 .searchsubmit {
+    border-radius: 10px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left: none;
