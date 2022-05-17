@@ -198,5 +198,14 @@ const dotfiles = [
         image: "assets/drahenprofi's-dotfiles.png",
         wm: "awesomewm",
         tags: ['awesomewm', 'rofi', 'kitty', 'sp']
+    },
+    {
+        title: "Mahancoder's dotfiles",
+        author: "mahancoder",
+        link: "https://github.com/mahancoder/.dotfiles",
+        description: "A minimalistic classic rice",
+        image: "assets/mahancoder.png",
+        wm: "qtile",
+        tags: ['qtile', 'alacritty', 'ulauncher', 'deadd-notification-center', 'rounded-corners', 'dark', 'dracula', 'arch']
     }
 ]
