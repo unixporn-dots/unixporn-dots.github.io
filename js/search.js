@@ -1,5 +1,5 @@
 var fuzzy = function (items, key) {
-    // Returns a method that you can use to create your own reusable fuzzy search.
+    // Returns a method that does a fuzzy search on a specific key1
 
     return function (query) {
         var words = query.toLowerCase().split(' ');
@@ -16,42 +16,34 @@ var fuzzy = function (items, key) {
 
 
 var searchByTitle = fuzzy(dotfiles, 'title');
+var searchByTags = fuzzy(dotfiles, 'tags');
+var searchByAuthor = fuzzy(dotfiles, 'author');
+var currentQuery = ""; // Handle keyup events on things like ctrl key, etc.
 
-load = false;
+function search (evt) {
 
-document.getElementById('searchInput').onkeyup = function () {
-    searchByTags = fuzzy(dotfiles, 'tags')
-    searchByAuthor = fuzzy(dotfiles, 'author')
+    var query = document.getElementById('searchInput').value;
 
-    value = document.getElementById('searchInput').value
-
-    result = searchByTitle(value)
-    tagy = searchByTags(value)
-    author = searchByAuthor(value)
-
-    result = tagy.concat(result)
-    result = result.concat(author)
-
-    result = [...new Set(result)]
-
-    document.getElementById("themes_container").style.opacity = 0
-
-    if (!load) {
-        load = true;
+    if (query != currentQuery || evt.currentTarget.forceSearch) { // So that we only search on query changes, not every keystroke (modifier keys, etc.)
+        currentQuery = query;
+        document.getElementById("themes_container").style.opacity = 0;
 
         setTimeout(() => {
-            document.getElementById("themes_container").innerHTML = ""
-        }, 200)
+            document.getElementById("themes_container").innerHTML = "";
 
-        setTimeout(() => {
-            document.getElementById("themes_container").style.opacity = 1
+            result = searchByTitle(query).concat(searchByTags(query)).concat(searchByAuthor(query));
 
-        }, 1000)
-
-        setTimeout(() => {
-            generateCards(result);
-            load = false;
-        }, 900)
-
+            result = new Set(result)
+            if (result.size > 0) {
+                generateCards(result);
+            }
+            document.getElementById("themes_container").style.opacity = 1;
+        }, 300);
     }
+
 }
+
+document.getElementById('searchInput').addEventListener('keyup', search);
+document.getElementById('searchSubmit').addEventListener('click', search);
+document.getElementById('searchSubmit').forceSearch = true;
+

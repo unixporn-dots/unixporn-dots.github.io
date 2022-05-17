@@ -68,6 +68,10 @@ input,
     color: var(--font-colour);
 }
 
+.btn-submit {
+    cursor: pointer;
+}
+
 footer {
     margin: 15px;
 }
