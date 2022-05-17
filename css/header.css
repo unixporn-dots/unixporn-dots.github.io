@@ -9,18 +9,21 @@
 
 @media only screen and (max-width: 850px) {
     #main_header {
-      flex-direction: column;
+        flex-direction: column;
     }
-   .searchinput {
-     width: 80%;
-     padding: 4px 8px;
-   }
-   .searchsubmit {
-     padding: 4px 8px;
-   }
-   #main_nav {
-    gap: 15px;
-   }
+
+    .searchinput {
+        width: 80%;
+        padding: 4px 8px;
+    }
+
+    .searchsubmit {
+        padding: 4px 8px;
+    }
+
+    #main_nav {
+        gap: 15px;
+    }
 }
 
 .header-branding {
