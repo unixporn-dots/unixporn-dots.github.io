@@ -11,8 +11,10 @@ Example:
     title: "Dotfiles Title",
     author: 'Armoredvortex',
     link: 'https://github.com/Armoredvortex/dotfiles',
+    reddit: 'https://reddit.com/r/unixporn/comments/abcdef/my_dotfiles'
     description: 'My Beautiful Dotfiles',
     image: 'assets/dotfiles.png',
+    wm: 'xmonad',
     tags: ['i3', 'polybar']
 }
 ```
@@ -24,8 +26,10 @@ Example:
     title: "",
     author: "",
     link: "",
+    reddit: "",
     description: "",
     image: "",
+    wm: "",
     tags: []
 }
 ```

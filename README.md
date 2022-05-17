@@ -28,8 +28,10 @@ A collection of dotfiles from the r/unixporn community
     title: 'Dotfiles',
     author: 'Armoredvortex',
     link: "https://github.com/armoredvortex",
+    reddit: 'https://reddit.com/r/unixporn/comments/abcdef/my_dotfiles',
     description: 'My dotfiles',
     image: 'assets/bridge.png',
+    wm: 'xmonad',
     tags: ['xmonad', 'polybar']
 }
 ```
