@@ -86,4 +86,6 @@ a {
     border: none;
     background: transparent;
     color: var(--font-color);
+    padding: 0;
+    font-size: 1em;
 }
