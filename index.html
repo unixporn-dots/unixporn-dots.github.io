@@ -38,35 +38,27 @@
 <body>
     <header id="main_header">
         <h3 class="header-branding">Unixporn Dots</h3>
-        <nav id="main_nav"><a href="index.html">Home</a><a id="js-themeSwitcher" href="#"><i id="themeIcon"
-                    class="bi bi-sun" aria-hidden="true"></i></a><a id="js-sortSwitcher" href="#" title="Shuffle"><i
-                    class="fa-solid fa-shuffle" aria-hidden="true"></i></a>
-            <div class="searchform" method="get">
+        <nav id="main_nav">
+            <a href="index.html">Home</a>
+            <button id="js-themeSwitcher" class="link-like-button">
+                <i id="themeIcon" class="bi bi-sun" aria-hidden="true"></i>
+            </button>
+            <button id="js-sortSwitcher link-like-button" title="Shuffle">
+                <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
+            </button>
+            <div class="searchform">
                 <div class="inputgroup">
                     <input class="searchinput" id="searchInput" type="text" placeholder="Search">
-                    <button class="btn-submit searchsubmit" id="searchButton" type="submit"><i class="bi bi-search"
-                            aria-hidden="true"></i></button>
+                    <button class="btn-submit searchsubmit">
+                        <i class="bi bi-search" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
     <main id="main_content">
         <div id="themes_container">
-            <!-- <div class="card" style="height: 300px; width: 400px;">
-                <header>
-                    <h3 class="theme-title">ArmoredVortex</h3>
-                    <a href="https://github.com/ArmoredVortex">
-                      <i class="fas fa-chevron-circle-down" aria-hidden="true"></i>
-                    </a>
-                </header>
-
-                <div class="meta">
-                    <a href="https://github.com/Armoredvortex" tabindex="-1">
-                      <img src="assets/bridge.png">
-                      <p class="description">A simple rounded theme</p>
-                    </a>
-                </div>
-            </div> -->
+            <!-- Will be filled dynamically -->
         </div>
     </main>
     <footer id="main_footer">

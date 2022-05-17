@@ -76,3 +76,10 @@ a {
     text-decoration: none;
     color: var(--font-color);
 }
+
+.link-like-button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--font-color);
+}
