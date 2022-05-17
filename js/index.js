@@ -55,7 +55,7 @@ random.forEach((dotfile) => {
 
   // tags
   tag = document.createElement("h3");
-  tag.innerHTML = dotfile.tags[0];
+  tag.innerHTML = dotfile.wm;
   tag.classList.add("tags");
   link.appendChild(tag);
 
