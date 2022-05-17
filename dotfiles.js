@@ -147,7 +147,7 @@ const dotfiles = [
         description: 'A backup of my Linux setup',
         image: "assets/rashad-707's-dotfiles.png",
         wm: 'dwm',
-        tags: ['dwm', 'kde', 'dunst','eww','polybar','rofi']
+        tags: ['dwm', 'kde', 'dunst', 'eww', 'polybar', 'rofi']
     },
     {
         title: "Aether Desktop",
@@ -187,7 +187,7 @@ const dotfiles = [
         description: "Aesthetic OpenboxWM Environment",
         image: "assets/bright-sky.webp",
         wm: "openbox",
-        tags: ['openbox','tint2','obmenu-generator','rofi','dunst','urxvt'],
+        tags: ['openbox', 'tint2', 'obmenu-generator', 'rofi', 'dunst', 'urxvt'],
     },
     {
         title: "drahenprofi's dotfiles",
@@ -198,5 +198,14 @@ const dotfiles = [
         image: "assets/drahenprofi's-dotfiles.png",
         wm: "awesomewm",
         tags: ['awesomewm', 'rofi', 'kitty', 'sp']
+    },
+    {
+        title: "Mahancoder's dotfiles",
+        author: "mahancoder",
+        link: "https://github.com/mahancoder/.dotfiles",
+        description: "A minimalistic classic rice",
+        image: "assets/mahancoder.png",
+        wm: "qtile",
+        tags: ['qtile', 'alacritty', 'ulauncher', 'deadd-notification-center', 'rounded-corners', 'dark', 'dracula', 'arch']
     }
 ]

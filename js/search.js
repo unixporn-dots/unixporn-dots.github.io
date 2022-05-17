@@ -1,57 +1,49 @@
-var fuzzy = function(items, key) {
-  // Returns a method that you can use to create your own reusable fuzzy search.
+var fuzzy = function (items, key) {
+    // Returns a method that does a fuzzy search on a specific key1
 
-  return function(query) {
-    var words  = query.toLowerCase().split(' ');
+    return function (query) {
+        var words = query.toLowerCase().split(' ');
 
-    return items.filter(function(item) {
-      var normalizedTerm = item[key].toString().toLowerCase();
+        return items.filter(function (item) {
+            var normalizedTerm = item[key].toString().toLowerCase();
 
-      return words.every(function(word) {
-        return (normalizedTerm.indexOf(word) > -1);
-      });
-    });
-  };
+            return words.every(function (word) {
+                return (normalizedTerm.indexOf(word) > -1);
+            });
+        });
+    };
 };
 
 
 var searchByTitle = fuzzy(dotfiles, 'title');
+var searchByTags = fuzzy(dotfiles, 'tags');
+var searchByAuthor = fuzzy(dotfiles, 'author');
+var currentQuery = ""; // Handle keyup events on things like ctrl key, etc.
 
-load = false;
+function search (evt) {
 
-document.getElementById('searchInput').onkeyup = function() {
-searchByTags = fuzzy(dotfiles, 'tags')
-searchByAuthor = fuzzy(dotfiles, 'author')
+    var query = document.getElementById('searchInput').value;
 
-value = document.getElementById('searchInput').value
+    if (query != currentQuery || evt.currentTarget.forceSearch) { // So that we only search on query changes, not every keystroke (modifier keys, etc.)
+        currentQuery = query;
+        document.getElementById("themes_container").style.opacity = 0;
 
-  result = searchByTitle(value)
-  tagy = searchByTags(value)
-  author = searchByAuthor(value)
+        setTimeout(() => {
+            document.getElementById("themes_container").innerHTML = "";
 
- result = tagy.concat(result)
- result = result.concat(author)
+            result = searchByTitle(query).concat(searchByTags(query)).concat(searchByAuthor(query));
 
- result = [...new Set(result)]
+            result = new Set(result)
+            if (result.size > 0) {
+                generateCards(result);
+            }
+            document.getElementById("themes_container").style.opacity = 1;
+        }, 300);
+    }
 
-document.getElementById("themes_container").style.opacity = 0
-
-if(!load){
- load = true;
- 
- setTimeout (() => {
-  document.getElementById("themes_container").innerHTML = ""
- }, 200)
-
-setTimeout(() => {
-  document.getElementById("themes_container").style.opacity = 1
-
- }, 1000)
-
-setTimeout(() => {
-  generateCards(result);
-  load = false;
-  }, 900)
-  
 }
-}
+
+document.getElementById('searchInput').addEventListener('keyup', search);
+document.getElementById('searchSubmit').addEventListener('click', search);
+document.getElementById('searchSubmit').forceSearch = true;
+

@@ -1,5 +1,3 @@
-random = randomize(dotfiles)
-
 function randomize(sourceArray) {
 
     for (var i = 0; i < sourceArray.length - 1; i++) {
@@ -18,63 +16,69 @@ function randomize(sourceArray) {
 
 }
 
-generateCards(random);
+random = randomize(dotfiles)
 
-function generateCards(list){
-  list.forEach((dotfile) => {
-    header = document.createElement("header");
+function generateCards(list) {
+    list.forEach((dotfile) => {
+        header = document.createElement("header");
 
-    repo = document.createElement("a");
-    repo.classList.add("button-child");
-    repo.href = dotfile.link;
-    repo.innerHTML = "Repository";
+        repo = document.createElement("a");
+        repo.classList.add("button-child");
+        repo.href = dotfile.link;
+        repo.innerHTML = "Repository";
 
-    reddit = document.createElement("a");
-    reddit.classList.add("button-child");
-    reddit.href = dotfile.reddit;
-    reddit.innerHTML = "Reddit";
+        if (dotfile.reddit) { // Reddit post is optional
+            reddit = document.createElement("a");
+            reddit.classList.add("button-child");
+            reddit.href = dotfile.reddit;
+            reddit.innerHTML = "Reddit";
+        }
 
-    // Desc
-    desc = document.createElement("h3");
-    desc.innerHTML = dotfile.description;
-    desc.classList.add("theme-desc");
-    header.appendChild(desc);
+        // Desc
+        desc = document.createElement("h3");
+        desc.innerHTML = dotfile.description;
+        desc.classList.add("theme-desc");
+        header.appendChild(desc);
 
-    // Title
-    title = document.createElement("h3");
-    title.innerHTML = dotfile.title;
-    title.classList.add("theme-title");
-    header.appendChild(title);
+        // Title
+        title = document.createElement("h3");
+        title.innerHTML = dotfile.title;
+        title.classList.add("theme-title");
+        header.appendChild(title);
 
-    // Image
-    image = document.createElement("img");
-    image.src = dotfile.image;
+        // Image
+        image = document.createElement("img");
+        image.src = dotfile.image;
 
-    // link
-    link = document.createElement("a");
-    link.href = dotfile.link;
-    link.target = "_blank";
-    header.appendChild(link);
+        // link
+        link = document.createElement("a");
+        link.href = dotfile.link;
+        link.target = "_blank";
+        header.appendChild(link);
 
-    // tags
-    tag = document.createElement("h3");
-    tag.innerHTML = dotfile.wm;
-    tag.classList.add("tags");
-    link.appendChild(tag);
+        // tags
+        tag = document.createElement("h3");
+        tag.innerHTML = dotfile.wm;
+        tag.classList.add("tags");
+        link.appendChild(tag);
 
-    // Buttons Thingy
-    buttonz = document.createElement("div");
-    buttonz.classList.add("buttons");
-    buttonz.appendChild(repo);
-    buttonz.appendChild(reddit);
+        // Buttons Thingy
+        buttonz = document.createElement("div");
+        buttonz.classList.add("buttons");
+        buttonz.appendChild(repo);
+        if (dotfile.reddit) {
+            buttonz.appendChild(reddit);
+        }
 
-    // Card
-    dotfile_div = document.createElement("div");
-    dotfile_div.classList.add("card");
-    dotfile_div.appendChild(header);
-    dotfile_div.appendChild(image);
-    dotfile_div.appendChild(buttonz);
+        // Card
+        dotfile_div = document.createElement("div");
+        dotfile_div.classList.add("card");
+        dotfile_div.appendChild(header);
+        dotfile_div.appendChild(image);
+        dotfile_div.appendChild(buttonz);
 
-    document.getElementById("themes_container").appendChild(dotfile_div);
-  });
+        document.getElementById("themes_container").appendChild(dotfile_div);
+    });
 }
+
+generateCards(random);
