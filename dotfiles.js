@@ -18,6 +18,15 @@ const dotfiles = [
         tags: ['i3-gaps', 'rofi', 'nvim', 'ranger', 'dunst', 'flameshot']
     },
     {
+        title: "Evan's Glassmorphism",
+        author: "EvanKoe",
+        link: "https://github.com/EvanKoe/dotfiles_2022.git",
+        reddit: "https://www.reddit.com/r/unixporn/comments/tc3kd0/i3gaps_glassmorphism_here_i_come/",
+        description: "A nice rice for glassmorphism lovers !",
+        image: "assets/evankoe-glass.png",
+        tags: ['i3-gaps', 'rofi', 'nvim', 'ranger', 'asm', 'arch']
+    },
+    {
         title: "Elena's Dotfiles",
         author: 'elenapan',
         link: 'https://github.com/elenapan/dotfiles',
