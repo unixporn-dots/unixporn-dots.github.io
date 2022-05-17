@@ -79,6 +79,15 @@
   border-radius: 8px;
   filter: contrast(0.85);
   font-weight: 500;
+  z-index: 3;
+  position: absolute;
+  bottom: 8px;
+  left: 6px;
+  transition: 0.3s ease;
+}
+
+.card:hover .tags {
+  position: relative;
 }
 
 .theme-title {
@@ -127,8 +136,9 @@
   transition: 0.2s ease-in-out;
   opacity: 0;
   position: absolute;
-  bottom: 16px;
-  right: 10px;
+  bottom: 8px;
+  right: 6px;
   display: grid;
   grid-gap: 10px;
+  grid-auto-flow: column;
 }
