@@ -207,5 +207,15 @@ const dotfiles = [
         image: "assets/mahancoder.png",
         wm: "qtile",
         tags: ['qtile', 'alacritty', 'ulauncher', 'deadd-notification-center', 'rounded-corners', 'dark', 'dracula', 'arch']
+    },
+    {
+        title: "Elena's configuration files",
+        author: "elenapan",
+        link: "https://github.com/elenapan/dotfiles",
+        reddit: "https://www.reddit.com/r/unixporn/comments/a900p7/awesome_mechanical_love/",
+        description: "an AwesomeWM rice which makes extensive use of the AwesomeWM Widget API",
+        image: "assets/mecahnical-love.png",
+        wm: "awesomewm",
+        tags: ['awesomewm', 'kitty', 'firefox', 'rofi']
     }
 ]
