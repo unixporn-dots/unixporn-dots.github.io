@@ -1,4 +1,4 @@
-document.getElementById('js-themeSwitcher').onclick = function () {
+document.getElementById('js-themeSwitcher').addEventListener("click", () => {
     // themeIcon has class 'bi', 'bi-sun'
     themeIcon = document.getElementById("themeIcon");
 
@@ -35,4 +35,4 @@ document.getElementById('js-themeSwitcher').onclick = function () {
     // --font-color : #fff;
     // --body-background-lighter: #404045;
     // --body-background-darker: #202025;
-}
+});

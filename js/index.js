@@ -1,5 +1,3 @@
-random = randomize(dotfiles)
-
 function randomize(sourceArray) {
 
     for (var i = 0; i < sourceArray.length - 1; i++) {
@@ -18,7 +16,7 @@ function randomize(sourceArray) {
 
 }
 
-generateCards(random);
+random = randomize(dotfiles)
 
 function generateCards(list) {
     list.forEach((dotfile) => {
@@ -82,3 +80,5 @@ function generateCards(list) {
         document.getElementById("themes_container").appendChild(dotfile_div);
     });
 }
+
+generateCards(random);
