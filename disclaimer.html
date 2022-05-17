@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unixporn Dots</title>
     <link rel="icon" type="image/x-icon" href="assets/unixporn.png">
- 
 
-   <!-- OpenGraph element -->
-   <meta property="og:title" content="Unixporn Dots">
-   <meta property="og:site_name" content="Unixporn Dots">
-   <meta property="og:url" content="https://unixporn-dots.github.io/">
-   <meta property="og:description" content="A collection of dotfiles from the r/unixporn community. Find your perfect *nix rice">
-   <meta property="og:type" content="website">
-   <meta property="og:image" content="https://avatars.githubusercontent.com/u/105546120?s=200&v=4">
-   <meta property="og:color" content="#303035" />
+
+    <!-- OpenGraph element -->
+    <meta property="og:title" content="Unixporn Dots">
+    <meta property="og:site_name" content="Unixporn Dots">
+    <meta property="og:url" content="https://unixporn-dots.github.io/">
+    <meta property="og:description"
+        content="A collection of dotfiles from the r/unixporn community. Find your perfect *nix rice">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/105546120?s=200&v=4">
+    <meta property="og:color" content="#303035" />
 
     <!-- imoprt sourcecode pro -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:wght@300;700&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:wght@300;700&display=swap"
+        rel="stylesheet">
     <!-- import fontawesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/afcb698043.js" crossorigin="anonymous"></script>
@@ -27,17 +31,29 @@
 
     <link href="css/base.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
+    <link href="css/main_content.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
 
     <script type="text/javascript" src="dotfiles.js"></script>
 </head>
+
 <body>
     <header id="main_header">
         <h3 class="header-branding">Unixporn Dots</h3>
-        <nav id="main_nav"><a href="index.html">Home</a><a id="js-themeSwitcher" href="#"><i id="themeIcon" class="bi bi-sun" aria-hidden="true"></i></a><a id="js-sortSwitcher" href="#" title="Shuffle"><i class="fa-solid fa-shuffle" aria-hidden="true"></i></a>
-            <div class="searchform" method="get">
+        <nav id="main_nav">
+            <a href="index.html">Home</a>
+            <button id="js-themeSwitcher" class="link-like-button">
+                <i id="themeIcon" class="bi bi-sun" aria-hidden="true"></i>
+            </button>
+            <button id="js-sortSwitcher" class="link-like-button" title="Shuffle">
+                <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
+            </button>
+            <div class="searchform">
                 <div class="inputgroup">
                     <input class="searchinput" id="searchInput" type="text" placeholder="Search">
-                    <button class="btn-submit searchsubmit" id="searchButton" type="submit"><i class="bi bi-search" aria-hidden="true"></i></button>
+                    <button class="btn-submit searchsubmit" id="searchSubmit">
+                        <i class="bi bi-search" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -46,22 +62,49 @@
         <h2>Definitions</h2>
         <ul>
             <li>
-                <p style="font-family: Jost;"><strong>Team </strong>refers to the organisation unixporn-dots</p>
+                <p style="font-family: Jost;">
+                    <strong>Team </strong>refers to the organisation unixporn-dots
+                </p>
             </li>
             <li>
-                <p style="font-family: Jost;"><strong>Service </strong>refers to the Website</p>
+                <p style="font-family: Jost;">
+                    <strong>Service </strong>refers to the Website
+                </p>
             </li>
         </ul>
         <p></p>
         <h2>Disclaimer</h2>
-        <p>The Service may contain links to external websites that are not provided or maintained by or in any way affiliated with the Team. Please note that the Team does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.</p>
+        <p>
+            The Service may contain links to external websites that are not provided or maintained by or in any way
+            affiliated with the Team. Please note that the Team does not guarantee the accuracy, relevance, timeliness,
+            or completeness of any information on these external websites.
+        </p>
         <h2>USE AT YOUR OWN RISK</h2>
-        <p>ALL INFORMATION IN THE SERVICE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE INFORMATION PROVIDED.</p>
+        <p>
+            ALL INFORMATION IN THE SERVICE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+            INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+            NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+            OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+            WITH THE INFORMATION PROVIDED.
+        </p>
     </main>
     <footer id="main_footer">
-        <div class="social_links"><a class="social_links-icon" href="https://github.com/unixporn-dots/"><i class="fab fa-github" aria-hidden="true"></i></a></div>
-        <p><strong>Unixporn-Dots</strong> is maintained by the community with&nbsp;<i class="fas fa-heart" aria-hidden="true"></i></p>
-        <div class="linklist"><a href="disclaimer.html" style="margin-right: 20px; color: lightblue;">Disclaimer</a><a style="margin-left: 20px; color: lightblue;" href="https://github.com/unixporn-dots/unixporn-dots.github.io/#add-your-dotfiles">Submit your dotfiles</a></div>
+        <div class="social_links">
+            <a class="social_links-icon" href="https://github.com/unixporn-dots/">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+        </div>
+        <p>
+            <strong>Unixporn-Dots</strong> is maintained by the community with&nbsp;<i class="fas fa-heart"
+                aria-hidden="true"></i>
+        </p>
+        <div class="linklist">
+            <a href="disclaimer.html" style="margin-right: 20px; color: lightblue;">Disclaimer</a>
+            <a style="margin-left: 20px; color: lightblue;"
+                href="https://github.com/unixporn-dots/unixporn-dots.github.io/#add-your-dotfiles">
+                Submit your dotfiles
+            </a>
+        </div>
     </footer>
 
     <script src="js/index.js"></script>
@@ -69,6 +112,5 @@
     <script src="js/random.js"></script>
     <script src="js/search.js"></script>
 </body>
-<link href="css/main_content.css" rel="stylesheet">
-<link href="css/footer.css" rel="stylesheet">
+
 </html>
