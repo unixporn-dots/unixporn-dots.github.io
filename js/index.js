@@ -29,10 +29,12 @@ function generateCards(list) {
         repo.href = dotfile.link;
         repo.innerHTML = "Repository";
 
-        reddit = document.createElement("a");
-        reddit.classList.add("button-child");
-        reddit.href = dotfile.reddit;
-        reddit.innerHTML = "Reddit";
+        if (dotfile.reddit) { // Reddit post is optional
+            reddit = document.createElement("a");
+            reddit.classList.add("button-child");
+            reddit.href = dotfile.reddit;
+            reddit.innerHTML = "Reddit";
+        }
 
         // Desc
         desc = document.createElement("h3");
@@ -66,7 +68,9 @@ function generateCards(list) {
         buttonz = document.createElement("div");
         buttonz.classList.add("buttons");
         buttonz.appendChild(repo);
-        buttonz.appendChild(reddit);
+        if (dotfile.reddit) {
+            buttonz.appendChild(reddit);
+        }
 
         // Card
         dotfile_div = document.createElement("div");
