@@ -18,6 +18,9 @@
    .searchsubmit {
      padding: 4px 8px;
    }
+   #main_nav {
+    gap: 15px;
+   }
 }
 
 .header-branding {
