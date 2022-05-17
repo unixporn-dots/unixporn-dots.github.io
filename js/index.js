@@ -18,59 +18,63 @@ function randomize(sourceArray) {
 
 }
 
-random.forEach((dotfile) => {
-  header = document.createElement("header");
+generateCards(random);
 
-  repo = document.createElement("a");
-  repo.classList.add("button-child");
-  repo.href = dotfile.link;
-  repo.innerHTML = "Repository";
+function generateCards(list){
+  list.forEach((dotfile) => {
+    header = document.createElement("header");
 
-  reddit = document.createElement("a");
-  reddit.classList.add("button-child");
-  reddit.href = dotfile.reddit;
-  reddit.innerHTML = "Reddit";
+    repo = document.createElement("a");
+    repo.classList.add("button-child");
+    repo.href = dotfile.link;
+    repo.innerHTML = "Repository";
 
-  // Desc
-  desc = document.createElement("h3");
-  desc.innerHTML = dotfile.description;
-  desc.classList.add("theme-desc");
-  header.appendChild(desc);
+    reddit = document.createElement("a");
+    reddit.classList.add("button-child");
+    reddit.href = dotfile.reddit;
+    reddit.innerHTML = "Reddit";
 
-  // Title
-  title = document.createElement("h3");
-  title.innerHTML = dotfile.title;
-  title.classList.add("theme-title");
-  header.appendChild(title);
+    // Desc
+    desc = document.createElement("h3");
+    desc.innerHTML = dotfile.description;
+    desc.classList.add("theme-desc");
+    header.appendChild(desc);
 
-  // Image
-  image = document.createElement("img");
-  image.src = dotfile.image;
+    // Title
+    title = document.createElement("h3");
+    title.innerHTML = dotfile.title;
+    title.classList.add("theme-title");
+    header.appendChild(title);
 
-  // link
-  link = document.createElement("a");
-  link.href = dotfile.link;
-  link.target = "_blank";
-  header.appendChild(link);
+    // Image
+    image = document.createElement("img");
+    image.src = dotfile.image;
 
-  // tags
-  tag = document.createElement("h3");
-  tag.innerHTML = dotfile.wm;
-  tag.classList.add("tags");
-  link.appendChild(tag);
+    // link
+    link = document.createElement("a");
+    link.href = dotfile.link;
+    link.target = "_blank";
+    header.appendChild(link);
 
-  // Buttons Thingy
-  buttonz = document.createElement("div");
-  buttonz.classList.add("buttons");
-  buttonz.appendChild(repo);
-  buttonz.appendChild(reddit);
+    // tags
+    tag = document.createElement("h3");
+    tag.innerHTML = dotfile.wm;
+    tag.classList.add("tags");
+    link.appendChild(tag);
 
-  // Card
-  dotfile_div = document.createElement("div");
-  dotfile_div.classList.add("card");
-  dotfile_div.appendChild(header);
-  dotfile_div.appendChild(image);
-  dotfile_div.appendChild(buttonz);
+    // Buttons Thingy
+    buttonz = document.createElement("div");
+    buttonz.classList.add("buttons");
+    buttonz.appendChild(repo);
+    buttonz.appendChild(reddit);
 
-  document.getElementById("themes_container").appendChild(dotfile_div);
-});
+    // Card
+    dotfile_div = document.createElement("div");
+    dotfile_div.classList.add("card");
+    dotfile_div.appendChild(header);
+    dotfile_div.appendChild(image);
+    dotfile_div.appendChild(buttonz);
+
+    document.getElementById("themes_container").appendChild(dotfile_div);
+  });
+}
