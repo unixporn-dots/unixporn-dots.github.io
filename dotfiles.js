@@ -159,4 +159,44 @@ const dotfiles = [
         wm: 'openbox',
         tags: ['openbox', 'urxvt', 'dunst', 'tint2', 'rofi']
     },
+    {
+        title: "macintosh",
+        author: "ChocolateBread799",
+        link: "https://github.com/ChocolateBread799/macintosh",
+        reddit: "https://www.reddit.com/r/unixporn/comments/nvnpco/herbstluftwm_herbstluftwm/",
+        description: "",
+        image: "assets/macintosh.png",
+        wm: "herbstluftwm",
+        tags: ['herbstluftwm', 'eww']
+    },
+    {
+        title: "Serenade",
+        author: "b4skyx",
+        link: "https://github.com/b4skyx/dotfiles",
+        reddit: "https://www.reddit.com/r/unixporn/comments/lhljmi/bspwm_serenade_a_low_contrast_setup_for_my/",
+        description: "A low contrast setup for my colorblind eyes",
+        image: "assets/serenade.png",
+        wm: "bspwm",
+        tags: ['bspwm', 'polybar', 'rofi', 'st']
+    },
+    {
+        title: "Bright Sky",
+        author: "owl4ce",
+        link: "https://github.com/owl4ce/dotfiles",
+        reddit: "https://www.reddit.com/r/unixporn/comments/hlrpg7/openbox_bright_sky/",
+        description: "Aesthetic OpenboxWM Environment",
+        image: "assets/bright-sky.webp",
+        wm: "openbox",
+        tags: ['openbox','tint2','obmenu-generator','rofi','dunst','urxvt'],
+    },
+    {
+        title: "drahenprofi's dotfiles",
+        author: "drahenprofi",
+        link: "https://github.com/drahenprofi/dotfiles",
+        reddit: "https://www.reddit.com/r/unixporn/comments/kucuzs/awesome_420_rice_it/",
+        description: "Arch Linux dotfiles",
+        image: "assets/drahenprofi's-dotfiles.png",
+        wm: "awesomewm",
+        tags: ['awesomewm', 'rofi', 'kitty', 'sp']
+    }
 ]
