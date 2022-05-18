@@ -277,5 +277,15 @@ const dotfiles = [
         image: "assets/awesomeshell.png",
         wm: "awesomewm",
         tags: ['awesomewm', 'i3lock-fancy', 'rofi']
+    },
+    {
+        title: "Sweetness",
+        author: "nekonako",
+        link: "https://github.com/nekonako/dotfiles",
+        reddit: "https://www.reddit.com/r/unixporn/comments/dbmmjo/openbox_sweetness/",
+        description: "Comfy home for linux user ",
+        image: "assets/sweetness.png",
+        wm: "openbox",
+        tags: ['openbox', 'conky', 'tint2']
     }
 ]
