@@ -58,6 +58,16 @@ function generateCards(list) {
         link.target = "_blank";
         header.appendChild(link);
 
+        imageLink = document.createElement("a");
+        imageLink.href = dotfile.image;
+        imageLink.target = "_blank";
+        link.appendChild(imageLink);
+
+        imageIcon = document.createElement("i");
+        imageIcon.classList.add("fas");
+        imageIcon.classList.add("fa-image");
+        imageLink.appendChild(imageIcon);
+
         // tags
         tag = document.createElement("h3");
         tag.innerHTML = dotfile.wm;
