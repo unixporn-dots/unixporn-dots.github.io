@@ -18,6 +18,7 @@ var fuzzy = function (items, key) {
 var searchByTitle = fuzzy(dotfiles, 'title');
 var searchByTags = fuzzy(dotfiles, 'tags');
 var searchByAuthor = fuzzy(dotfiles, 'author');
+var timer;
 var currentQuery = ""; // Handle keyup events on things like ctrl key, etc.
 
 function search (evt) {
@@ -26,9 +27,10 @@ function search (evt) {
 
     if (query != currentQuery || evt.currentTarget.forceSearch) { // So that we only search on query changes, not every keystroke (modifier keys, etc.)
         currentQuery = query;
+        clearTimeout(timer);
         document.getElementById("themes_container").style.opacity = 0;
 
-        setTimeout(() => {
+        timer = setTimeout(() => {
             document.getElementById("themes_container").innerHTML = "";
 
             result = searchByTitle(query).concat(searchByTags(query)).concat(searchByAuthor(query));
@@ -38,7 +40,7 @@ function search (evt) {
                 generateCards(result);
             }
             document.getElementById("themes_container").style.opacity = 1;
-        }, 300);
+        }, 800);
     }
 
 }

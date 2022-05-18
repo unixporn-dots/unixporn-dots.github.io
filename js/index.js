@@ -27,7 +27,7 @@ function generateCards(list) {
         repo.href = dotfile.link;
         repo.innerHTML = "Repository";
 
-        if (dotfile.reddit) { // Reddit post is optional
+        if (dotfile.reddit && /\S/.test(dotfile.reddit)) { // Reddit post is optional
             reddit = document.createElement("a");
             reddit.classList.add("button-child");
             reddit.href = dotfile.reddit;
@@ -66,7 +66,7 @@ function generateCards(list) {
         buttonz = document.createElement("div");
         buttonz.classList.add("buttons");
         buttonz.appendChild(repo);
-        if (dotfile.reddit) {
+        if (dotfile.reddit && /\S/.test(dotfile.reddit)) {
             buttonz.appendChild(reddit);
         }
 
