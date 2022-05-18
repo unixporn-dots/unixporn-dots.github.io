@@ -217,5 +217,15 @@ const dotfiles = [
         image: "assets/mecahnical-love.png",
         wm: "awesomewm",
         tags: ['awesomewm', 'kitty', 'firefox', 'rofi']
+    },
+    {
+        title: "SwiftyChicken's dotfiles",
+        author: "SwiftyChicken",
+        link: "https://github.com/SwiftyChicken/dotfiles",
+        reddit: "https://www.reddit.com/r/unixporn/comments/haogs0/bspwm_i_have_spent_too_much_time_on_this/",
+        description: "My dotfiles",
+        image: "assets/swiftychicken's-dotfiles.png",
+        wm: "bspwm",
+        tags: ['bspwm', 'dunst', 'rofi', 'polybar', 'eww']
     }
 ]
