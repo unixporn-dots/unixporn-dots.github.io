@@ -19,6 +19,7 @@ var searchByTitle = fuzzy(dotfiles, 'title');
 var searchByTags = fuzzy(dotfiles, 'tags');
 var searchByAuthor = fuzzy(dotfiles, 'author');
 var currentQuery = ""; // Handle keyup events on things like ctrl key, etc.
+var load = false; // Prevent spams
 
 function search (evt) {
 
@@ -37,8 +38,14 @@ function search (evt) {
             if (result.size > 0) {
                 generateCards(result);
             }
-            document.getElementById("themes_container").style.opacity = 1;
-        }, 300);
+            if(load == false) {
+             load = true;
+             setTimeout (() => {
+               document.getElementById("themes_container").style.opacity = 1;
+               load = false;
+             }, 200)
+            }
+        }, 200);
     }
 
 }
