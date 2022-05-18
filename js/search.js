@@ -1,5 +1,5 @@
 var fuzzy = function (items, key) {
-    // Returns a method that does a fuzzy search on a specific key1
+    // Returns a method that does a fuzzy search on a specific key
 
     return function (query) {
         var words = query.toLowerCase().split(' ');
@@ -38,7 +38,6 @@ function search(evt) {
             if (evt.currentTarget.forceSearch) { // Only lock if the event is fired from the button
                 loaded = false;
             }
-<<<<<<< HEAD
             document.getElementById("themes_container").style.opacity = 0;
 
             timer = setTimeout(() => {
@@ -58,16 +57,6 @@ function search(evt) {
                          // meaning the lock will be released 200ms after everything is done
             }, 500);
         }
-=======
-            if(load == false) {
-             load = true;
-             setTimeout (() => {
-               document.getElementById("themes_container").style.opacity = 1;
-               load = false;
-             }, 200)
-            }
-        }, 200);
->>>>>>> 7dea5ed950a20a0b066fc23f2322b5a32b8dbd62
     }
 
 }
