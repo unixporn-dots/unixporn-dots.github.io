@@ -247,5 +247,15 @@ const dotfiles = [
         image: "assets/crylia-theme.png",
         wm: "awesomewm",
         tags: ['awesomewm', 'rofi', 'alacritty']
+    },
+    {
+        title: "Neon 80s",
+        author: "Vista1nik",
+        link: "https://github.com/Vista1nik/i3-neon80s",
+        reddit: "https://www.reddit.com/r/unixporn/comments/c0i8e1/i3gaps_neon_80s/?utm_source=share&utm_medium=web2x&context=3",
+        description: "Neon80s for i3",
+        image: "assets/neon-80s.png",
+        wm: "i3-gaps",
+        tags: ['i3-gaps', 'kitty', 'i3blocks']
     }
 ]
