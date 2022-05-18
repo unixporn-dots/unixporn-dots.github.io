@@ -237,5 +237,15 @@ const dotfiles = [
         image: "assets/k-vernooy's-dotfiles.png",
         wm: "i3-gaps",
         tags: ['i3-gaps', 'polybar', 'dunst', 'urxvt']
+    },
+    {
+        title: "Crylia Theme",
+        author: "Crylia",
+        link: "https://github.com/Crylia/crylia-theme",
+        reddit: "https://www.reddit.com/r/unixporn/comments/u79yy4/awesome_something_ive_been_working_on_for_a_long/",
+        description: 'An AwesomeWM theme inspired by everything I could find online and thought "Hey, that looks good!".',
+        image: "assets/crylia-theme.png",
+        wm: "awesomewm",
+        tags: ['awesomewm', 'rofi', 'alacritty']
     }
 ]
