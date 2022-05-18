@@ -1,7 +1,7 @@
-var loaded = true;
+var loaded = true; // The lock, to prevent spamming the shuffle button
 document.getElementById('js-sortSwitcher').addEventListener("click", () => {
-    if (loaded) {
-        loaded = false;
+    if (loaded) { // Only shuffle if the lock is open
+        loaded = false; // Close the lock
         document.getElementById("themes_container").style.opacity = 0
         console.log("hi");
         random = randomize(dotfiles)
@@ -11,8 +11,9 @@ document.getElementById('js-sortSwitcher').addEventListener("click", () => {
             generateCards(random);
             document.getElementById("themes_container").style.opacity = 1;
             setTimeout(() => {
-                loaded = true;
-            }, 400);
+                loaded = true; // Open the lock after a certain timeout
+            }, 400); // This time includes the opactiy change to 1 too,
+                     // So the lock will be released 200ms after everything is done
         }, 300);
     }
 });

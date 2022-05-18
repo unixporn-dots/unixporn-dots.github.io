@@ -19,7 +19,7 @@ var searchByTitle = fuzzy(dotfiles, 'title');
 var searchByTags = fuzzy(dotfiles, 'tags');
 var searchByAuthor = fuzzy(dotfiles, 'author');
 var timer;
-var loaded = true;
+var loaded = true; // Timeout the search button
 var currentQuery = ""; // Handle keyup events on things like ctrl key, etc.
 
 function search(evt) {
@@ -28,12 +28,13 @@ function search(evt) {
 
     if (query != currentQuery || evt.currentTarget.forceSearch) { // So that we only search on query changes, not every keystroke (modifier keys, etc.)
         currentQuery = query;
-        if (!evt.currentTarget.forceSearch) {
+        if (!evt.currentTarget.forceSearch) { // Timeout is not needed when event is fired from typing
             loaded = true;
-            clearTimeout(timer);
+            clearTimeout(timer); // We shouldn't clear the timer if the event is fired from the button
+                                 // Otherwise, the lock will never be opened
         }
-        if (loaded) {
-            if (evt.currentTarget.forceSearch) {
+        if (loaded) { // Only do search if the lock is open
+            if (evt.currentTarget.forceSearch) { // Only lock if the event is fired from the button
                 loaded = false;
             }
             document.getElementById("themes_container").style.opacity = 0;
@@ -49,8 +50,9 @@ function search(evt) {
                 }
                 document.getElementById("themes_container").style.opacity = 1;
                 setTimeout(() => {
-                    loaded = true
-                }, 400);
+                    loaded = true // Open the lock after a certain timeout
+                }, 400); // This time includes the opactiy change to 1 too,
+                         // meaning the lock will be released 200ms after everything is done
             }, 500);
         }
     }
