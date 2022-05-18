@@ -11,7 +11,7 @@ Example:
     title: "Dotfiles Title",
     author: 'Armoredvortex',
     link: 'https://github.com/Armoredvortex/dotfiles',
-    reddit: 'https://reddit.com/r/unixporn/comments/abcdef/my_dotfiles'
+    reddit: 'https://reddit.com/r/unixporn/comments/abcdef/my_dotfiles',    // Optional
     description: 'My Beautiful Dotfiles',
     image: 'assets/dotfiles.png',
     wm: 'xmonad',
@@ -26,7 +26,7 @@ Example:
     title: "",
     author: "",
     link: "",
-    reddit: "",
+    reddit: "", //Optional
     description: "",
     image: "",
     wm: "",
