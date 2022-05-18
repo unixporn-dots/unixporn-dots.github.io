@@ -227,5 +227,15 @@ const dotfiles = [
         image: "assets/swiftychicken's-dotfiles.png",
         wm: "bspwm",
         tags: ['bspwm', 'dunst', 'rofi', 'polybar', 'eww']
+    },
+    {
+        title: "k-vernooy's dotfiles",
+        author: "k-vernooy",
+        link: "https://github.com/k-vernooy/dotfiles",
+        reddit: "https://www.reddit.com/r/unixporn/comments/j3mfc6/i3gaps_ready_for_fall/",
+        description: "My dotfile organization repository! Contains config files for my current i3/Arch setup.",
+        image: "assets/k-vernooy's-dotfiles.png",
+        wm: "i3-gaps",
+        tags: ['i3-gaps', 'polybar', 'dunst', 'urxvt']
     }
 ]
