@@ -40,7 +40,7 @@ function search (evt) {
                 generateCards(result);
             }
             document.getElementById("themes_container").style.opacity = 1;
-        }, 800);
+        }, 500);
     }
 
 }
