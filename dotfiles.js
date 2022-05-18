@@ -214,7 +214,7 @@ const dotfiles = [
         link: "https://github.com/elenapan/dotfiles",
         reddit: "https://www.reddit.com/r/unixporn/comments/a900p7/awesome_mechanical_love/",
         description: "an AwesomeWM rice which makes extensive use of the AwesomeWM Widget API",
-        image: "assets/mecahnical-love.png",
+        image: "assets/mechanical-love.png",
         wm: "awesomewm",
         tags: ['awesomewm', 'kitty', 'firefox', 'rofi']
     },
