@@ -55,7 +55,7 @@
     width: inherit;
 }
 
-.card > a > img, .card > a {
+.card img {
     /* min-height: 250px;
   max-height: 275px; */
     min-width: 300px;

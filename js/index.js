@@ -49,24 +49,20 @@ function generateCards(list) {
         header.appendChild(title);
 
         // Image
-        var img_link = document.createElement("a");
-        img_link.target = "_blank";
-        img_link.href = dotfile.image;
         image = document.createElement("img");
         image.src = dotfile.image;
-        img_link.appendChild(image);
 
-        // // link
-        // link = document.createElement("a");
-        // link.href = dotfile.link;
-        // link.target = "_blank";
-        // header.appendChild(link);
+        // link
+        link = document.createElement("a");
+        link.href = dotfile.link;
+        link.target = "_blank";
+        header.appendChild(link);
 
         // tags
         tag = document.createElement("h3");
         tag.innerHTML = dotfile.wm;
         tag.classList.add("tags");
-        header.appendChild(tag);
+        link.appendChild(tag);
 
         // Buttons Thingy
         buttonz = document.createElement("div");
@@ -77,15 +73,13 @@ function generateCards(list) {
         }
 
         // Card
-        dotfile_card = document.createElement("a");
-        dotfile_card.classList.add("card");
-        dotfile_card.href = dotfile.link;
-        dotfile_card.target = "_blank";
-        dotfile_card.appendChild(header);
-        dotfile_card.appendChild(img_link);
-        dotfile_card.appendChild(buttonz);
+        dotfile_div = document.createElement("div");
+        dotfile_div.classList.add("card");
+        dotfile_div.appendChild(header);
+        dotfile_div.appendChild(image);
+        dotfile_div.appendChild(buttonz);
 
-        document.getElementById("themes_container").appendChild(dotfile_card);
+        document.getElementById("themes_container").appendChild(dotfile_div);
     });
 }
 
