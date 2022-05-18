@@ -44,8 +44,9 @@ function search(evt) {
 
                 result = searchByTitle(query).concat(searchByTags(query)).concat(searchByAuthor(query));
 
-                result = new Set(result)
-                if (result.size > 0) {
+                result = result.filter((v, i, a) => a.indexOf(v) === i); // Remove duplicates
+                current_dotfiles = result;
+                if (result.length > 0) {
                     generateCards(result);
                 }
                 document.getElementById("themes_container").style.opacity = 1;

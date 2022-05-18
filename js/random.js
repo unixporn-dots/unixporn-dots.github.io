@@ -3,8 +3,7 @@ document.getElementById('js-sortSwitcher').addEventListener("click", () => {
     if (loaded) { // Only shuffle if the lock is open
         loaded = false; // Close the lock
         document.getElementById("themes_container").style.opacity = 0
-        console.log("hi");
-        random = randomize(dotfiles)
+        random = randomize(current_dotfiles)
 
         setTimeout(() => {
             document.getElementById("themes_container").innerHTML = "";

@@ -16,7 +16,9 @@ function randomize(sourceArray) {
 
 }
 
-random = randomize(dotfiles)
+var current_dotfiles = dotfiles;
+
+random = randomize(current_dotfiles)
 
 function generateCards(list) {
     list.forEach((dotfile) => {
