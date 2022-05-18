@@ -257,5 +257,25 @@ const dotfiles = [
         image: "assets/neon-80s.png",
         wm: "i3-gaps",
         tags: ['i3-gaps', 'kitty', 'i3blocks']
+    },
+    {
+        title: "AFreidz's Dotfiles",
+        author: "AFreidz",
+        link: "https://github.com/afreidz/dots",
+        reddit: "https://www.reddit.com/r/unixporn/comments/i09jf9/awesomewm_excuse_me_kind_sur/",
+        description: "Dotfiles for AwesomeWM on Linux setup",
+        image: "assets/afreidz's-dotfiles.png",
+        wm: "awesomewm",
+        tags: ['awesomewm', 'urxvt', 'rofi', 'zsh']
+    },
+    {
+        title: "AwesomeShell",
+        author: "Mofiqul",
+        link: "https://github.com/Mofiqul/awesome-shell",
+        reddit: "https://www.reddit.com/r/unixporn/comments/mfryxp/awesome_just_learning_some_lua/",
+        description: "This is a collection of awesome wm configuration files",
+        image: "assets/awesomeshell.png",
+        wm: "awesomewm",
+        tags: ['awesomewm', 'i3lock-fancy', 'rofi']
     }
 ]
