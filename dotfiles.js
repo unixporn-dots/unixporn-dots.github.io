@@ -289,12 +289,12 @@ const dotfiles = [
         tags: ['openbox', 'conky', 'tint2']
     },
     {
-        title: "Serene Dust",
+        title: "Serene Dusk",
         author: "ParallaxWave",
         link: "https://github.com/ParallaxWave/blood_i3",
         reddit: "https://www.reddit.com/r/unixporn/comments/il5xjc/i3gaps_serene_dusk/",
         description: "Trying to escape the stereotypical i3wm desktop...",
-        image: "assets/serene-dust.png",
+        image: "assets/serene-dusk.png",
         wm: "i3-gaps",
         tags: ['i3-gaps', 'xfce4-terminal', 'dunst', 'rofi', 'up-clock', 'tint2']
     }
