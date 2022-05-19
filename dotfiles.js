@@ -297,5 +297,15 @@ const dotfiles = [
         image: "assets/serene-dusk.png",
         wm: "i3-gaps",
         tags: ['i3-gaps', 'xfce4-terminal', 'dunst', 'rofi', 'up-clock', 'tint2']
+    },
+    {
+        title: "mf-dots",
+        authoer: "obliviousofcraps",
+        link: "https://github.com/obliviousofcraps/mf-dots",
+        reddit: "https://www.reddit.com/r/unixporn/comments/mioauy/openbox_eww_its_pastel/",
+        description: "These are some of my ridiculously shit dotfiles that I use in my unproductive daily life. ",
+        image: "assets/mf-dots.png",
+        wm: "openbox",
+        tags: ['openbox', 'rofi', 'kitty', 'slim', 'eww', 'tint2', 'dunst']
     }
 ]
