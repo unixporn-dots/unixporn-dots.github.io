@@ -164,7 +164,7 @@ const dotfiles = [
         author: "ChocolateBread799",
         link: "https://github.com/ChocolateBread799/macintosh",
         reddit: "https://www.reddit.com/r/unixporn/comments/nvnpco/herbstluftwm_herbstluftwm/",
-        description: "",
+        description: "Herbstluftwm?",
         image: "assets/macintosh.png",
         wm: "herbstluftwm",
         tags: ['herbstluftwm', 'eww']
