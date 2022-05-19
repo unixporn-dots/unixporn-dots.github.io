@@ -4,17 +4,17 @@
 <img width="100px" src="assets/unixporn.png"> <br>
 A collection of dotfiles from the r/unixporn community
 <br>
-<a href="https://unixporn-dots.github.io">Visit Site</a>
+<a href="https://unixporn-dots.github.io">Visit the website</a>
 </div>
 
 ---
 <br>
 
-# Add your Dotfiles
+# Adding your Dotfiles
 + Opening a pull request:
   1. Fork this repository.
-  2. Add your entry in the `dotfiles.json` file.
-  3. The image can be added via a url, or by adding an image inside the `assets` folder and referencing it.
+  2. Add your entry to the `dotfiles.js` file.
+  3. The image can be added via a URL, or by adding an image inside the `assets` folder and referencing it.
   4. Open a pull request and it's done!
 
 <br>
@@ -28,8 +28,10 @@ A collection of dotfiles from the r/unixporn community
     title: 'Dotfiles',
     author: 'Armoredvortex',
     link: "https://github.com/armoredvortex",
+    reddit: 'https://reddit.com/r/unixporn/comments/abcdef/my_dotfiles', // Optional
     description: 'My dotfiles',
     image: 'assets/bridge.png',
+    wm: 'xmonad',
     tags: ['xmonad', 'polybar']
 }
 ```

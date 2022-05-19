@@ -1,5 +1,3 @@
-random = randomize(dotfiles)
-
 function randomize(sourceArray) {
 
     for (var i = 0; i < sourceArray.length - 1; i++) {
@@ -18,59 +16,81 @@ function randomize(sourceArray) {
 
 }
 
-random.forEach((dotfile) => {
-  header = document.createElement("header");
+var current_dotfiles = dotfiles;
 
-  repo = document.createElement("a");
-  repo.classList.add("button-child");
-  repo.href = dotfile.link;
-  repo.innerHTML = "Repository";
+random = randomize(current_dotfiles)
 
-  reddit = document.createElement("a");
-  reddit.classList.add("button-child");
-  reddit.href = dotfile.reddit;
-  reddit.innerHTML = "Reddit";
+function generateCards(list) {
+    list.forEach((dotfile) => {
+        header = document.createElement("header");
 
-  // Desc
-  desc = document.createElement("h3");
-  desc.innerHTML = dotfile.description;
-  desc.classList.add("theme-desc");
-  header.appendChild(desc);
+        repo = document.createElement("a");
+        repo.classList.add("button-child");
+        repo.href = dotfile.link;
+        repo.innerHTML = "Repository";
 
-  // Title
-  title = document.createElement("h3");
-  title.innerHTML = dotfile.title;
-  title.classList.add("theme-title");
-  header.appendChild(title);
+        if (dotfile.reddit && /\S/.test(dotfile.reddit)) { // Reddit post is optional
+            reddit = document.createElement("a");
+            reddit.classList.add("button-child");
+            reddit.href = dotfile.reddit;
+            reddit.innerHTML = "Reddit";
+        }
 
-  // Image
-  image = document.createElement("img");
-  image.src = dotfile.image;
+        // Desc
+        desc = document.createElement("h3");
+        desc.innerHTML = dotfile.description;
+        desc.classList.add("theme-desc");
+        header.appendChild(desc);
 
-  // link
-  link = document.createElement("a");
-  link.href = dotfile.link;
-  link.target = "_blank";
-  header.appendChild(link);
+        // Title
+        title = document.createElement("h3");
+        title.innerHTML = dotfile.title;
+        title.classList.add("theme-title");
+        header.appendChild(title);
 
-  // tags
-  tag = document.createElement("h3");
-  tag.innerHTML = dotfile.tags[0];
-  tag.classList.add("tags");
-  link.appendChild(tag);
+        // Image
+        image = document.createElement("img");
+        image.src = dotfile.image;
 
-  // Buttons Thingy
-  buttonz = document.createElement("div");
-  buttonz.classList.add("buttons");
-  buttonz.appendChild(repo);
-  buttonz.appendChild(reddit);
+        // link
+        link = document.createElement("a");
+        link.href = dotfile.link;
+        link.target = "_blank";
+        header.appendChild(link);
 
-  // Card
-  dotfile_div = document.createElement("div");
-  dotfile_div.classList.add("card");
-  dotfile_div.appendChild(header);
-  dotfile_div.appendChild(image);
-  dotfile_div.appendChild(buttonz);
+        imageLink = document.createElement("a");
+        imageLink.href = dotfile.image;
+        imageLink.target = "_blank";
+        link.appendChild(imageLink);
 
-  document.getElementById("themes_container").appendChild(dotfile_div);
-});
+        imageIcon = document.createElement("i");
+        imageIcon.classList.add("fas");
+        imageIcon.classList.add("fa-image");
+        imageLink.appendChild(imageIcon);
+
+        // tags
+        tag = document.createElement("h3");
+        tag.innerHTML = dotfile.wm;
+        tag.classList.add("tags");
+        link.appendChild(tag);
+
+        // Buttons Thingy
+        buttonz = document.createElement("div");
+        buttonz.classList.add("buttons");
+        buttonz.appendChild(repo);
+        if (dotfile.reddit && /\S/.test(dotfile.reddit)) {
+            buttonz.appendChild(reddit);
+        }
+
+        // Card
+        dotfile_div = document.createElement("div");
+        dotfile_div.classList.add("card");
+        dotfile_div.appendChild(header);
+        dotfile_div.appendChild(image);
+        dotfile_div.appendChild(buttonz);
+
+        document.getElementById("themes_container").appendChild(dotfile_div);
+    });
+}
+
+generateCards(random);

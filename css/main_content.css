@@ -1,39 +1,41 @@
 #main_content {
-  padding: 3rem;
+    padding: 3rem;
 }
 
 @media only screen and (max-width: 850px) {
- #main_content {
-  padding: 10px;
- }
+    #main_content {
+        padding: 10px;
+    }
 }
 
 #themes_container {
-  transition: 0.2s ease-in-out;
-  display: grid;
-  gap: 20px;
-  grid-template: auto/repeat(auto-fit, minmax(360px, 1fr));
+    transition: 0.2s ease-in-out;
+    display: grid;
+    gap: 20px;
+    grid-template: auto/repeat(auto-fit, minmax(360px, 1fr));
 }
 
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border-radius: 12px;
-  background: var(--body-background-lighter);
-  box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  width: -webkit-fill-available; /* Webkit browsers */
-  width: -moz-available; /* Mozilla Firefox */
-  width: fill-available;
-  flex-flow: wrap;
-  /* min-height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background: var(--body-background-lighter);
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: -webkit-fill-available;
+    /* Webkit browsers */
+    width: -moz-available;
+    /* Mozilla Firefox */
+    width: fill-available;
+    flex-flow: wrap;
+    /* min-height: 250px;
   max-height: 275px; */
-  max-width: 500px;
+    max-width: 500px;
 }
 
 .card:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .card:hover .buttons {
@@ -46,53 +48,56 @@
 }
 
 .card header {
-  padding: 0 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: inherit;
+    padding: 0 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
 }
 
 .card img {
-  /* min-height: 250px;
+    /* min-height: 250px;
   max-height: 275px; */
-  min-width: 300px;
-  max-width: 736px;
-  border-radius: inherit;
-  transform: translate(0px, 0px);
-  transition: 0.2s ease-in-out;
-  z-index: 0;
-  width: -webkit-fill-available; /* Webkit browsers */
-  width: -moz-available; /* Mozilla Firefox */
-  width: fill-available;
+    min-width: 300px;
+    max-width: 736px;
+    border-radius: inherit;
+    transform: translate(0px, 0px);
+    transition: 0.2s ease-in-out;
+    z-index: 0;
+    width: -webkit-fill-available;
+    /* Webkit browsers */
+    width: -moz-available;
+    /* Mozilla Firefox */
+    width: fill-available;
 }
 
-.card:focus-within img, .card:hover img {
-  transform: translate(0px, 15px);
+.card:focus-within img,
+.card:hover img {
+    transform: translate(0px, 15px);
 }
 
 .tags {
-  padding: 0px 14px;
-  background-color: var(--body-background-darker);
-  font-family: "Jost";
-  margin: 0px;
-  border-radius: 8px;
-  filter: contrast(0.85);
-  font-weight: 500;
-  z-index: 3;
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  transition: 0.2s ease-in-out;
+    padding: 0px 14px;
+    background-color: var(--body-background-darker);
+    font-family: "Jost";
+    margin: 0px;
+    border-radius: 8px;
+    filter: contrast(0.85);
+    font-weight: 500;
+    z-index: 3;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    transition: 0.2s ease-in-out;
 }
 
 .card:hover .tags {
-  bottom: 55px;
+    bottom: 55px;
 }
 
 .theme-title {
-  font-family: "Jost";
-  margin: 12px 0px;
+    font-family: "Jost";
+    margin: 12px 0px;
 }
 
 .theme-desc {
@@ -109,22 +114,24 @@
     transform: translateY(-50%);
     background: var(--body-background-lighter);
     transition: 0.2s ease-in-out;
-    width: -webkit-fill-available; /* Webkit browsers */
-    width: -moz-available; /* Mozilla Firefox */
+    width: -webkit-fill-available;
+    /* Webkit browsers */
+    width: -moz-available;
+    /* Mozilla Firefox */
     width: fill-available;
     border-radius: 14px;
 }
 
 .button-child {
-  font-family: "Jost";
-  padding: 8px 16px;
-  border-radius: 12px;
-  margin: 0px;
-  font-size: 16px;
-  background: var(--body-background-lighter);
-  transition: 0.2s ease-in-out;
-  font-weight: bold;
-  text-align: center;
+    font-family: "Jost";
+    padding: 8px 16px;
+    border-radius: 12px;
+    margin: 0px;
+    font-size: 16px;
+    background: var(--body-background-lighter);
+    transition: 0.2s ease-in-out;
+    font-weight: bold;
+    text-align: center;
 }
 
 .button-child:hover {
@@ -133,12 +140,12 @@
 }
 
 .buttons {
-  transition: 0.2s ease-in-out;
-  opacity: 0;
-  position: absolute;
-  bottom: 8px;
-  right: 6px;
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-flow: column;
+    transition: 0.2s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    bottom: 8px;
+    right: 6px;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
 }

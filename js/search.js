@@ -1,107 +1,65 @@
-var fuzzy = function(items, key) {
-  // Returns a method that you can use to create your own reusable fuzzy search.
+var fuzzy = function (items, key) {
+    // Returns a method that does a fuzzy search on a specific key
 
-  return function(query) {
-    var words  = query.toLowerCase().split(' ');
+    return function (query) {
+        var words = query.toLowerCase().split(' ');
 
-    return items.filter(function(item) {
-      var normalizedTerm = item[key].toString().toLowerCase();
+        return items.filter(function (item) {
+            var normalizedTerm = item[key].toString().toLowerCase();
 
-      return words.every(function(word) {
-        return (normalizedTerm.indexOf(word) > -1);
-      });
-    });
-  };
+            return words.every(function (word) {
+                return (normalizedTerm.indexOf(word) > -1);
+            });
+        });
+    };
 };
 
 
 var searchByTitle = fuzzy(dotfiles, 'title');
+var searchByTags = fuzzy(dotfiles, 'tags');
+var searchByAuthor = fuzzy(dotfiles, 'author');
+var timer;
+var loaded = true; // Timeout the search button
+var currentQuery = ""; // Handle keyup events on things like ctrl key, etc.
+var load = false; // Prevent spams
 
-load = false;
+function search(evt) {
 
-document.getElementById('searchInput').onkeyup = function() {
-searchByTags = fuzzy(dotfiles, 'tags')
-searchByAuthor = fuzzy(dotfiles, 'author')
+    var query = document.getElementById('searchInput').value;
 
-value = document.getElementById('searchInput').value
+    if (query != currentQuery || evt.currentTarget.forceSearch) { // So that we only search on query changes, not every keystroke (modifier keys, etc.)
+        currentQuery = query;
+        if (!evt.currentTarget.forceSearch) { // Timeout is not needed when event is fired from typing
+            loaded = true;
+            clearTimeout(timer); // We shouldn't clear the timer if the event is fired from the button
+                                 // Otherwise, the lock will never be opened
+        }
+        if (loaded) { // Only do search if the lock is open
+            if (evt.currentTarget.forceSearch) { // Only lock if the event is fired from the button
+                loaded = false;
+            }
+            document.getElementById("themes_container").style.opacity = 0;
 
-  result = searchByTitle(value)
-  tagy = searchByTags(value)
-  author = searchByAuthor(value)
+            timer = setTimeout(() => {
+                document.getElementById("themes_container").innerHTML = "";
 
- result = tagy.concat(result)
- result = result.concat(author)
+                result = searchByTitle(query).concat(searchByTags(query)).concat(searchByAuthor(query));
 
- result = [...new Set(result)]
-
-document.getElementById("themes_container").style.opacity = 0
-
-if(!load){
- load = true;
- 
- setTimeout (() => {
-  document.getElementById("themes_container").innerHTML = ""
- }, 200)
-
-setTimeout(() => {
-  document.getElementById("themes_container").style.opacity = 1
-
- }, 1000)
-
-setTimeout(() => {
-  result.forEach((dotfile) => {
-    header = document.createElement("header");
-
-    downld = document.createElement("a");
-    downld.classList.add("button-child");
-    downld.href = dotfile.link;
-    downld.innerHTML = "Download";
-
-    // Desc
-    desc = document.createElement("h3");
-    desc.innerHTML = dotfile.description;
-    desc.classList.add("theme-desc");
-    header.appendChild(desc);
-
-    // Title
-    title = document.createElement("h3");
-    title.innerHTML = dotfile.title;
-    title.classList.add("theme-title");
-    header.appendChild(title);
-
-    // Image
-    image = document.createElement("img");
-    image.src = dotfile.image;
-
-    // link
-    link = document.createElement("a");
-    link.href = dotfile.link;
-    link.target = "_blank";
-    header.appendChild(link);
-
-    // link-icon
-    tag = document.createElement("h3");
-    tag.innerHTML = dotfile.tags[0];
-    tag.classList.add("tags");
-    link.appendChild(tag);
-
-    // Buttons Thingy
-    buttonz = document.createElement("div");
-    buttonz.classList.add("buttons");
-    buttonz.appendChild(downld);
-
-    // Card
-    dotfile_div = document.createElement("div");
-    dotfile_div.classList.add("card");
-    dotfile_div.appendChild(header);
-    dotfile_div.appendChild(image);
-    dotfile_div.appendChild(buttonz);
-
-    document.getElementById("themes_container").appendChild(dotfile_div);
-    load = false;
-  });
-  }, 900)
-  
-}
+                result = result.filter((v, i, a) => a.indexOf(v) === i); // Remove duplicates
+                current_dotfiles = result;
+                if (result.length > 0) {
+                    generateCards(result);
+                }
+                document.getElementById("themes_container").style.opacity = 1;
+                setTimeout(() => {
+                    loaded = true // Open the lock after a certain timeout
+                }, 400); // This time includes the opactiy change to 1 too,
+                         // meaning the lock will be released 200ms after everything is done
+            }, 500);
+        }
+    }
 
 }
+document.getElementById('searchInput').addEventListener('keyup', search);
+document.getElementById('searchSubmit').addEventListener('click', search);
+document.getElementById('searchSubmit').forceSearch = true;
