@@ -327,5 +327,15 @@ const dotfiles = [
         image: "assets/prismatic-night.png",
         wm: "openbox",
         tags: ['openbox', 'urxvt', 'firefox', 'tint2', 'jgmenu']
+    },
+    {
+        title: "LucyUwI's Dotfiles",
+        author: "LucyUwI",
+        link: "https://github.com/LucyUwI/dotfiles",
+        reddit: "https://www.reddit.com/r/unixporn/comments/pilgqs/kde_my_current_kde_setup/",
+        description: "My personal dotfiles for KDE",
+        image: "assets/lucyuwi's-dotfiles.png",
+        wm: "kde",
+        tags: ['kde', 'kvantum', 'latte']
     }
 ]
