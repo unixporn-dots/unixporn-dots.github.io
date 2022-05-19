@@ -300,12 +300,22 @@ const dotfiles = [
     },
     {
         title: "mf-dots",
-        authoer: "obliviousofcraps",
+        author: "obliviousofcraps",
         link: "https://github.com/obliviousofcraps/mf-dots",
         reddit: "https://www.reddit.com/r/unixporn/comments/mioauy/openbox_eww_its_pastel/",
         description: "These are some of my ridiculously shit dotfiles that I use in my unproductive daily life. ",
         image: "assets/mf-dots.png",
         wm: "openbox",
         tags: ['openbox', 'rofi', 'kitty', 'slim', 'eww', 'tint2', 'dunst']
+    },
+    {
+        title: "Potamides' Dotfiles",
+        author: "potamides",
+        link: "https://github.com/potamides/dotfiles",
+        reddit: "https://www.reddit.com/r/unixporn/comments/i60b10/awesome_streets_of_gruvbox/",
+        description: "My personal dotfiles for most of the programs I use on a daily basis.",
+        image: "assets/potamide's-dotfiles.png",
+        wm: "awesomewm",
+        tags: ['awesomewm', 'alacritty', 'conky']
     }
 ]
