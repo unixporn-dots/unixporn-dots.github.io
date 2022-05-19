@@ -133,7 +133,7 @@ const dotfiles = [
         title: "JinPots's Dotfiles",
         author: 'JinPots',
         link: "https://github.com/JinPots/dotfiles",
-        reddit: "https://www.reddit.com/r/unixporn/comments/urfqyy/i3gaps_minimalistic_rice_i_made/?utm_source=share&utm_medium=web2x&context=3",
+        reddit: "https://www.reddit.com/r/unixporn/comments/usyr5a/i3gaps_finally_done_my_minimalistic_rice_with/",
         description: 'Some minimalistic theme for my i3 setup.',
         image: 'assets/jinpots-dotfiles.png',
         wm: 'i3-gaps',
