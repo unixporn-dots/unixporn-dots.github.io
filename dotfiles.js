@@ -317,5 +317,15 @@ const dotfiles = [
         image: "assets/potamide's-dotfiles.png",
         wm: "awesomewm",
         tags: ['awesomewm', 'alacritty', 'conky']
+    },
+    {
+        title: "Prismatic Night",
+        author: "3r3bu5x9",
+        link: "https://github.com/3r3bu5x9/prismatic-night",
+        reddit: "https://www.reddit.com/r/unixporn/comments/gpqbfe/openbox_been_working_on_this_for_quite_some_time/",
+        description: "A dark themed startpage and dark themes for Firefox and Linux inspired by Material design and Adapta.",
+        image: "assets/prismatic-night.png",
+        wm: "openbox",
+        tags: ['openbox', 'urxvt', 'firefox', 'tint2', 'jgmenu']
     }
 ]
