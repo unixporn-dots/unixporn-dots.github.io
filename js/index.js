@@ -16,7 +16,9 @@ function randomize(sourceArray) {
 
 }
 
-random = randomize(dotfiles)
+var current_dotfiles = dotfiles;
+
+random = randomize(current_dotfiles)
 
 function generateCards(list) {
     list.forEach((dotfile) => {
@@ -27,7 +29,7 @@ function generateCards(list) {
         repo.href = dotfile.link;
         repo.innerHTML = "Repository";
 
-        if (dotfile.reddit) { // Reddit post is optional
+        if (dotfile.reddit && /\S/.test(dotfile.reddit)) { // Reddit post is optional
             reddit = document.createElement("a");
             reddit.classList.add("button-child");
             reddit.href = dotfile.reddit;
@@ -56,6 +58,16 @@ function generateCards(list) {
         link.target = "_blank";
         header.appendChild(link);
 
+        imageLink = document.createElement("a");
+        imageLink.href = dotfile.image;
+        imageLink.target = "_blank";
+        link.appendChild(imageLink);
+
+        imageIcon = document.createElement("i");
+        imageIcon.classList.add("fas");
+        imageIcon.classList.add("fa-image");
+        imageLink.appendChild(imageIcon);
+
         // tags
         tag = document.createElement("h3");
         tag.innerHTML = dotfile.wm;
@@ -66,7 +78,7 @@ function generateCards(list) {
         buttonz = document.createElement("div");
         buttonz.classList.add("buttons");
         buttonz.appendChild(repo);
-        if (dotfile.reddit) {
+        if (dotfile.reddit && /\S/.test(dotfile.reddit)) {
             buttonz.appendChild(reddit);
         }
 
