@@ -20,8 +20,13 @@ var current_dotfiles = dotfiles;
 
 random = randomize(current_dotfiles)
 
-function generateCards(list) {
-    list.forEach((dotfile) => {
+function generateCards(list, pageNumber) {
+    // loop through the array of dotfiles 12 times
+    for (var i = (12 * pageNumber) - 12; i < 12 * pageNumber; i++) {
+        dotfile = current_dotfiles[i];
+
+        if(!dotfile) return;
+
         header = document.createElement("header");
 
         repo = document.createElement("a");
@@ -90,7 +95,8 @@ function generateCards(list) {
         dotfile_div.appendChild(buttonz);
 
         document.getElementById("themes_container").appendChild(dotfile_div);
-    });
+ 
+    }
 }
 
-generateCards(random);
+generateCards(random, 1);

@@ -48,7 +48,7 @@ function search(evt) {
                 result = result.filter((v, i, a) => a.indexOf(v) === i); // Remove duplicates
                 current_dotfiles = result;
                 if (result.length > 0) {
-                    generateCards(result);
+                    generateCards(result,1);
                 }
                 document.getElementById("themes_container").style.opacity = 1;
                 setTimeout(() => {

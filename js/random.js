@@ -7,7 +7,7 @@ document.getElementById('js-sortSwitcher').addEventListener("click", () => {
 
         setTimeout(() => {
             document.getElementById("themes_container").innerHTML = "";
-            generateCards(random);
+            generateCards(random,1);
             document.getElementById("themes_container").style.opacity = 1;
             setTimeout(() => {
                 loaded = true; // Open the lock after a certain timeout
