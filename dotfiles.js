@@ -347,5 +347,15 @@ const dotfiles = [
         image: "assets/retro-spectronum.png",
         wm: "i3-gaps",
         tags: ['i3-gaps', 'polybar', 'fish', 'alacritty']
+    },
+    {
+        title: "fahimfaisal42's dotfiles",
+        author: "fahimfaisal42",
+        link: "https://github.com/fahimfaisal42/.dotfiles",
+        reddit: "https://www.reddit.com/r/unixporn/comments/uumk8j/bspwm_lost_in_the_oblivion/",
+        description: "My Arch Conf",
+        image: "assets/fahimfaisal42's-dotfiles.png",
+        wm: "bspwm",
+        tags: ['bspwm', 'dunst', 'kitty', 'polybar']
     }
 ]
