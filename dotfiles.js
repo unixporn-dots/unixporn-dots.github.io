@@ -337,5 +337,15 @@ const dotfiles = [
         image: "assets/lucyuwi's-dotfiles.png",
         wm: "kde",
         tags: ['kde', 'kvantum', 'latte']
+    },
+    {
+        title: "Retro-Spectronum",
+        author: "DebianOwO",
+        link: "https://github.com/DebianOWO/Retro-Spectronum",
+        reddit: "https://www.reddit.com/r/unixporn/comments/uve34a/polybar_i3gaps_my_first_arch_rice/",
+        description: "So if you're here you probably came from my unixporn rice. I tried my best to guide you through",
+        image: "assets/retro-spectronum.png",
+        wm: "i3-gaps",
+        tags: ['i3-gaps', 'polybar', 'fish', 'alacritty']
     }
 ]
