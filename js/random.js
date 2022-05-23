@@ -4,7 +4,8 @@ document.getElementById('js-sortSwitcher').addEventListener("click", () => {
         loaded = false; // Close the lock
         document.getElementById("themes_container").style.opacity = 0
         random = randomize(current_dotfiles)
-
+        resetPageInfo();
+        
         setTimeout(() => {
             document.getElementById("themes_container").innerHTML = "";
             generateCards(random,1);

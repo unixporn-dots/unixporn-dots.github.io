@@ -47,6 +47,8 @@ function search(evt) {
 
                 result = result.filter((v, i, a) => a.indexOf(v) === i); // Remove duplicates
                 current_dotfiles = result;
+                resetPageInfo();
+
                 if (result.length > 0) {
                     generateCards(result,1);
                 }
