@@ -19,3 +19,11 @@
     font-family: Jost;
     text-align: center;
 }
+
+.page-button {
+    transition: 300ms;
+    cursor: pointer;
+}
+.page-button:hover {
+    color: lightblue;
+}
