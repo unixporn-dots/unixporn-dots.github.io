@@ -357,5 +357,15 @@ const dotfiles = [
         image: "assets/fahimfaisal42's-dotfiles.png",
         wm: "bspwm",
         tags: ['bspwm', 'dunst', 'kitty', 'polybar']
+    },
+    {
+        title: "leetApe's dotfiles",
+        author: "leetApe",
+        link: "https://github.com/leetApe/new-bspdots",
+        reddit: "https://www.reddit.com/r/unixporn/comments/vf0cox/bspwm_ricing_while_its_raining_outside_is_so_chill/",
+        description: "Cozy Rainy Weather Rice ʕु•̫͡•ʔु",
+        image: "assets/leetApe's-dotfiles.png",
+        wm: "bspwm",
+        tags: ['bspwm', 'alacritty', 'polybar', 'rofi']
     }
 ]
