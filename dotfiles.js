@@ -369,10 +369,10 @@ const dotfiles = [
         tags: ['bspwm', 'alacritty', 'polybar', 'rofi']
     }
     {
-    title: 'alba4k's dotfiles,
+    title: "alba4k's dotfiles",
     author: 'alba4k',
     link: "https://github.com/alba4k/.dotfiles",
-    reddit: 'https://www.reddit.com/r/unixporn/comments/vf2tej/i3gaps_well_i_like_purple_anybody_here_good_with/', // Optional
+    reddit: 'https://www.reddit.com/r/unixporn/comments/vf2tej/i3gaps_well_i_like_purple_anybody_here_good_with/',
     description: 'Just a random catppuccin rice',
     image: 'assets/alba4k.png',
     wm: 'i3-gaps',
