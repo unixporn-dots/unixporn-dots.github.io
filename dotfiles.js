@@ -367,7 +367,7 @@ const dotfiles = [
         image: "assets/leetApe's-dotfiles.png",
         wm: "bspwm",
         tags: ['bspwm', 'alacritty', 'polybar', 'rofi']
-    }
+    },
     {
     title: "alba4k's dotfiles",
     author: 'alba4k',
