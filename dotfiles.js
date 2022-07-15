@@ -369,43 +369,43 @@ const dotfiles = [
         tags: ['bspwm', 'alacritty', 'polybar', 'rofi']
     },
     {
-    title: "alba4k's dotfiles",
-    author: 'alba4k',
-    link: "https://github.com/alba4k/.dotfiles",
-    reddit: 'https://www.reddit.com/r/unixporn/comments/vf2tej/i3gaps_well_i_like_purple_anybody_here_good_with/',
-    description: 'Just a random catppuccin rice',
-    image: 'assets/alba4k.png',
-    wm: 'i3-gaps',
-    tags: ['i3-gaps', 'polybar']
+        title: "alba4k's dotfiles",
+        author: 'alba4k',
+        link: "https://github.com/alba4k/.dotfiles",
+        reddit: 'https://www.reddit.com/r/unixporn/comments/vf2tej/i3gaps_well_i_like_purple_anybody_here_good_with/',
+        description: 'Just a random catppuccin rice',
+        image: 'assets/alba4k.png',
+        wm: 'i3-gaps',
+        tags: ['i3-gaps', 'polybar']
     },
     {
-    title: 'SAGA dwm',
-    author: 'Miusaky',
-    link: "https://github.com/Miusaky/dotfiles",
-    reddit: 'https://www.reddit.com/r/unixporn/comments/vuaga4/dwm_saga/', // Optional
-    description: 'Dotfiles for dwm',
-    image: 'assets/SAGA_dwm.png',
-    wm: 'dwm',
-    tags: ['dwm', 'SAGA']
+        title: 'SAGA dwm',
+        author: 'Miusaky',
+        link: "https://github.com/Miusaky/dotfiles",
+        reddit: 'https://www.reddit.com/r/unixporn/comments/vuaga4/dwm_saga/', // Optional
+        description: 'Dotfiles for dwm',
+        image: 'assets/SAGA_dwm.png',
+        wm: 'dwm',
+        tags: ['dwm', 'SAGA']
     },
     {
-    title: 'SAGA bspwm',
-    author: 'Miusaky',
-    link: "https://github.com/Miusaky/dotfiles",
-    reddit: 'https://www.reddit.com/r/unixporn/comments/v95di4/bspwm_switched_to_arch/', // Optional
-    description: 'Dotfiles for bspwm',
-    image: 'assets/SAGA_bspwm.png',
-    wm: 'bspwm',
-    tags: ['bspwm', 'SAGA']
+        title: 'SAGA bspwm',
+        author: 'Miusaky',
+        link: "https://github.com/Miusaky/dotfiles",
+        reddit: 'https://www.reddit.com/r/unixporn/comments/v95di4/bspwm_switched_to_arch/', // Optional
+        description: 'Dotfiles for bspwm',
+        image: 'assets/SAGA_bspwm.png',
+        wm: 'bspwm',
+        tags: ['bspwm', 'SAGA']
     },
     {
-    title: "GG's IDLE",
-    author: 'alba4k',
-    link: "https://github.com/weebcyberpunk/ggidle",
-    reddit: 'https://www.reddit.com/r/unixporn/comments/vjdqkx/dwm_few_improvements_on_my_rice_removed_gaps_for/?utm_source=share&utm_medium=web2x&context=3',
-    description: 'GG\' Integrated Developing & Living Environment',
-    image: 'assets/ggidle-jul14-2022.png',
-    wm: 'dwm',
-    tags: ['dwm', 'neovim', 'mpd']
+        title: "GG's IDLE",
+        author: 'alba4k',
+        link: "https://github.com/weebcyberpunk/ggidle",
+        reddit: 'https://www.reddit.com/r/unixporn/comments/vjdqkx/dwm_few_improvements_on_my_rice_removed_gaps_for/?utm_source=share&utm_medium=web2x&context=3',
+        description: 'GG\' Integrated Developing & Living Environment',
+        image: 'assets/ggidle-jul14-2022.png',
+        wm: 'dwm',
+        tags: ['dwm', 'neovim', 'mpd']
     }
 ]
