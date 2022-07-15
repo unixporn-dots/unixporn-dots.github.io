@@ -1,7 +1,6 @@
 <h2 align=center>Unixporn-dots</h2>
 
 <div align=center>
-<img width="100px" src="assets/unixporn.png"> <br>
 A collection of dotfiles from the r/unixporn community
 <br>
 <a href="https://unixporn-dots.github.io">Visit the website</a>
