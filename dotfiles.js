@@ -379,6 +379,26 @@ const dotfiles = [
     tags: ['i3-gaps', 'polybar']
     },
     {
+    title: 'SAGA',
+    author: 'Miusaky',
+    link: "https://github.com/Miusaky/dotfiles",
+    reddit: 'https://www.reddit.com/r/unixporn/comments/vuaga4/dwm_saga/', // Optional
+    description: 'Dotfiles for dwm',
+    image: 'assets/SAGA_dwm.png',
+    wm: 'dwm',
+    tags: ['dwm', 'SAGA']
+    },
+    {
+    title: 'SAGA',
+    author: 'Miusaky',
+    link: "https://github.com/Miusaky/dotfiles",
+    reddit: 'https://www.reddit.com/r/unixporn/comments/v95di4/bspwm_switched_to_arch/', // Optional
+    description: 'Dotfiles for bspwm',
+    image: 'assets/SAGA_bspwm.png',
+    wm: 'bspwm',
+    tags: ['bspwm', 'SAGA']
+    },
+    {
     title: "GG's IDLE",
     author: 'alba4k',
     link: "https://github.com/weebcyberpunk/ggidle",
