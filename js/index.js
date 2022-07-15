@@ -32,12 +32,14 @@ function generateCards(list, pageNumber) {
         repo = document.createElement("a");
         repo.classList.add("button-child");
         repo.href = dotfile.link;
+        repo.target = "_blank";
         repo.innerHTML = "Repository";
 
         if (dotfile.reddit && /\S/.test(dotfile.reddit)) { // Reddit post is optional
             reddit = document.createElement("a");
             reddit.classList.add("button-child");
             reddit.href = dotfile.reddit;
+            reddit.target = "_blank";
             reddit.innerHTML = "Reddit";
         }
 
