@@ -23,6 +23,8 @@
 .page-button {
     transition: 300ms;
     cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .page-button:hover {
     color: lightblue;
