@@ -379,7 +379,7 @@ const dotfiles = [
     tags: ['i3-gaps', 'polybar']
     },
     {
-    title: 'SAGA',
+    title: 'SAGA dwm',
     author: 'Miusaky',
     link: "https://github.com/Miusaky/dotfiles",
     reddit: 'https://www.reddit.com/r/unixporn/comments/vuaga4/dwm_saga/', // Optional
@@ -389,7 +389,7 @@ const dotfiles = [
     tags: ['dwm', 'SAGA']
     },
     {
-    title: 'SAGA',
+    title: 'SAGA bspwm',
     author: 'Miusaky',
     link: "https://github.com/Miusaky/dotfiles",
     reddit: 'https://www.reddit.com/r/unixporn/comments/v95di4/bspwm_switched_to_arch/', // Optional
