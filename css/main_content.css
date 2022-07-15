@@ -34,9 +34,9 @@
     max-width: 500px;
 }
 
-.card:hover {
+/* .card:hover {
     cursor: pointer;
-}
+} */
 
 .card:hover .buttons {
     opacity: 1;

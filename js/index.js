@@ -59,7 +59,7 @@ function generateCards(list, pageNumber) {
 
         // link
         link = document.createElement("a");
-        link.href = dotfile.link;
+        // link.href = dotfile.link;
         link.target = "_blank";
         header.appendChild(link);
 
