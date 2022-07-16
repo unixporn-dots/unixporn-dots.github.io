@@ -407,5 +407,14 @@ const dotfiles = [
         image: 'assets/ggidle-jul14-2022.png',
         wm: 'dwm',
         tags: ['dwm', 'neovim', 'mpd']
+    },
+    {
+        title: "b9k's dotfiles",
+        author: "beyond9thousand",
+        link: "https://github.com/beyond9thousand/dotfiles",
+        description: "Opinionated BSPWM setup",
+        image: "assets/b9k's-dotfiles.png",
+        wm: "bspwm",
+        tags: ['bspwm', 'nvim', 'rofi', 'ranger', 'dunst', 'blender','dmenu', 'polybar', 'alacritty', 'tokyonight']
     }
 ]
