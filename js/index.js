@@ -66,8 +66,10 @@ function generateCards(list, pageNumber) {
         header.appendChild(link);
 
         imageLink = document.createElement("a");
-        imageLink.href = dotfile.image;
         imageLink.target = "_blank";
+        imageLink.classList.add("imageRedir");
+        imageLink.classList.add(dotfile.image)
+        imageLink.setAttribute("onclick", "imgPop(this)");
         link.appendChild(imageLink);
 
         imageIcon = document.createElement("i");
@@ -84,6 +86,7 @@ function generateCards(list, pageNumber) {
         // Buttons Thingy
         buttonz = document.createElement("div");
         buttonz.classList.add("buttons");
+        buttonz.appendChild(imageLink);
         buttonz.appendChild(repo);
         if (dotfile.reddit && /\S/.test(dotfile.reddit)) {
             buttonz.appendChild(reddit);
