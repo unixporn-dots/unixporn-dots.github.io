@@ -1,0 +1,9 @@
+--- #Theme info
+title: "Bright Sky"
+author: "owl4ce"
+link: "https://github.com/owl4ce/dotfiles"
+reddit: "https://www.reddit.com/r/unixporn/comments/hlrpg7/openbox_bright_sky/"
+description: "Aesthetic OpenboxWM Environment"
+image: "themes/Bright Sky/bright-sky.webp"
+wm: "openbox"
+tags: ['openbox', 'tint2', 'obmenu-generator', 'rofi', 'dunst', 'urxvt']

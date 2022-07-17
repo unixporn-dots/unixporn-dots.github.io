@@ -1,0 +1,9 @@
+--- #Theme info
+title: "AFreidz's Dotfiles"
+author: "AFreidz"
+link: "https://github.com/afreidz/dots"
+reddit: "https://www.reddit.com/r/unixporn/comments/i09jf9/awesomewm_excuse_me_kind_sur/"
+description: "Dotfiles for AwesomeWM on Linux setup"
+image: "themes/AFreidz's Dotfiles/afreidz's-dotfiles.png"
+wm: "awesomewm"
+tags: ['awesomewm', 'urxvt', 'rofi', 'zsh']

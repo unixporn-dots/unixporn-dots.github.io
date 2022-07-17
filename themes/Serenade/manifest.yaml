@@ -1,0 +1,9 @@
+--- #Theme info
+title: "Serenade"
+author: "b4skyx"
+link: "https://github.com/b4skyx/dotfiles"
+reddit: "https://www.reddit.com/r/unixporn/comments/lhljmi/bspwm_serenade_a_low_contrast_setup_for_my/"
+description: "A low contrast setup for my colorblind eyes"
+image: "themes/Serenade/serenade.png"
+wm: "bspwm"
+tags: ['bspwm', 'polybar', 'rofi', 'st']

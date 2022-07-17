@@ -1,0 +1,9 @@
+--- #Theme info
+title: "ChocolateBread799's dotfiles"
+author: 'ChocolateBread799'
+link: 'https://github.com/ChocolateBread799/dotfiles'
+reddit: 'https://www.reddit.com/r/unixporn/comments/td7ob3/awesomewm_its_not_an_apple_ad/?utm_source=share&utm_medium=web2x&context=3'
+description: 'My Awesomewm dotfiles'
+image: "themes/ChocolateBread799's dotfiles/chocolatebread799's-dotfiles.png"
+wm: 'awesomewm'
+tags: ['awesomewm', 'hilbish', 'wezterm']

@@ -1,0 +1,9 @@
+--- #Theme info
+title: 'SAGA dwm'
+author: 'Miusaky'
+link: "https://github.com/Miusaky/dotfiles"
+reddit: 'https://www.reddit.com/r/unixporn/comments/vuaga4/dwm_saga/' 
+description: 'Dotfiles for dwm'
+image: 'themes/SAGA dwm/SAGA_dwm.png'
+wm: 'dwm'
+tags: ['dwm', 'SAGA']

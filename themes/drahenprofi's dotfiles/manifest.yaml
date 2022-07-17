@@ -1,0 +1,9 @@
+--- #Theme info
+title: "drahenprofi's dotfiles"
+author: "drahenprofi"
+link: "https://github.com/drahenprofi/dotfiles"
+reddit: "https://www.reddit.com/r/unixporn/comments/kucuzs/awesome_420_rice_it/"
+description: "Arch Linux dotfiles"
+image: "themes/drahenprofi's dotfiles/drahenprofi's-dotfiles.png"
+wm: "awesomewm"
+tags: ['awesomewm', 'rofi', 'kitty', 'sp']

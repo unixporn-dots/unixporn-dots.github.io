@@ -1,0 +1,8 @@
+--- #Theme info
+title: "b9k's dotfiles"
+author: "beyond9thousand"
+link: "https://github.com/beyond9thousand/dotfiles"
+description: "Opinionated BSPWM setup"
+image: "themes/b9k's dotfiles/b9k's-dotfiles.png"
+wm: "bspwm"
+tags: ['bspwm', 'nvim', 'rofi', 'ranger', 'dunst', 'blender','dmenu', 'polybar', 'alacritty', 'tokyonight']

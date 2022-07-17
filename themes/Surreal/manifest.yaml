@@ -1,0 +1,9 @@
+--- #Theme info
+title: 'Surreal'
+author: 'manilarome'
+link: 'https://github.com/manilarome/the-glorious-dotfiles'
+reddit: 'https://www.reddit.com/r/unixporn/comments/fhd70d/awesomewm_floppier/?utm_source=share&utm_medium=web2x&context=3'
+description: "Yes I copied the macOS Big Sur design. Many linux elitists will hate it but I don't care. Cry me a river."
+image: 'themes/Surreal/surreal.webp'
+wm: 'awesomewm'
+tags: ['awesomewm', 'rofi', 'kitty', 'fish']

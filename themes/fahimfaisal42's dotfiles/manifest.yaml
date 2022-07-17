@@ -1,0 +1,9 @@
+--- #Theme info
+title: "fahimfaisal42's dotfiles"
+author: "fahimfaisal42"
+link: "https://github.com/fahimfaisal42/.dotfiles"
+reddit: "https://www.reddit.com/r/unixporn/comments/uumk8j/bspwm_lost_in_the_oblivion/"
+description: "My Arch Conf"
+image: "themes/fahimfaisal42's dotfiles/fahimfaisal42's-dotfiles.png"
+wm: "bspwm"
+tags: ['bspwm', 'dunst', 'kitty', 'polybar']
