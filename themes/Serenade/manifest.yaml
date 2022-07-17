@@ -1,0 +1,8 @@
+author: b4skyx
+description: A low contrast setup for my colorblind eyes
+image: themes/Serenade/serenade.png
+link: https://github.com/b4skyx/dotfiles
+reddit: https://www.reddit.com/r/unixporn/comments/lhljmi/bspwm_serenade_a_low_contrast_setup_for_my/
+tags: [bspwm, polybar, rofi, st]
+title: Serenade
+wm: bspwm
