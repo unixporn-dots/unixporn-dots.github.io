@@ -1,9 +1,0 @@
-author: k-vernooy
-description: My dotfile organization repository! Contains config files for my current
-  i3/Arch setup.
-image: themes/k-vernooy's dotfiles/k-vernooy's-dotfiles.png
-link: https://github.com/k-vernooy/dotfiles
-reddit: https://www.reddit.com/r/unixporn/comments/j3mfc6/i3gaps_ready_for_fall/
-tags: [i3-gaps, polybar, dunst, urxvt]
-title: k-vernooy's dotfiles
-wm: i3-gaps

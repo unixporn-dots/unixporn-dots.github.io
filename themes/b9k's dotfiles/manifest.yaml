@@ -1,7 +1,0 @@
-author: beyond9thousand
-description: Opinionated BSPWM setup
-image: themes/b9k's dotfiles/b9k's-dotfiles.png
-link: https://github.com/beyond9thousand/dotfiles
-tags: [bspwm, nvim, rofi, ranger, dunst, blender, dmenu, polybar, alacritty, tokyonight]
-title: b9k's dotfiles
-wm: bspwm
