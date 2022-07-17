@@ -1,9 +1,8 @@
---- #Theme info
-title: 'AmogOS'
-author: 'Amog-OS'
-link: 'https://github.com/Amog-OS/AmogOS'
-reddit: 'https://www.reddit.com/r/unixporn/comments/nhomed/cinnamon_amogos_is_complete_icon_art_idea_by_u/?utm_source=share&utm_medium=web2x&context=3'
-description: 'A parody OS inspired by Among Us'
-image: 'themes/AmogOS/AmogOS.webp'
-wm: 'openbox'
-tags: ['openbox', 'lxde', 'xfce4-panel']
+author: Amog-OS
+description: A parody OS inspired by Among Us
+image: themes/AmogOS/AmogOS.webp
+link: https://github.com/Amog-OS/AmogOS
+reddit: https://www.reddit.com/r/unixporn/comments/nhomed/cinnamon_amogos_is_complete_icon_art_idea_by_u/?utm_source=share&utm_medium=web2x&context=3
+tags: [openbox, lxde, xfce4-panel]
+title: AmogOS
+wm: openbox

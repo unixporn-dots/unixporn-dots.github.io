@@ -1,9 +1,8 @@
---- #Theme info
-title: "leetApe's dotfiles"
-author: "leetApe"
-link: "https://github.com/leetApe/new-bspdots"
-reddit: "https://www.reddit.com/r/unixporn/comments/vf0cox/bspwm_ricing_while_its_raining_outside_is_so_chill/"
-description: "Cozy Rainy Weather Rice ʕु•̫͡•ʔु"
-image: "themes/leetApe's dotfiles/leetApe's-dotfiles.png"
-wm: "bspwm"
-tags: ['bspwm', 'alacritty', 'polybar', 'rofi']
+author: leetApe
+description: "Cozy Rainy Weather Rice \u0295\u0941\u2022\u032B\u0361\u2022\u0294\u0941"
+image: themes/leetApe's dotfiles/leetApe's-dotfiles.png
+link: https://github.com/leetApe/new-bspdots
+reddit: https://www.reddit.com/r/unixporn/comments/vf0cox/bspwm_ricing_while_its_raining_outside_is_so_chill/
+tags: [bspwm, alacritty, polybar, rofi]
+title: leetApe's dotfiles
+wm: bspwm

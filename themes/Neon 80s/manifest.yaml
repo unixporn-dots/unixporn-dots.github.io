@@ -1,9 +1,8 @@
---- #Theme info
-title: "Neon 80s"
-author: "Vista1nik"
-link: "https://github.com/Vista1nik/i3-neon80s"
-reddit: "https://www.reddit.com/r/unixporn/comments/c0i8e1/i3gaps_neon_80s/?utm_source=share&utm_medium=web2x&context=3"
-description: "Neon80s for i3"
-image: "themes/Neon 80s/neon-80s.png"
-wm: "i3-gaps"
-tags: ['i3-gaps', 'kitty', 'i3blocks']
+author: Vista1nik
+description: Neon80s for i3
+image: themes/Neon 80s/neon-80s.png
+link: https://github.com/Vista1nik/i3-neon80s
+reddit: https://www.reddit.com/r/unixporn/comments/c0i8e1/i3gaps_neon_80s/?utm_source=share&utm_medium=web2x&context=3
+tags: [i3-gaps, kitty, i3blocks]
+title: Neon 80s
+wm: i3-gaps

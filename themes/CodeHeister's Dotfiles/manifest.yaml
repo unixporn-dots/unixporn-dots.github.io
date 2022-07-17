@@ -1,9 +1,8 @@
---- #Theme info
-title: "CodeHeister's Dotfiles"
-author: 'CodeHeister'
-link: 'https://github.com/CodeHeister/dotfiles'
-reddit: 'https://www.reddit.com/r/unixporn/comments/sjroxe/i3gaps_my_onedarknord_rice_after_a_month_what_do/?utm_source=share&utm_medium=web2x&context=3'
-description: 'First rice for i3-gaps '
-image: "themes/CodeHeister's Dotfiles/codeheister's-dotfiles.png"
-wm: 'i3-gaps'
-tags: ['i3-gaps', 'rofi', 'nvim', 'ranger', 'dunst', 'flameshot']
+author: CodeHeister
+description: First rice for i3-gaps
+image: themes/CodeHeister's Dotfiles/codeheister's-dotfiles.png
+link: https://github.com/CodeHeister/dotfiles
+reddit: https://www.reddit.com/r/unixporn/comments/sjroxe/i3gaps_my_onedarknord_rice_after_a_month_what_do/?utm_source=share&utm_medium=web2x&context=3
+tags: [i3-gaps, rofi, nvim, ranger, dunst, flameshot]
+title: CodeHeister's Dotfiles
+wm: i3-gaps

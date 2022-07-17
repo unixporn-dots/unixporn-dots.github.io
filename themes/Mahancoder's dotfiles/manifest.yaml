@@ -1,8 +1,8 @@
---- #Theme info
-title: "Mahancoder's dotfiles"
-author: "mahancoder"
-link: "https://github.com/mahancoder/.dotfiles"
-description: "A minimalistic classic rice"
-image: "themes/Mahancoder's dotfiles/mahancoder.png"
-wm: "qtile"
-tags: ['qtile', 'alacritty', 'ulauncher', 'deadd-notification-center', 'rounded-corners', 'dark', 'dracula', 'arch']
+author: mahancoder
+description: A minimalistic classic rice
+image: themes/Mahancoder's dotfiles/mahancoder.png
+link: https://github.com/mahancoder/.dotfiles
+tags: [qtile, alacritty, ulauncher, deadd-notification-center, rounded-corners, dark,
+  dracula, arch]
+title: Mahancoder's dotfiles
+wm: qtile

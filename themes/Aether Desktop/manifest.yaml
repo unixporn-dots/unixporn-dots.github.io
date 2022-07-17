@@ -1,9 +1,8 @@
---- #Theme info
-title: Aether Desktop
 author: ilham25
-link: 'https://github.com/ilham25/dotfiles-openbox'
-reddit: 'https://www.reddit.com/r/unixporn/comments/qy1you/openbox_aether_desktop/?utm_source=share&utm_medium=web2x&context=3'
-description: 'Here is my aether dotfiles openbox version '
-image: "themes/Aether Desktop/aether-desktop.png"
-wm: 'openbox'
-tags: ['openbox', 'urxvt', 'dunst', 'tint2', 'rofi']
+description: Here is my aether dotfiles openbox version
+image: themes/Aether Desktop/aether-desktop.png
+link: https://github.com/ilham25/dotfiles-openbox
+reddit: https://www.reddit.com/r/unixporn/comments/qy1you/openbox_aether_desktop/?utm_source=share&utm_medium=web2x&context=3
+tags: [openbox, urxvt, dunst, tint2, rofi]
+title: Aether Desktop
+wm: openbox

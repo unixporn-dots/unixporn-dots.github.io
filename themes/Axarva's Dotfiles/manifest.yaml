@@ -1,9 +1,8 @@
---- #Theme info
-title: "Axarva's Dotfiles"
-author: 'Axarva'
-link: 'https://github.com/Axarva/dotfiles-2.0'
-reddit: 'https://www.reddit.com/r/unixporn/comments/knv0r4/xmonad_youhavenoideawhatspossible_edition/?utm_source=share&utm_medium=web2x&context=3'
-description: 'XMonad. Widgets go brr.'
-image: "themes/Axarva's Dotfiles/axarva's-dotfiles.png"
-wm: 'xmonad'
-tags: ['xmonad', 'eww', 'rofi', 'alacritty', 'tint2']
+author: Axarva
+description: XMonad. Widgets go brr.
+image: themes/Axarva's Dotfiles/axarva's-dotfiles.png
+link: https://github.com/Axarva/dotfiles-2.0
+reddit: https://www.reddit.com/r/unixporn/comments/knv0r4/xmonad_youhavenoideawhatspossible_edition/?utm_source=share&utm_medium=web2x&context=3
+tags: [xmonad, eww, rofi, alacritty, tint2]
+title: Axarva's Dotfiles
+wm: xmonad

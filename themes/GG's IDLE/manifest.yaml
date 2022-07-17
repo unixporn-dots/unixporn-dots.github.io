@@ -1,9 +1,8 @@
---- #Theme info
-title: GG's IDLE
-author: 'alba4k'
-link: "https://github.com/weebcyberpunk/ggidle"
-reddit: 'https://www.reddit.com/r/unixporn/comments/vjdqkx/dwm_few_improvements_on_my_rice_removed_gaps_for/?utm_source=share&utm_medium=web2x&context=3'
+author: alba4k
 description: GG' Integrated Developing & Living Environment
 image: themes/GG's IDLE/ggidle-jul14-2022.png
-wm: 'dwm'
-tags: ['dwm', 'neovim', 'mpd']
+link: https://github.com/weebcyberpunk/ggidle
+reddit: https://www.reddit.com/r/unixporn/comments/vjdqkx/dwm_few_improvements_on_my_rice_removed_gaps_for/?utm_source=share&utm_medium=web2x&context=3
+tags: [dwm, neovim, mpd]
+title: GG's IDLE
+wm: dwm

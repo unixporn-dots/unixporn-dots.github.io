@@ -1,9 +1,8 @@
---- #Theme info
-title: "Sweetness"
-author: "nekonako"
-link: "https://github.com/nekonako/dotfiles"
-reddit: "https://www.reddit.com/r/unixporn/comments/dbmmjo/openbox_sweetness/"
-description: "Comfy home for linux user "
-image: "themes/Sweetness/sweetness.png"
-wm: "openbox"
-tags: ['openbox', 'conky', 'tint2']
+author: nekonako
+description: Comfy home for linux user
+image: themes/Sweetness/sweetness.png
+link: https://github.com/nekonako/dotfiles
+reddit: https://www.reddit.com/r/unixporn/comments/dbmmjo/openbox_sweetness/
+tags: [openbox, conky, tint2]
+title: Sweetness
+wm: openbox

@@ -1,9 +1,8 @@
---- #Theme info
-title: "AwesomeShell"
-author: "Mofiqul"
-link: "https://github.com/Mofiqul/awesome-shell"
-reddit: "https://www.reddit.com/r/unixporn/comments/mfryxp/awesome_just_learning_some_lua/"
-description: "This is a collection of awesome wm configuration files"
-image: "themes/AwesomeShell/awesomeshell.png"
-wm: "awesomewm"
-tags: ['awesomewm', 'i3lock-fancy', 'rofi']
+author: Mofiqul
+description: This is a collection of awesome wm configuration files
+image: themes/AwesomeShell/awesomeshell.png
+link: https://github.com/Mofiqul/awesome-shell
+reddit: https://www.reddit.com/r/unixporn/comments/mfryxp/awesome_just_learning_some_lua/
+tags: [awesomewm, i3lock-fancy, rofi]
+title: AwesomeShell
+wm: awesomewm

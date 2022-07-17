@@ -1,9 +1,8 @@
---- #Theme info
-title: "Elena's configuration files"
-author: "elenapan"
-link: "https://github.com/elenapan/dotfiles"
-reddit: "https://www.reddit.com/r/unixporn/comments/a900p7/awesome_mechanical_love/"
-description: "an AwesomeWM rice which makes extensive use of the AwesomeWM Widget API"
-image: "themes/Elena's configuration files/mechanical-love.png"
-wm: "awesomewm"
-tags: ['awesomewm', 'kitty', 'firefox', 'rofi']
+author: elenapan
+description: an AwesomeWM rice which makes extensive use of the AwesomeWM Widget API
+image: themes/Elena's configuration files/mechanical-love.png
+link: https://github.com/elenapan/dotfiles
+reddit: https://www.reddit.com/r/unixporn/comments/a900p7/awesome_mechanical_love/
+tags: [awesomewm, kitty, firefox, rofi]
+title: Elena's configuration files
+wm: awesomewm
