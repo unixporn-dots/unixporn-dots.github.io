@@ -12,7 +12,7 @@ A collection of dotfiles from the r/unixporn community
 # Adding your Dotfiles
 + Opening a pull request:
   1. Fork this repository.
-  2. Add your entry to the `dotfiles.js` file.
+  2. Add your entry to the `themes` folder. 
   3. The image can be added via a URL, or by adding an image inside the `assets` folder and referencing it.
   4. Open a pull request and it's done!
 
@@ -22,16 +22,15 @@ A collection of dotfiles from the r/unixporn community
     1. Use the template provided and fill in the necessary details
     2. Open an Issue and you're done!
 
-```js
-{
-    title: 'Dotfiles',
-    author: 'Armoredvortex',
-    link: "https://github.com/armoredvortex",
-    reddit: 'https://reddit.com/r/unixporn/comments/abcdef/my_dotfiles', // Optional
-    description: 'My dotfiles',
-    image: 'assets/bridge.png',
-    wm: 'xmonad',
-    tags: ['xmonad', 'polybar']
-}
+```yaml
+author: 
+description: 
+image: 
+link: 
+reddit:                 # Optional
+tags: []
+title: 
+wm: 
 ```
+
 NOTE: Please try to make sure the image has a 16:9 aspect ratio for consistency
