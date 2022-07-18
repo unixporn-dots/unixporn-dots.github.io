@@ -123,17 +123,18 @@
 }
 
 .tags {
-  padding: 0px 14px;
-  background-color: var(--body-background-darker);
-  font-family: "Jost";
-  margin: 0;
-  border-radius: 8px;
-  filter: contrast(0.85);
-  font-weight: 500;
-  z-index: 3;
   position: absolute;
   bottom: 8px;
   right: 8px;
+  z-index: 3;
+  margin: 0;
+  padding: 0 14px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-family: "Jost";
+  filter: contrast(0.85);
+  border-radius: 8px;
+  background-color: var(--body-background-darker);
   transition: opacity 0.2s ease-in-out;
 }
 
