@@ -55,6 +55,7 @@ html {
     color: var(--font-color);
     caret-color: transparent;
     scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 
 body {
