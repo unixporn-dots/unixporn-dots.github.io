@@ -1,41 +1,42 @@
+
+
+const cardsPerPage = 12;
 currentPage = 1;
-totalPages = Math.ceil(current_dotfiles.length / 12);
-document.getElementById('page-number').innerHTML = `${currentPage}/${totalPages}`;
+
+const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+
+function generatePage()
+{
+    maxPage = Math.ceil(current_dotfiles.length / cardsPerPage);
+    if (currentPage == -1) currentPage = maxPage;
+    currentPage = clamp(currentPage, 1, maxPage);
+    generateCards(current_dotfiles.slice(cardsPerPage * (currentPage - 1), cardsPerPage * currentPage));
+    document.getElementById('page-number').innerHTML = `${currentPage}/${maxPage}`;
+}
+
+
+function resetPage() {
+    currentPage = 1;
+    generatePage();
+}
 
 document.getElementById('nextPage').addEventListener('click', function() {
-    if (currentPage == totalPages) return;
-    document.getElementById("themes_container").innerHTML = "";
     currentPage++;
-    generateCards(current_dotfiles, currentPage);
-    document.getElementById('page-number').innerHTML = `${currentPage}/${totalPages}`;
+    generatePage();
 });
 
 document.getElementById('prevPage').addEventListener('click', function() {
-    if (currentPage == 1) return;
-    document.getElementById("themes_container").innerHTML = "";
     currentPage--;
-    generateCards(current_dotfiles, currentPage);
-    document.getElementById('page-number').innerHTML = `${currentPage}/${totalPages}`;
+    generatePage();
 });
 
 document.getElementById('firstPage').addEventListener('click', function() {
-    if (currentPage == 1) return;
-    document.getElementById("themes_container").innerHTML = "";
     currentPage = 1;
-    generateCards(current_dotfiles, currentPage);
-    document.getElementById('page-number').innerHTML = `${currentPage}/${totalPages}`;
+    generatePage();
 });
 
 document.getElementById('lastPage').addEventListener('click', function() {
-    if (currentPage == totalPages) return;
-    document.getElementById("themes_container").innerHTML = "";
-    currentPage = totalPages;
-    generateCards(current_dotfiles, currentPage);
-    document.getElementById('page-number').innerHTML = `${currentPage}/${totalPages}`;
+    currentPage = -1;
+    generatePage();
 });
 
-function resetPageInfo() {
-    currentPage = 1;
-    totalPages = Math.ceil(current_dotfiles.length / 12);
-    document.getElementById('page-number').innerHTML = `${currentPage}/${totalPages}`;
-}
