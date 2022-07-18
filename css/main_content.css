@@ -169,6 +169,22 @@
   border-radius: 14px;
 }
 
+/* =========== Card Header Buttons =========== */
+.buttons {
+  opacity: 0;
+  gap: 0.25rem;
+  display: flex;
+  align-items: center;
+  transform-origin: bottom;
+  transform: translateY(50%);
+  transition: all 200ms ease-in-out;
+}
+
+.card:hover .buttons {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .button-child {
   font-size: 1.4rem;
   font-family: "Jost";
@@ -181,12 +197,4 @@
 
 .button-child:hover {
   opacity: 0.5;
-}
-
-.buttons {
-  opacity: 0;
-  gap: 0.25rem;
-  display: flex;
-  align-items: center;
-  transition: opacity 200ms ease-in-out;
 }
