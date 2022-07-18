@@ -47,6 +47,10 @@ a {
     font-family: "Jost";
 }
 
+svg {
+    vertical-align: middle;
+}
+
 html {
     color: var(--font-color);
     caret-color: transparent;
