@@ -48,21 +48,11 @@ function generateCards(list)
         image = document.createElement("img");
         image.src = dotfile.image;
 
-        // link
-        link = document.createElement("a");
-        // link.href = dotfile.link;
-        link.target = "_blank";
-
         // Image Preview
-        imageLink = document.createElement("a");
-        imageLink.target = "_blank";
-        imageLink.classList.add("button-child", dotfile.image);
-        imageLink.setAttribute("onclick", "imgPop(this)");
-        link.appendChild(imageLink);
-
-        imageIcon = document.createElement("i");
-        imageIcon.classList.add("fa-regular", "fa-images");
-        imageLink.appendChild(imageIcon);
+        imagePreview = document.createElement("a");
+        imagePreview.target = "_blank";
+        imagePreview.classList.add("img-preview", dotfile.image);
+        imagePreview.setAttribute("onclick", "imgPop(this)");
 
         // tags
         tag = document.createElement("h3");
@@ -72,7 +62,7 @@ function generateCards(list)
         // Buttons Thingy
         buttonz = document.createElement("div");
         buttonz.classList.add("buttons");
-        buttonz.appendChild(imageLink);
+        buttonz.appendChild(imagePreview);
         buttonz.appendChild(repo);
         if (dotfile.reddit && /\S/.test(dotfile.reddit)) {
             buttonz.appendChild(reddit);
@@ -85,6 +75,7 @@ function generateCards(list)
         dotfile_div.appendChild(header);
         dotfile_div.appendChild(tag);
         dotfile_div.appendChild(image);
+        dotfile_div.appendChild(imagePreview);
 
         document.getElementById("themes_container").appendChild(dotfile_div);
     }

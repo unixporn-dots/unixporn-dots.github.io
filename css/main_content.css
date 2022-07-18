@@ -84,6 +84,14 @@
   transform: translate(0px, 15px);
 }
 
+.img-preview {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  cursor: pointer;
+}
+
 .imgViewer {
   opacity: 0;
   position: fixed;
