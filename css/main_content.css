@@ -59,6 +59,7 @@
   align-items: center;
   justify-content: space-between;
   width: inherit;
+  position: relative;
 }
 
 .card img {
@@ -82,16 +83,12 @@
   transform: translate(0px, 15px);
 }
 
-.imageRedir {
-  border-radius: 9px;
-  background: var(--body-background-lighter);
-  padding: 10px;
-  transition: 0.2s ease-in-out;
-  display: flex;
-}
-.imageRedir:hover {
+.img-preview {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 80%;
   cursor: pointer;
-  background: var(--body-background-darker);
 }
 
 .imgViewer {
@@ -134,22 +131,23 @@
 }
 
 .tags {
-  padding: 0px 14px;
-  background-color: var(--body-background-darker);
-  font-family: "Jost";
-  margin: 0px;
-  border-radius: 8px;
-  filter: contrast(0.85);
-  font-weight: 500;
-  z-index: 3;
   position: absolute;
   bottom: 8px;
   right: 8px;
-  transition: 0.2s ease-in-out;
+  z-index: 3;
+  margin: 0;
+  padding: 0 14px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-family: "Jost";
+  filter: contrast(0.85);
+  border-radius: 8px;
+  background-color: var(--body-background-darker);
+  transition: opacity 0.2s ease-in-out;
 }
 
 .card:hover .tags {
-  bottom: 55px;
+  opacity: 0;
 }
 
 .theme-title {
@@ -179,30 +177,33 @@
   border-radius: 14px;
 }
 
+/* =========== Card Header Buttons =========== */
+.buttons {
+  opacity: 0;
+  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  transform-origin: bottom;
+  transform: translateY(50%);
+  transition: transform 200ms ease-in-out,
+              opacity 200ms ease-in-out;
+}
+
+.card:hover .buttons {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .button-child {
+  font-size: clamp(1.25rem, 4vw, 1.4rem);
   font-family: "Jost";
-  padding: 8px 16px;
+  margin: 0;
+  padding: 8px 0;
+  cursor: pointer;
   border-radius: 12px;
-  margin: 0px;
-  font-size: 16px;
-  background: var(--body-background-lighter);
-  transition: 0.2s ease-in-out;
-  font-weight: bold;
-  text-align: center;
+  transition: opacity 200ms ease-in-out;
 }
 
 .button-child:hover {
-  cursor: pointer;
-  background: var(--body-background-darker);
-}
-
-.buttons {
-  transition: 0.2s ease-in-out;
-  opacity: 0;
-  position: absolute;
-  bottom: 8px;
-  right: 6px;
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-flow: column;
+  opacity: 0.5;
 }
