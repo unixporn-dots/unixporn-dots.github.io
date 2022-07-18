@@ -71,8 +71,8 @@ function generateCards(list, pageNumber) {
         link = document.createElement("a");
         // link.href = dotfile.link;
         link.target = "_blank";
-        header.appendChild(link);
 
+        // Image Preview
         imageLink = document.createElement("a");
         imageLink.target = "_blank";
         imageLink.classList.add("button-child", dotfile.image);
@@ -87,7 +87,6 @@ function generateCards(list, pageNumber) {
         tag = document.createElement("h3");
         tag.innerHTML = dotfile.wm;
         tag.classList.add("tags");
-        link.appendChild(tag);
 
         // Buttons Thingy
         buttonz = document.createElement("div");
