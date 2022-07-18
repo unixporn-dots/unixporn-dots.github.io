@@ -21,6 +21,22 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install PyYAML
-    - name: Test with pytest
-      run: |
-        python generateJS.py
+    - name: remove previous file
+      run: rm ./dotfiles.js
+    - name: Generate JS
+      run: python ./generateJS.py
+      
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Parse Dotfiles
+    # - name: Commit files # commit the output folder
+    #  run: |
+    #    git config --local user.email "test@github.com"
+    #    git config --local user.name "GitHub Action test"
+    #    git add .
+    #    git commit -m "Parse dotfiles"
+    # - name: Push changes # push the output folder to your repo
+    # uses: ad-m/github-push-action@master
+    #  with:
+    #    github_token: ${{ secrets.GITHUB_TOKEN }}
+    #    force: true
