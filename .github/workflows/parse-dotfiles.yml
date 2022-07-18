@@ -25,3 +25,13 @@ jobs:
       run: rm ./dotfiles.js
     - name: Generate JS
       run: python ./generateJS.py
+      
+    - name: Commit and Push
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        # use account 'github-actions[bot]' to set the git config
+
+        git add -A
+        git commit -m "Parse dotfiles"
+        git push
