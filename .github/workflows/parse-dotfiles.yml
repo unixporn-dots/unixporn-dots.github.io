@@ -22,6 +22,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install PyYAML
     - name: remove previous file
-      run: rm ./generateJS.py
+      run: rm ./dotfiles.js
     - name: Generate JS
       run: python ./generateJS.py
