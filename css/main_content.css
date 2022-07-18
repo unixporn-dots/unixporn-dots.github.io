@@ -15,7 +15,6 @@
 }
 
 #themes_container {
-  min-height: 100vh;
   transition: 0.2s ease-in-out;
   display: grid;
   gap: 20px;
@@ -39,7 +38,6 @@
   /* min-height: 250px;
   max-height: 275px; */
   max-width: 500px;
-  max-height: 333px
 }
 
 /* .card:hover {
