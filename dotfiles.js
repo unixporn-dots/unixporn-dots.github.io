@@ -358,6 +358,16 @@ const dotfiles = [
 		wm: "awesomewm"
 	},
 	{
+		author: "janleigh",
+		description: "My desktop configuration files.",
+		image: "themes/janleigh_dotfiles/janleigh-dotfiles.png",
+		link: "https://github.com/janleigh/dotfiles",
+		reddit: "https://www.reddit.com/r/unixporn/comments/vlqhzb/bspwm_comfy_rocky_beach/",
+		tags: ['bspwm', 'alacritty', 'zsh', 'eww', 'picom', 'dunst', 'thunar', 'rofi', 'firefox'],
+		title: "janleigh\'s dotfiles",
+		wm: "bspwm"
+	},
+	{
 		author: "Rashad-707",
 		description: "A backup of my Linux setup",
 		image: "themes/Rashad-707s_dotfiles/rashad-707s-dotfiles.png",
