@@ -59,6 +59,7 @@
   align-items: center;
   justify-content: space-between;
   width: inherit;
+  position: relative;
 }
 
 .card img {
@@ -137,7 +138,7 @@
   padding: 0px 14px;
   background-color: var(--body-background-darker);
   font-family: "Jost";
-  margin: 0px;
+  margin: 0;
   border-radius: 8px;
   filter: contrast(0.85);
   font-weight: 500;
@@ -145,11 +146,11 @@
   position: absolute;
   bottom: 8px;
   right: 8px;
-  transition: 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .card:hover .tags {
-  bottom: 55px;
+  opacity: 0;
 }
 
 .theme-title {
@@ -198,9 +199,9 @@
 
 .buttons {
   transition: 0.2s ease-in-out;
-  opacity: 0;
+  /* opacity: 0; */
   position: absolute;
-  bottom: 8px;
+  /* bottom: 8px; */
   right: 6px;
   display: grid;
   grid-gap: 10px;

@@ -96,8 +96,9 @@ function generateCards(list, pageNumber) {
         dotfile_div = document.createElement("div");
         dotfile_div.classList.add("card");
         dotfile_div.appendChild(header);
-        dotfile_div.appendChild(image);
         dotfile_div.appendChild(buttonz);
+        dotfile_div.appendChild(tag);
+        dotfile_div.appendChild(image);
 
         document.getElementById("themes_container").appendChild(dotfile_div);
  
