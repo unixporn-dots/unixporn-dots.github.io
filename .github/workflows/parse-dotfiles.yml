@@ -23,4 +23,5 @@ jobs:
         pip install PyYAML
     - name: Test with pytest
       run: |
-        python generateJS.py
+        ls
+        python ./generateJS.py
