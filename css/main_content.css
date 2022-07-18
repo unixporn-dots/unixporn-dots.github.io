@@ -83,18 +83,6 @@
   transform: translate(0px, 15px);
 }
 
-.imageRedir {
-  border-radius: 9px;
-  background: var(--body-background-lighter);
-  padding: 10px;
-  transition: 0.2s ease-in-out;
-  display: flex;
-}
-.imageRedir:hover {
-  cursor: pointer;
-  background: var(--body-background-darker);
-}
-
 .imgViewer {
   opacity: 0;
   position: fixed;
@@ -181,29 +169,23 @@
 }
 
 .button-child {
+  font-size: 1.4rem;
   font-family: "Jost";
-  padding: 8px 16px;
+  margin: 0;
+  padding: 8px;
+  cursor: pointer;
   border-radius: 12px;
-  margin: 0px;
-  font-size: 16px;
-  background: var(--body-background-lighter);
-  transition: 0.2s ease-in-out;
-  font-weight: bold;
-  text-align: center;
+  transition: opacity 200ms ease-in-out;
 }
 
 .button-child:hover {
-  cursor: pointer;
-  background: var(--body-background-darker);
+  opacity: 0.5;
 }
 
 .buttons {
-  transition: 0.2s ease-in-out;
-  /* opacity: 0; */
-  position: absolute;
-  /* bottom: 8px; */
-  right: 6px;
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-flow: column;
+  opacity: 0;
+  gap: 0.25rem;
+  display: flex;
+  align-items: center;
+  transition: opacity 200ms ease-in-out;
 }

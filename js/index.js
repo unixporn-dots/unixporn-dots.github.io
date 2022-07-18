@@ -33,14 +33,22 @@ function generateCards(list, pageNumber) {
         repo.classList.add("button-child");
         repo.href = dotfile.link;
         repo.target = "_blank";
-        repo.innerHTML = "Repository";
+
+        // Add github icon
+        repoIcon = document.createElement('i');
+        repoIcon.classList.add("fa-brands", "fa-github");
+        repo.appendChild(repoIcon);
 
         if (dotfile.reddit && /\S/.test(dotfile.reddit)) { // Reddit post is optional
             reddit = document.createElement("a");
             reddit.classList.add("button-child");
             reddit.href = dotfile.reddit;
             reddit.target = "_blank";
-            reddit.innerHTML = "Reddit";
+
+            // Add reddit icon  
+            redditIcon = document.createElement("i");
+            redditIcon.classList.add("fa-brands", "fa-reddit");
+            reddit.appendChild(redditIcon);
         }
 
         // Desc
@@ -67,14 +75,12 @@ function generateCards(list, pageNumber) {
 
         imageLink = document.createElement("a");
         imageLink.target = "_blank";
-        imageLink.classList.add("imageRedir");
-        imageLink.classList.add(dotfile.image)
+        imageLink.classList.add("button-child", dotfile.image);
         imageLink.setAttribute("onclick", "imgPop(this)");
         link.appendChild(imageLink);
 
         imageIcon = document.createElement("i");
-        imageIcon.classList.add("fas");
-        imageIcon.classList.add("fa-image");
+        imageIcon.classList.add("fa-regular", "fa-images");
         imageLink.appendChild(imageIcon);
 
         // tags
@@ -91,12 +97,12 @@ function generateCards(list, pageNumber) {
         if (dotfile.reddit && /\S/.test(dotfile.reddit)) {
             buttonz.appendChild(reddit);
         }
+        header.appendChild(buttonz);
 
         // Card
         dotfile_div = document.createElement("div");
         dotfile_div.classList.add("card");
         dotfile_div.appendChild(header);
-        dotfile_div.appendChild(buttonz);
         dotfile_div.appendChild(tag);
         dotfile_div.appendChild(image);
 
