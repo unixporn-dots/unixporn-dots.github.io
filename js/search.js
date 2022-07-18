@@ -41,17 +41,11 @@ function search(evt) {
             document.getElementById("themes_container").style.opacity = 0;
 
             timer = setTimeout(() => {
-                document.getElementById("themes_container").innerHTML = "";
 
                 result = searchByTitle(query).concat(searchByTags(query)).concat(searchByAuthor(query));
-
                 result = result.filter((v, i, a) => a.indexOf(v) === i); // Remove duplicates
                 current_dotfiles = result;
-                resetPageInfo();
-
-                if (result.length > 0) {
-                    generateCards(result,1);
-                }
+                resetPage();
                 document.getElementById("themes_container").style.opacity = 1;
                 setTimeout(() => {
                     loaded = true // Open the lock after a certain timeout
