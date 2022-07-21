@@ -33,7 +33,7 @@ class PageManager {
             const start_index = i * ITEMS_PER_PAGE;
             const end_index = start_index + ITEMS_PER_PAGE - 1;
             this.page_list[i] = new Page(
-                items.slice(start_index, end_index - 1),
+                items.slice(start_index, end_index + 1),
                 i + 1
             );
         }
