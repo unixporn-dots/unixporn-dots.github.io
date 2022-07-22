@@ -62,11 +62,6 @@
   position: relative;
 }
 
-.card-img-wrapper {
-  max-width: 100%;
-  position: relative;
-}
-
 .card img {
   /* min-height: 250px;
   max-height: 275px; */
