@@ -7,7 +7,7 @@
     padding: 10px;
   }
 
-  .imgViewer img {
+  .img-viewer img {
     object-fit: cover;
     height: auto !important;
     width: 100%;
