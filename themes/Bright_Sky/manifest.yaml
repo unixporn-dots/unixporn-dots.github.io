@@ -1,6 +1,5 @@
 author: owl4ce
 description: Aesthetic OpenboxWM Environment
-image: themes/Bright_Sky/bright-sky.webp
 link: https://github.com/owl4ce/dotfiles
 reddit: https://www.reddit.com/r/unixporn/comments/hlrpg7/openbox_bright_sky/
 tags: [openbox, tint2, obmenu-generator, rofi, dunst, urxvt]
