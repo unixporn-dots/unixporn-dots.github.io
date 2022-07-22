@@ -83,52 +83,6 @@
   transform: translate(0px, 15px);
 }
 
-.img-preview {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-  height: 80%;
-  cursor: pointer;
-}
-
-.img-viewer {
-  position: fixed;
-  display: flex;
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.884);
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 100%;
-}
-
-.viewer-close {
-  transition: 0.2s ease-in-out;
-  border-radius: 12px;
-  border: none;
-  padding: 5px 12px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: var(--body-background-lighter);
-  color: white;
-}
-
-.viewer-close:hover {
-  cursor: pointer;
-  background: var(--body-background-darker);
-}
-
-.img-viewer img {
-  object-fit: cover;
-  height: 75%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .tags {
   position: absolute;
   bottom: 8px;
@@ -206,6 +160,79 @@
 .button-child:hover {
   opacity: 0.5;
 }
-.card-img {
+
+/* =========== Image Preview =========== */
+.img-preview {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 80%;
   cursor: pointer;
+}
+
+.img-preview-icon {
+  display: none;
+}
+
+.img-viewer {
+  position: fixed;
+  display: flex;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.884);
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.viewer-close {
+  transition: 0.2s ease-in-out;
+  border-radius: 12px;
+  border: none;
+  padding: 5px 12px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--body-background-lighter);
+  color: white;
+}
+
+.viewer-close:hover {
+  cursor: pointer;
+  background: var(--body-background-darker);
+}
+
+.img-viewer img {
+  object-fit: cover;
+  height: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media screen and (max-width: 850px) {
+  .img-preview {
+    width: 18px;
+    height: 18px;
+    padding: 0.25rem;
+  }
+
+  .img-preview-icon {
+    opacity: 0;
+    display: inline-block;
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    position: absolute;
+    bottom: clamp(2px, 4vw, 6px);
+    left: 8px;
+    transition: opacity 200ms ease-in-out;
+    padding: 0.5rem;
+    border-radius: 12px;
+    background-color: var(--body-background-darker);
+  }
+
+  .card:hover .img-preview-icon {
+    opacity: 1;
+  }
 }
