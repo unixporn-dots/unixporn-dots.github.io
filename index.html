@@ -15,39 +15,39 @@
     <meta
       property="og:description"
       content="A collection of dotfiles from the r/unixporn community. Find your perfect *nix rice"
-    />
+      />
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
       content="https://avatars.githubusercontent.com/u/105546120?s=200&v=4"
-    />
+      />
     <meta property="og:color" content="#303035" />
 
     <!-- imoprt sourcecode pro -->
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:wght@300;700&display=swap"
       rel="stylesheet"
-    />
+      />
     <!-- import fontawesome -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
-    />
+      />
     <script
       src="https://kit.fontawesome.com/afcb698043.js"
       crossorigin="anonymous"
-    ></script>
+      ></script>
     <!-- Jost semibold -->
     <link
       href="https://fonts.googleapis.com/css?family=Jost:400,500,600,700"
       rel="stylesheet"
-    />
+      />
 
     <link href="css/base.css" rel="stylesheet" />
     <link href="css/header.css" rel="stylesheet" />
     <link href="css/pageSwitcher.css" rel="stylesheet" />
 
-    <script type="text/javascript" src="dotfiles.js"></script>
+    <script type="module" src="dotfiles.js"></script>
   </head>
 
   <body>
@@ -68,7 +68,7 @@
               id="searchInput"
               type="text"
               placeholder="Search"
-            />
+              />
             <button class="btn-submit searchsubmit" id="searchSubmit">
               <i class="bi bi-search" aria-hidden="true"></i>
             </button>
@@ -79,10 +79,6 @@
     <main id="main_content">
       <div id="themes_container">
         <!-- Will be filled dynamically -->
-      </div>
-      <div class="imgViewer">
-        <img id="main" alt="IMAGE" />
-        <a class="closeView"><i class="fa-solid fa-xmark"></i></a>
       </div>
     </main>
     <div class="page-switcher">
@@ -119,24 +115,24 @@
       </p>
       <div class="linklist">
         <a href="disclaimer.html" style="margin-right: 20px; color: lightblue"
-          >Disclaimer</a
-        >
-        <a
-          style="margin-left: 20px; color: lightblue"
-          href="https://github.com/unixporn-dots/unixporn-dots.github.io/#adding-your-dotfiles"
-        >
-          Submit your dotfiles
-        </a>
+                                  >Disclaimer</a
+                                >
+                                <a
+                                  style="margin-left: 20px; color: lightblue"
+                                  href="https://github.com/unixporn-dots/unixporn-dots.github.io/#adding-your-dotfiles"
+                                  >
+                                  Submit your dotfiles
+                                </a>
       </div>
     </footer>
 
-    <script src="js/themeSwitcher.js"></script>
-    <script src="js/random.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/pageSwitcher.js"></script>
-    <script src="js/cardGenerator.js"></script>
-    <script src="js/imageViewer.js"></script>
-    <script src="js/index.js"></script>
+    <script type="module" src="js/themeSwitcher.js"></script>
+    <script type="module" src="js/random.js"></script>
+    <!--<script src="js/search.js"></script>-->
+    <script type="module" src="js/cardGenerator.js"></script>
+    <script type="module" src="js/card.js"></script>
+    <script type="module" src="js/page.js"></script>
+    <script type="module" src="js/index.js"></script>
 
   </body>
 </html>
