@@ -97,30 +97,25 @@ class Card {
         wm.classList.add("tags");
         wm.innerHTML = this.wm;
 
-        // Image wrapper
-        const imgWrapper = document.createElement("div");
-        imgWrapper.classList.add("card-img-wrapper");
-        
         // Image
         const img = document.createElement("img");
         img.src = this.img_url;
         img.classList.add("card-img");
-        imgWrapper.appendChild(img);
         
-        // Image icon wrapper
-        const imgIconWrapper = document.createElement('div');
-        imgIconWrapper.addEventListener("click", () => prev_window.open(this.img_url));
+        // Image preview icon container
+        const imgPreviewIconContainer = document.createElement('div');
+        imgPreviewIconContainer.addEventListener("click", () => prev_window.open(this.img_url));
 
         // Image preview icon
         const imgPreviewIcon = document.createElement("i");
         imgPreviewIcon.classList.add("fa-regular", "fa-images", "img-preview-icon");
-        imgIconWrapper.appendChild(imgPreviewIcon);
-        imgWrapper.appendChild(imgIconWrapper);
+        imgPreviewIconContainer.appendChild(imgPreviewIcon);
         
         // Add everything to the card
         root_container.appendChild(header);
         root_container.appendChild(wm);
-        root_container.appendChild(imgWrapper);
+        root_container.appendChild(img);
+        root_container.appendChild(imgPreviewIconContainer);
         return root_container;
     }
 }
