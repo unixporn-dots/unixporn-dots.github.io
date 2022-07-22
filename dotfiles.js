@@ -438,3 +438,5 @@ const dotfiles = [
 		wm: "kde"
 	}
 ]
+
+export {dotfiles};

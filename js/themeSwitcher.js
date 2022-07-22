@@ -1,4 +1,3 @@
-
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -22,10 +21,9 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-
+const themeIcon = document.getElementById("themeIcon");
 function setDark()
 {
-    themeIcon = document.getElementById("themeIcon");
     themeIcon.classList.remove("bi-moon-stars-fill");
     themeIcon.classList.add("bi-sun");
 
@@ -39,7 +37,6 @@ function setDark()
 
 function setLight()
 {
-    themeIcon = document.getElementById("themeIcon");
     themeIcon.classList.remove("bi-sun");
     themeIcon.classList.add("bi-moon-stars-fill");
 
@@ -51,7 +48,7 @@ function setLight()
     setCookie('theme', 'light', 365);
 }
 
-window.onload = () => {
+function setSavedTheme() {
     let theme = getCookie('theme');
     switch(theme){
         case 'dark':
@@ -63,12 +60,13 @@ window.onload = () => {
     }
 }
 
-document.getElementById('js-themeSwitcher').addEventListener("click", () => {
+function toggleTheme() {
     if (themeIcon.classList.contains("bi-sun")) {
         setLight();
     } else {
         setDark();
     }
-});
+}
 
+export {toggleTheme, setSavedTheme};
 
