@@ -27,10 +27,17 @@ class ImagePreview {
     open(img_src) {
         this.image.src = img_src;
         this.parent.appendChild(this.element);
+        document.addEventListener("keydown", this.closeKeyHandler);
     }
 
     close() {
         this.parent.removeChild(this.element);
+        document.removeEventListener("keydown", this.closeKeyHandler);
+    }
+    closeKeyHandler = (event) => {
+        if (event.key == "Escape") {
+            this.close();
+        }
     }
 }
 export { ImagePreview };
