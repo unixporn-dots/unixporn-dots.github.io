@@ -10,27 +10,23 @@ A collection of dotfiles from the r/unixporn community
 <br>
 
 # Adding your Dotfiles
-+ Opening a pull request:
+To add your dots simply open a pull request:
   1. Fork this repository.
-  2. Add your entry to the `themes` folder. 
-  3. The image can be added via a URL, or by adding an image inside the `assets` folder and referencing it.
+  2. Add your entry to the `themes` folder. Add the `mainfest.yaml` file, then add 1 to 5 images.
+  3. If you want a particular image to be shown on the main page preview rename it to `thumbnail`. This is optional.
   4. Open a pull request and it's done!
 
 <br>
 
-+ Through an Issue:
-    1. Use the template provided and fill in the necessary details
-    2. Open an Issue and you're done!
-
+The YAML file looks like this:
 ```yaml
-author: 
-description: 
-image: 
-link: 
-reddit:                 # Optional
-tags: []
-title: 
-wm: 
+author: I am the author
+title: This is the title
+description: This is a short description
+link: # Theme repository URL    
+reddit: # Optional link to UnixPorn post
+wm: windowmanager
+tags: ['tag1', 'tag2', 'tag3'] 
 ```
 
 NOTE: Please try to make sure the image has a 16:9 aspect ratio for consistency

@@ -7,7 +7,7 @@ function generateCards(dotfiles) {
             new Card(
                 dotfile.title,
                 dotfile.description,
-                dotfile.image,
+                dotfile.images[0],
                 dotfile.link,
                 dotfile.reddit,
                 dotfile.wm,
