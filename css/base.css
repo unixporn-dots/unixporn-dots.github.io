@@ -95,3 +95,34 @@ a {
     padding: 0;
     font-size: 1em;
 }
+
+/* ==================== Utility Classes ==================== */
+.popout {
+    animation: popout 200ms ease-in-out;
+}
+
+.popin {
+    animation: popin 200ms ease-in-out;
+}
+
+@keyframes popout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes popin {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -27,12 +27,17 @@ class ImagePreview {
     open(img_src) {
         this.image.src = img_src;
         this.parent.appendChild(this.element);
+        this.element.classList.add("popin");
         document.addEventListener("keydown", this.closeKeyHandler);
     }
 
     close() {
-        this.parent.removeChild(this.element);
-        document.removeEventListener("keydown", this.closeKeyHandler);
+        this.element.classList.remove("popin");
+        this.element.classList.add("popout");
+        this.element.addEventListener('animationend', () => {
+            this.parent.removeChild(this.element);
+            document.removeEventListener("keydown", this.closeKeyHandler);
+        }, { once: true });
     }
     closeKeyHandler = (event) => {
         if (event.key == "Escape") {
