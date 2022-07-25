@@ -237,7 +237,7 @@ const dotfiles = [
 		tags: ['xmonad', 'eww', 'rofi', 'alacritty', 'tint2'],
 		title: "Axarva\'s Dotfiles",
 		wm: "xmonad",
-		images: ['themes/Axarvas_Dotfiles/axarvas-dotfiles.png']
+		images: ['themes/Axarvas_Dotfiles/thumbnail.png', 'themes/Axarvas_Dotfiles/1.png', 'themes/Axarvas_Dotfiles/2.png']
 	},
 	{
 		author: "elenapan",
@@ -355,7 +355,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'rofi', 'nvim', 'ranger', 'dunst', 'flameshot'],
 		title: "CodeHeister\'s Dotfiles",
 		wm: "i3-gaps",
-		images: ['themes/CodeHeisters_Dotfiles/codeheisters-dotfiles.png']
+		images: ['themes/CodeHeisters_Dotfiles/thumbnail.png', 'themes/CodeHeisters_Dotfiles/1.png', 'themes/CodeHeisters_Dotfiles/2.png', 'themes/CodeHeisters_Dotfiles/3.png']
 	},
 	{
 		author: "DebianOwO",
