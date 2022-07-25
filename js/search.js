@@ -44,10 +44,10 @@ function search(evt) {
                 var result = searchByTitle(query).concat(searchByTags(query)).concat(searchByAuthor(query));
                 result = result.filter((v, i, a) => a.indexOf(v) === i); // Remove duplicates
                 GlobalContext.page_manager.generate_pages(result);
+                GlobalContext.page_manager.update_number();
                 GlobalContext.page_manager.current_page.render();
                 setTimeout(() => {
                     loaded = true // Open the lock after a certain timeout
-                    GlobalContext.page_manager.update_number();
                 }, 400); // This time includes the opactiy change to 1 too,
                          // meaning the lock will be released 200ms after everything is done
             }, 500);
