@@ -195,7 +195,8 @@
 }
 
 .prev-img {
-  left: 100px;
+  top: 90%;
+  left: 30%;
 }
 
 .viewer-close {
@@ -203,7 +204,8 @@
 }
 
 .next-img {
-  right: 100px;
+  top: 90%;
+  right: 30%;
 }
 
 .img-viewer img {
@@ -219,7 +221,7 @@
   cursor: not-allowed
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1100px) {
   .img-viewer img {
     width: 100%;
   }
@@ -238,5 +240,17 @@
   .card:hover .img-preview-icon {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .next-img {
+    top: 70%;
+    right: 30%;
+  }
+
+  .prev-img {
+    top: 70%;
+    left: 30%;
   }
 }
