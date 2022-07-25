@@ -7,7 +7,7 @@ const dotfiles = [
 		tags: ['bspwm', 'dunst', 'rofi', 'polybar', 'eww'],
 		title: "SwiftyChicken\'s dotfiles",
 		wm: "bspwm",
-		images: ['themes/SwiftyChickens_dotfiles/swiftychickens-dotfiles.png']
+		images: ['themes/SwiftyChickens_dotfiles/thumbnail.png']
 	},
 	{
 		author: "leetApe",
@@ -17,7 +17,7 @@ const dotfiles = [
 		tags: ['bspwm', 'alacritty', 'polybar', 'rofi'],
 		title: "leetApe\'s dotfiles",
 		wm: "bspwm",
-		images: ['themes/leetApes_dotfiles/leetApes-dotfiles.png']
+		images: ['themes/leetApes_dotfiles/thumbnail.png', 'themes/leetApes_dotfiles/1.png']
 	},
 	{
 		author: "fahimfaisal42",
@@ -27,7 +27,7 @@ const dotfiles = [
 		tags: ['bspwm', 'dunst', 'kitty', 'polybar'],
 		title: "fahimfaisal42\'s dotfiles",
 		wm: "bspwm",
-		images: ['themes/fahimfaisal42s_dotfiles/fahimfaisal42s-dotfiles.png']
+		images: ['themes/fahimfaisal42s_dotfiles/thumbnail.png']
 	},
 	{
 		author: "elenapan",
@@ -37,7 +37,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'kitty', 'firefox', 'rofi'],
 		title: "Elena\'s configuration files",
 		wm: "awesomewm",
-		images: ['themes/Elenas_configuration_files/mechanical-love.png']
+		images: ['themes/Elenas_configuration_files/thumbnail.png']
 	},
 	{
 		author: "ilham25",
@@ -47,7 +47,7 @@ const dotfiles = [
 		tags: ['openbox', 'urxvt', 'dunst', 'tint2', 'rofi'],
 		title: "Aether Desktop",
 		wm: "openbox",
-		images: ['themes/Aether_Desktop/aether-desktop.png']
+		images: ['themes/Aether_Desktop/thumbnail.png']
 	},
 	{
 		author: "manilarome",
@@ -57,7 +57,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'rofi', 'kitty', 'fish'],
 		title: "Surreal",
 		wm: "awesomewm",
-		images: ['themes/Surreal/surreal.webp']
+		images: ['themes/Surreal/thumbnail.webp']
 	},
 	{
 		author: "Amog-OS",
@@ -67,7 +67,7 @@ const dotfiles = [
 		tags: ['openbox', 'lxde', 'xfce4-panel'],
 		title: "AmogOS",
 		wm: "openbox",
-		images: ['themes/AmogOS/AmogOS.webp']
+		images: ['themes/AmogOS/thumbnail.webp']
 	},
 	{
 		author: "3r3bu5x9",
@@ -77,7 +77,7 @@ const dotfiles = [
 		tags: ['openbox', 'urxvt', 'firefox', 'tint2', 'jgmenu'],
 		title: "Prismatic Night",
 		wm: "openbox",
-		images: ['themes/Prismatic_Night/prismatic-night.png']
+		images: ['themes/Prismatic_Night/thumbnail.png']
 	},
 	{
 		author: "nekonako",
@@ -87,7 +87,7 @@ const dotfiles = [
 		tags: ['openbox', 'conky', 'tint2'],
 		title: "Sweetness",
 		wm: "openbox",
-		images: ['themes/Sweetness/sweetness.png']
+		images: ['themes/Sweetness/thumbnail.png']
 	},
 	{
 		author: "obliviousofcraps",
@@ -97,7 +97,7 @@ const dotfiles = [
 		tags: ['openbox', 'rofi', 'kitty', 'slim', 'eww', 'tint2', 'dunst'],
 		title: "mf-dots",
 		wm: "openbox",
-		images: ['themes/mf-dots/mf-dots.png']
+		images: ['themes/mf-dots/thumbnail.png']
 	},
 	{
 		author: "Mofiqul",
@@ -107,7 +107,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'i3lock-fancy', 'rofi'],
 		title: "AwesomeShell",
 		wm: "awesomewm",
-		images: ['themes/AwesomeShell/awesomeshell.png']
+		images: ['themes/AwesomeShell/thumbnail.png']
 	},
 	{
 		author: "b4skyx",
@@ -117,7 +117,7 @@ const dotfiles = [
 		tags: ['bspwm', 'polybar', 'rofi', 'st'],
 		title: "Serenade",
 		wm: "bspwm",
-		images: ['themes/Serenade/serenade.png']
+		images: ['themes/Serenade/thumbnail.png']
 	},
 	{
 		author: "Vista1nik",
@@ -127,7 +127,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'kitty', 'i3blocks'],
 		title: "Neon 80s",
 		wm: "i3-gaps",
-		images: ['themes/Neon_80s/neon-80s.png']
+		images: ['themes/Neon_80s/thumbnail.png']
 	},
 	{
 		author: "ParallaxWave",
@@ -137,7 +137,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'xfce4-terminal', 'dunst', 'rofi', 'up-clock', 'tint2'],
 		title: "Serene Dusk",
 		wm: "i3-gaps",
-		images: ['themes/Serene_Dusk/serene-dusk.png']
+		images: ['themes/Serene_Dusk/thumbnail.png']
 	},
 	{
 		author: "owl4ce",
@@ -147,7 +147,7 @@ const dotfiles = [
 		tags: ['openbox', 'tint2', 'obmenu-generator', 'rofi', 'dunst', 'urxvt'],
 		title: "Bright Sky",
 		wm: "openbox",
-		images: ['themes/Bright_Sky/bright-sky.webp']
+		images: ['themes/Bright_Sky/thumbnail.webp']
 	},
 	{
 		author: "ChocolateBread799",
@@ -157,7 +157,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'hilbish', 'wezterm'],
 		title: "ChocolateBread799\'s dotfiles",
 		wm: "awesomewm",
-		images: ['themes/ChocolateBread799s_dotfiles/chocolatebread799s-dotfiles.png']
+		images: ['themes/ChocolateBread799s_dotfiles/thumbnail.png']
 	},
 	{
 		author: "EvanKoe",
@@ -167,7 +167,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'rofi', 'nvim', 'ranger', 'asm', 'arch'],
 		title: "Evan\'s Glassmorphism",
 		wm: "i3-gaps",
-		images: ['themes/Evans_Glassmorphism/evankoe-glass.png']
+		images: ['themes/Evans_Glassmorphism/thumbnail.png']
 	},
 	{
 		author: "Miusaky",
@@ -177,7 +177,7 @@ const dotfiles = [
 		tags: ['dwm', 'SAGA'],
 		title: "SAGA dwm",
 		wm: "dwm",
-		images: ['themes/SAGA_dwm/SAGA_dwm.png']
+		images: ['themes/SAGA_dwm/thumbnail.png']
 	},
 	{
 		author: "JinPots",
@@ -187,7 +187,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'polybar'],
 		title: "JinPots\'s Dotfiles",
 		wm: "i3-gaps",
-		images: ['themes/JinPotss_Dotfiles/jinpots-dotfiles.png']
+		images: ['themes/JinPotss_Dotfiles/thumbnail.png']
 	},
 	{
 		author: "AFreidz",
@@ -197,7 +197,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'urxvt', 'rofi', 'zsh'],
 		title: "AFreidz\'s Dotfiles",
 		wm: "awesomewm",
-		images: ['themes/AFreidzs_Dotfiles/afreidzs-dotfiles.png']
+		images: ['themes/AFreidzs_Dotfiles/thumbnail.png']
 	},
 	{
 		author: "Miusaky",
@@ -207,7 +207,7 @@ const dotfiles = [
 		tags: ['bspwm', 'SAGA'],
 		title: "SAGA bspwm",
 		wm: "bspwm",
-		images: ['themes/SAGA_bspwm/SAGA_bspwm.png']
+		images: ['themes/SAGA_bspwm/thumbnail.png']
 	},
 	{
 		author: "Crylia",
@@ -217,7 +217,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'rofi', 'alacritty'],
 		title: "Crylia Theme",
 		wm: "awesomewm",
-		images: ['themes/Crylia_Theme/crylia-theme.png']
+		images: ['themes/Crylia_Theme/thumbnail.png']
 	},
 	{
 		author: "rxyhn",
@@ -227,7 +227,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'alacritty', 'rofi', 'ncmpcpp'],
 		title: "rxyhn\'s dotfiles",
 		wm: "awesomewm",
-		images: ['themes/rxyhns_dotfiles/rxyhns-dotfiles.png']
+		images: ['themes/rxyhns_dotfiles/thumbnail.png']
 	},
 	{
 		author: "Axarva",
@@ -247,7 +247,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'zsh', 'kitty', 'rofi'],
 		title: "Elena\'s Dotfiles",
 		wm: "awesomewm",
-		images: ['themes/Elenas_Dotfiles/elenas-dotfiles.png']
+		images: ['themes/Elenas_Dotfiles/thumbnail.png']
 	},
 	{
 		author: "Rashad-707",
@@ -257,7 +257,7 @@ const dotfiles = [
 		tags: ['dwm', 'kde', 'dunst', 'eww', 'polybar', 'rofi'],
 		title: "Rashad-707\'s dotfiles",
 		wm: "dwm",
-		images: ['themes/Rashad-707s_dotfiles/rashad-707s-dotfiles.png']
+		images: ['themes/Rashad-707s_dotfiles/thumbnail.png']
 	},
 	{
 		author: "manilarome",
@@ -267,7 +267,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'rofi', 'kitty', 'fish'],
 		title: "Linear",
 		wm: "awesomewm",
-		images: ['themes/Linear/linear.webp']
+		images: ['themes/Linear/thumbnail.webp']
 	},
 	{
 		author: "beyond9thousand",
@@ -276,7 +276,7 @@ const dotfiles = [
 		tags: ['bspwm', 'nvim', 'rofi', 'ranger', 'dunst', 'blender', 'dmenu', 'polybar', 'alacritty', 'tokyonight'],
 		title: "b9k\'s dotfiles",
 		wm: "bspwm",
-		images: ['themes/b9ks_dotfiles/b9ks-dotfiles.png']
+		images: ['themes/b9ks_dotfiles/thumbnail.png']
 	},
 	{
 		author: "manilarome",
@@ -286,7 +286,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'rofi', 'kitty', 'fish'],
 		title: "Floppy",
 		wm: "awesomewm",
-		images: ['themes/Floppy/floppy.webp']
+		images: ['themes/Floppy/thumbnail.webp']
 	},
 	{
 		author: "janleigh",
@@ -296,7 +296,7 @@ const dotfiles = [
 		tags: ['bspwm', 'alacritty', 'zsh', 'eww', 'picom', 'dunst', 'thunar', 'rofi', 'firefox'],
 		title: "janleigh\'s dotfiles",
 		wm: "bspwm",
-		images: ['themes/janleigh_dotfiles/janleigh-dotfiles.png']
+		images: ['themes/janleigh_dotfiles/thumbnail.png']
 	},
 	{
 		author: "saimoomedits",
@@ -306,7 +306,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'alacritty', 'wibar', 'mpd'],
 		title: "M3 Dotfiles",
 		wm: "awesomewm",
-		images: ['themes/M3_Dotfiles/m3-dotfiles.png']
+		images: ['themes/M3_Dotfiles/thumbnail.png']
 	},
 	{
 		author: "mahancoder",
@@ -315,7 +315,7 @@ const dotfiles = [
 		tags: ['qtile', 'alacritty', 'ulauncher', 'deadd-notification-center', 'rounded-corners', 'dark', 'dracula', 'arch'],
 		title: "Mahancoder\'s dotfiles",
 		wm: "qtile",
-		images: ['themes/Mahancoders_dotfiles/mahancoder.png']
+		images: ['themes/Mahancoders_dotfiles/thumbnail.png']
 	},
 	{
 		author: "ChocolateBread799",
@@ -325,7 +325,7 @@ const dotfiles = [
 		tags: ['herbstluftwm', 'eww'],
 		title: "macintosh",
 		wm: "herbstluftwm",
-		images: ['themes/macintosh/macintosh.png']
+		images: ['themes/macintosh/thumbnail.png']
 	},
 	{
 		author: "alba4k",
@@ -335,7 +335,7 @@ const dotfiles = [
 		tags: ['dwm', 'neovim', 'mpd'],
 		title: "GG\'s IDLE",
 		wm: "dwm",
-		images: ['themes/GGs_IDLE/ggidle-jul14-2022.png']
+		images: ['themes/GGs_IDLE/thumbnail.png']
 	},
 	{
 		author: "Syndrizzle",
@@ -345,7 +345,7 @@ const dotfiles = [
 		tags: ['bspwm', 'kitty', 'eww', 'rofi', 'dunst', 'conky', 'slim', 'polybar', 'tokyonight'],
 		title: "Hotfiles",
 		wm: "bspwm",
-		images: ['themes/Hotfiles/hotfiles.png']
+		images: ['themes/Hotfiles/thumbnail.png']
 	},
 	{
 		author: "CodeHeister",
@@ -365,7 +365,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'polybar', 'fish', 'alacritty'],
 		title: "Retro-Spectronum",
 		wm: "i3-gaps",
-		images: ['themes/Retro-Spectronum/retro-spectronum.png']
+		images: ['themes/Retro-Spectronum/thumbnail.png']
 	},
 	{
 		author: "potamides",
@@ -375,7 +375,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'alacritty', 'conky'],
 		title: "Potamides\' Dotfiles",
 		wm: "awesomewm",
-		images: ['themes/Potamides_Dotfiles/potamides-dotfiles.png']
+		images: ['themes/Potamides_Dotfiles/thumbnail.png']
 	},
 	{
 		author: "k-vernooy",
@@ -385,7 +385,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'polybar', 'dunst', 'urxvt', 'rofi'],
 		title: "k-vernooy\'s dotfiles",
 		wm: "i3-gaps",
-		images: ['themes/k-vernooys_dotfiles/k-vernooys-dotfiles.png']
+		images: ['themes/k-vernooys_dotfiles/thumbnail.png']
 	},
 	{
 		author: "manilarome",
@@ -395,7 +395,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'rofi', 'kitty', 'fish'],
 		title: "GNawesoME",
 		wm: "awesomewm",
-		images: ['themes/GNawesoME/gnawesome.webp']
+		images: ['themes/GNawesoME/thumbnail.webp']
 	},
 	{
 		author: "Barbaross93",
@@ -405,7 +405,7 @@ const dotfiles = [
 		tags: ['qtile', 'alacritty', 'zsh', 'eww', 'dunst'],
 		title: "Nebula",
 		wm: "qtile",
-		images: ['themes/Nebula/nebula.png']
+		images: ['themes/Nebula/thumbnail.png']
 	},
 	{
 		author: "alba4k",
@@ -415,7 +415,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'polybar'],
 		title: "alba4k\'s dotfiles",
 		wm: "i3-gaps",
-		images: ['themes/alba4ks_dotfiles/alba4k.png']
+		images: ['themes/alba4ks_dotfiles/thumbnail.png']
 	},
 	{
 		author: "drahenprofi",
@@ -425,7 +425,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'rofi', 'kitty', 'sp'],
 		title: "drahenprofi\'s dotfiles",
 		wm: "awesomewm",
-		images: ['themes/drahenprofis_dotfiles/drahenprofis-dotfiles.png']
+		images: ['themes/drahenprofis_dotfiles/thumbnail.png']
 	},
 	{
 		author: "LucyUwI",
@@ -435,7 +435,7 @@ const dotfiles = [
 		tags: ['kde', 'kvantum', 'latte'],
 		title: "LucyUwI\'s Dotfiles",
 		wm: "kde",
-		images: ['themes/LucyUwIs_Dotfiles/lucyuwis-dotfiles.png']
+		images: ['themes/LucyUwIs_Dotfiles/thumbnail.png']
 	}
 ]
 
