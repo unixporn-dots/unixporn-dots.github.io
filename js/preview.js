@@ -8,32 +8,32 @@ class ImagePreview {
     this.element.classList.add("img-viewer");
 
     // The close button
-    const close_button = document.createElement("a"); // TODO: Make this a button instead of an anchor
-    close_button.classList.add("viewer-close");
-    close_button.addEventListener("click", () => this.close());
-    const close_button_ico = document.createElement("i");
-    close_button_ico.classList.add("fa-solid", "fa-xmark");
-    close_button_ico.classList.add("fa-solid", "fa-xmark");
-    close_button.appendChild(close_button_ico);
+    const closeButton = document.createElement("a"); // TODO: Make this a button instead of an anchor
+    closeButton.classList.add("viewer-close");
+    closeButton.addEventListener("click", () => this.close());
+    const closeButton_ico = document.createElement("i");
+    closeButton_ico.classList.add("fa-solid", "fa-xmark");
+    closeButton_ico.classList.add("fa-solid", "fa-xmark");
+    closeButton.appendChild(closeButton_ico);
 
-    const nxt = document.createElement("a");
-    nxt.classList.add("next-img");
-    nxt.addEventListener("click", () => this.next());
-    const nxt_ico = document.createElement("i");
-    nxt_ico.classList.add("fa-solid", "fa-angle-right");
+    const nextButton = document.createElement("a");
+    nextButton.classList.add("next-img");
+    nextButton.addEventListener("click", () => this.next());
+    const nextButton_ico = document.createElement("i");
+    nextButton_ico.classList.add("fa-solid", "fa-angle-right");
 
-    nxt.appendChild(nxt_ico);
+    nextButton.appendChild(nextButton_ico);
 
-    const bck = document.createElement("a");
-    bck.classList.add("prev-img");
-    bck.addEventListener("click", () => this.prev());
-    const bck_ico = document.createElement("i");
-    bck_ico.classList.add("fa-solid", "fa-angle-left");
+    const backButton = document.createElement("a");
+    backButton.classList.add("prev-img");
+    backButton.addEventListener("click", () => this.prev());
+    const backButton_ico = document.createElement("i");
+    backButton_ico.classList.add("fa-solid", "fa-angle-left");
 
-    bck.appendChild(bck_ico);
+    backButton.appendChild(backButton_ico);
 
-    this.nxt = nxt;
-    this.back = bck;
+    this.nextButton = nextButton;
+    this.back = backButton;
 
     // The image
     this.image = document.createElement("img");
@@ -43,9 +43,9 @@ class ImagePreview {
     this.current_image_index = 0;
 
     // Add the image and close button to the popup
-    this.element.appendChild(close_button);
-    this.element.appendChild(nxt);
-    this.element.appendChild(bck);
+    this.element.appendChild(closeButton);
+    this.element.appendChild(nextButton);
+    this.element.appendChild(backButton);
     this.element.appendChild(this.image);
   }
 
@@ -53,23 +53,23 @@ class ImagePreview {
     if (img_srcs != this.img_srcs) {
       this.img_srcs = img_srcs;
       this.current_image_index = 0;
-      }
-      
-      let bck = this.back;
-      let nxt = this.nxt;
+    }
 
-      if(this.img_srcs.length == 1){
-         bck.classList.add("disable-img-btn");
-         nxt.classList.add("disable-img-btn");
-      } else {
-          nxt.classList.remove('disable-img-btn')
-      }
-      if (this.current_image_index == 0) {
-        bck.classList.add("disable-img-btn");
-      } else {
-        nxt.classList.remove("disable-img-btn");
-        bck.classList.remove("disable-img-btn");
-      }
+    let backButton = this.back;
+    let nextButton = this.nextButton;
+
+    if (this.img_srcs.length == 1) {
+      backButton.classList.add("disable-img-btn");
+      nextButton.classList.add("disable-img-btn");
+    } else {
+      nextButton.classList.remove("disable-img-btn");
+    }
+    if (this.current_image_index == 0) {
+      backButton.classList.add("disable-img-btn");
+    } else {
+      nextButton.classList.remove("disable-img-btn");
+      backButton.classList.remove("disable-img-btn");
+    }
 
     this.image.src = img_srcs[this.current_image_index];
     this.parent.appendChild(this.element);
@@ -82,14 +82,13 @@ class ImagePreview {
         ? this.img_srcs[++this.current_image_index]
         : this.image.src;
 
-      let nxt = this.nxt;
-      let bck = this.back;
+    let nextButton = this.nextButton;
+    let backButton = this.back;
     if (this.current_image_index == this.img_srcs.length - 1) {
-        nxt.classList.add("disable-img-btn");
-        
+      nextButton.classList.add("disable-img-btn");
     } else {
-        nxt.classList.remove("disable-img-btn");
-        bck.classList.remove("disable-img-btn");
+      nextButton.classList.remove("disable-img-btn");
+      backButton.classList.remove("disable-img-btn");
     }
   }
   prev() {
@@ -98,13 +97,13 @@ class ImagePreview {
         ? this.img_srcs[--this.current_image_index]
         : this.image.src;
 
-      let bck = this.back;
-      let nxt = this.nxt;
+    let backButton = this.back;
+    let nextButton = this.nextButton;
     if (this.current_image_index == 0) {
-      bck.classList.add("disable-img-btn");
+      backButton.classList.add("disable-img-btn");
     } else {
-        nxt.classList.remove("disable-img-btn");
-      bck.classList.remove("disable-img-btn");
+      nextButton.classList.remove("disable-img-btn");
+      backButton.classList.remove("disable-img-btn");
     }
   }
 

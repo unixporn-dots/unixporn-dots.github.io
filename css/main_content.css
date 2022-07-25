@@ -115,7 +115,7 @@
   transform-origin: bottom;
   transform: translateY(50%);
   transition: transform 200ms ease-in-out,
-              opacity 200ms ease-in-out;
+    opacity 200ms ease-in-out;
 }
 
 .card:hover .buttons {
@@ -167,7 +167,9 @@
   background-color: rgba(0, 0, 0, 0.884);
 }
 
-.viewer-close, .prev-img, .next-img {
+.viewer-close,
+.prev-img,
+.next-img {
   transition: 0.2s ease-in-out;
   border-radius: 12px;
   border: none;
@@ -179,11 +181,14 @@
   cursor: pointer;
 }
 
-.viewer-close:hover, .prev-img:hover, .next-img:hover {
+.viewer-close:hover,
+.prev-img:hover,
+.next-img:hover {
   background: var(--body-background-darker);
 }
 
-.prev-img, .next-img {
+.prev-img,
+.next-img {
   padding: 8px 15px;
   border-radius: 15px;
   top: 50%;
@@ -229,7 +234,7 @@
     transition: opacity 200ms ease-in-out;
     background-color: var(--body-background-darker);
   }
-  
+
   .card:hover .img-preview-icon {
     opacity: 1;
     transform: translateY(0);
