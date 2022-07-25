@@ -16,6 +16,7 @@
 }
 
 .card {
+  max-width: 500px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -23,20 +24,7 @@
   background: var(--body-background-lighter);
   box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: -webkit-fill-available;
-  /* Webkit browsers */
-  width: -moz-available;
-  /* Mozilla Firefox */
-  width: fill-available;
-  flex-flow: wrap;
-  /* min-height: 250px;
-  max-height: 275px; */
-  max-width: 500px;
 }
-
-/* .card:hover {
-    cursor: pointer;
-} */
 
 .card:hover .buttons {
   opacity: 1;
@@ -59,6 +47,7 @@
 .card img {
   z-index: 0;
   max-width: 100%;
+  /* Force resize images to use 16:9 ratio */
   aspect-ratio: 16 / 9;
   border-radius: inherit;
   transform: translateY(0);
