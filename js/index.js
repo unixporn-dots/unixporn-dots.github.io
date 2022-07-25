@@ -10,6 +10,9 @@ GlobalContext.cards = generateCards(dotfiles);
 GlobalContext.page_manager = new PageManager(GlobalContext.cards);
 randomize(GlobalContext.cards);
 
+// Shuffle cards on each page load
+shuffle();
+
 function mapButtons() {
     // Shuffle button
     document
