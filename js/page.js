@@ -4,17 +4,17 @@ class Page {
     constructor(items, page_num) {
         this.items = items;
         this.number = page_num;
+        this.parent = document.getElementById("themes_container");
     }
     disappear() {
-        document.getElementById("themes_container").style.opacity = 0;
+        this.parent.style.opacity = 0;
     }
     render() {
-        const parent = document.getElementById("themes_container");
-        parent.innerHTML = "";
+        this.parent.innerHTML = "";
         this.items.forEach((card) => {
-            parent.appendChild(card.html_element);
+            this.parent.appendChild(card.html_element);
         });
-        parent.style.opacity = 1;
+        this.parent.style.opacity = 1;
     }
 }
 

@@ -36,7 +36,7 @@ class ImagePreview {
         this.image.src = img_srcs[this.current_image_index];
         this.parent.appendChild(this.element);
         this.element.classList.add("popin");
-        document.addEventListener("keydown", this.KeyHandler);
+        document.addEventListener("keydown", this.keyHandler);
     }
     next() {
         this.image.src =
@@ -54,16 +54,18 @@ class ImagePreview {
     close() {
         this.element.classList.remove("popin");
         this.element.classList.add("popout");
+        document.removeEventListener("keydown", this.keyHandler);
         this.element.addEventListener(
             "animationend",
             () => {
-                this.parent.removeChild(this.element);
-                document.removeEventListener("keydown", this.closeKeyHandler);
+                if (this.parent.contains(this.element)) {
+                    this.parent.removeChild(this.element);
+                }
             },
             { once: true }
         );
     }
-    KeyHandler = (event) => {
+    keyHandler = (event) => {
         switch (event.key) {
             case "Escape":
                 this.close();
