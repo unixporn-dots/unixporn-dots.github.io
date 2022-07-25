@@ -26,6 +26,11 @@ class PageManager {
         this.current_page.render();
         this.update_number();
     }
+    get_current_items() {
+        var items = [];
+        this.page_list.forEach(p => items = items.concat(p.items));
+        return items;
+    }
     generate_pages(items) {
         this.page_list = [];
         this.page_count = Math.max(Math.ceil(items.length / ITEMS_PER_PAGE), 1);

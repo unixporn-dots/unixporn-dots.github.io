@@ -1,4 +1,4 @@
-import {GlobalContext} from './global_ctx.js';
+import { GlobalContext } from "./global_ctx.js";
 function randomize(sourceArray) {
     for (var i = 0; i < sourceArray.length - 1; i++) {
         var j = i + Math.floor(Math.random() * (sourceArray.length - i));
@@ -15,10 +15,11 @@ function shuffle() {
         // Only shuffle if the lock is open
         loaded = false; // Close the lock
         document.getElementById("themes_container").style.opacity = 0;
-        randomize(GlobalContext.cards);
+        var current_items = GlobalContext.page_manager.get_current_items(); // Randomize the search results, not all items
+        randomize(current_items);
 
         setTimeout(() => {
-            GlobalContext.page_manager.generate_pages(GlobalContext.cards);
+            GlobalContext.page_manager.generate_pages(current_items);
             GlobalContext.page_manager.current_page.render();
             document.getElementById("themes_container").style.opacity = 1;
 
