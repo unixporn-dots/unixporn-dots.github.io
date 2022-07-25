@@ -206,18 +206,18 @@
   }
 
   .img-preview-icon {
-    opacity: 0;
     width: 1.25rem;
     height: 1.25rem;
     left: 8px;
-    top: 82%;
+    top: 85%;
     padding: 0.5rem;
     border-radius: 8px;
     transition: opacity 200ms ease-in-out;
     background-color: var(--body-background-darker);
   }
-
+  
   .card:hover .img-preview-icon {
     opacity: 1;
+    transform: translateY(0);
   }
 }
