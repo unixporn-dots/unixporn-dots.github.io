@@ -7,8 +7,8 @@ import { PageManager } from "./page.js";
 import { dotfiles } from "../dotfiles.js";
 
 GlobalContext.cards = generateCards(dotfiles);
-randomize(GlobalContext.cards);
 GlobalContext.page_manager = new PageManager(GlobalContext.cards);
+randomize(GlobalContext.cards);
 
 function mapButtons() {
     // Shuffle button
