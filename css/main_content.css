@@ -167,26 +167,51 @@
   background-color: rgba(0, 0, 0, 0.884);
 }
 
-.viewer-close {
+.viewer-close, .prev-img, .next-img {
   transition: 0.2s ease-in-out;
   border-radius: 12px;
   border: none;
   padding: 5px 12px;
   position: absolute;
   top: 15px;
-  right: 15px;
   background-color: var(--body-background-lighter);
   color: white;
   cursor: pointer;
 }
 
-.viewer-close:hover {
+.viewer-close:hover, .prev-img:hover, .next-img:hover {
   background: var(--body-background-darker);
+}
+
+.prev-img, .next-img {
+  padding: 8px 15px;
+  border-radius: 15px;
+  top: 50%;
+}
+
+.prev-img {
+  left: 100px;
+}
+
+.viewer-close {
+  right: 15px;
+}
+
+.next-img {
+  right: 100px;
 }
 
 .img-viewer img {
   object-fit: cover;
   max-height: 75%;
+}
+
+.disable-img-btn {
+  opacity: 0.5;
+}
+
+.disable-img-btn:hover {
+  cursor: not-allowed
 }
 
 @media screen and (max-width: 850px) {
