@@ -28,14 +28,19 @@ class PageManager {
     }
     generate_pages(items) {
         this.page_list = [];
-        this.page_count = Math.ceil(items.length / ITEMS_PER_PAGE);
-        for (let i = 0; i < this.page_count; i++) {
-            const start_index = i * ITEMS_PER_PAGE;
-            const end_index = start_index + ITEMS_PER_PAGE - 1;
-            this.page_list[i] = new Page(
-                items.slice(start_index, end_index + 1),
-                i + 1
-            );
+        this.page_count = Math.max(Math.ceil(items.length / ITEMS_PER_PAGE), 1);
+        if (items.length < 1) {
+            // If there are no items, create an empty page
+            this.page_list[0] = new Page([], 1);
+        } else {
+            for (let i = 0; i < this.page_count; i++) {
+                const start_index = i * ITEMS_PER_PAGE;
+                const end_index = start_index + ITEMS_PER_PAGE - 1;
+                this.page_list[i] = new Page(
+                    items.slice(start_index, end_index + 1),
+                    i + 1
+                );
+            }
         }
         this.current_page = this.page_list[0];
     }
@@ -52,7 +57,14 @@ class PageManager {
             : this.current_page;
     }
     update_number() {
-        this.number_element.innerHTML = `${this.current_page.number}/${this.page_count}`;
+        if (this.page_count > 1) {
+            this.number_element.innerHTML = `${this.current_page.number}/${this.page_count}`;
+            document.getElementsByClassName("page-switcher")[0].style.display =
+                "grid"; // Show the page switcher in case it's hidden
+        } else {
+            document.getElementsByClassName("page-switcher")[0].style.display =
+                "none"; // Hide the page switcher when there is just one page
+        }
     }
     go_to_next_page() {
         this.current_page.disappear();
