@@ -5,7 +5,7 @@ class Card {
     constructor(
         title,
         desc,
-        img_url,
+        img_urls,
         repo_link,
         reddit_link = null,
         wm,
@@ -14,7 +14,7 @@ class Card {
     ) {
         this.title = title;
         this.desc = desc;
-        this.img_url = img_url;
+        this.img_urls = img_urls;
         this.repo_link = repo_link;
         if (reddit_link) {
             this.reddit_link = reddit_link;
@@ -99,12 +99,12 @@ class Card {
 
         // Image
         const img = document.createElement("img");
-        img.src = this.img_url;
+        img.src = this.img_urls[0];
         img.classList.add("card-img");
         
         // Image preview icon container
         const imgPreviewIconContainer = document.createElement('div');
-        imgPreviewIconContainer.addEventListener("click", () => prev_window.open(this.img_url));
+        imgPreviewIconContainer.addEventListener("click", () => prev_window.open(this.img_urls));
 
         // Image preview icon
         const imgPreviewIcon = document.createElement("i");
