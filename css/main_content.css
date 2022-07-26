@@ -8,7 +8,7 @@
   }
 }
 
-#themes_container {
+#themes_container, #icons_container {
   transition: 0.2s ease-in-out;
   display: grid;
   gap: 20px;

@@ -4,7 +4,9 @@ class Page {
     constructor(items, page_num) {
         this.items = items;
         this.number = page_num;
-        this.parent = document.getElementById("themes_container");
+        this.parent =
+          document.getElementById("themes_container") ||
+          document.getElementById("icons_container");
     }
     disappear() {
         this.parent.style.opacity = 0;

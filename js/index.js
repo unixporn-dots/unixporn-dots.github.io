@@ -5,7 +5,11 @@ import { search } from "./search.js";
 import { generateCards } from "./cardGenerator.js";
 import { PageManager } from "./page.js";
 import { dotfiles } from "../dotfiles.js";
+import { icons } from '../icons.js'
 
+if (document.getElementById("icons_container")) {
+    GlobalContext.cards = generateCards(icons);
+} else
 GlobalContext.cards = generateCards(dotfiles);
 randomize(GlobalContext.cards);
 GlobalContext.page_manager = new PageManager(GlobalContext.cards);
