@@ -6,9 +6,9 @@ ALLOWED_IMG_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.webp']
 
 iconcontent = 'const icons = [\n'
 
-for icondir in os.listdir('iconDir') :
+for icondir in os.listdir('assets/icons') :
     try:
-        with open(f"iconDir/{icondir}/manifest.yaml", "r") as manifest:
+        with open(f"assets/icons/{icondir}/manifest.yaml", "r") as manifest:
             yaml_dict = yaml.safe_load(manifest)
 
             jsobject = '\t{\n'
@@ -31,8 +31,8 @@ for icondir in os.listdir('iconDir') :
                         "YAML item not currently supported. Please implement a conversion YAML -> js object in this script.")
 
             images = []
-            for filename in sorted(os.listdir(f"iconDir/{icondir}")):
-                complete_path = f"iconDir/{icondir}/{filename}"
+            for filename in sorted(os.listdir(f"assets/icons/{icondir}")):
+                complete_path = f"assets/icons/{icondir}/{filename}"
                 if os.path.isfile(complete_path):
                     f_name, f_ext = os.path.splitext(filename) 
                     if f_ext in ALLOWED_IMG_EXTENSIONS:
@@ -66,10 +66,10 @@ with open("icons.js", "w") as jsfile:
 
 jsfilecontent = 'const dotfiles = [\n'
 
-for themedir in os.listdir("themes"):
+for themedir in os.listdir("assets/themes"):
 
     try:
-        with open(f"themes/{themedir}/manifest.yaml", "r") as manifest:
+        with open(f"assets/themes/{themedir}/manifest.yaml", "r") as manifest:
             yaml_dict = yaml.safe_load(manifest)
 
             jsobject = '\t{\n'
@@ -92,8 +92,8 @@ for themedir in os.listdir("themes"):
                         "YAML item not currently supported. Please implement a conversion YAML -> js object in this script.")
 
             images = []
-            for filename in sorted(os.listdir(f"themes/{themedir}")):
-                complete_path = f"themes/{themedir}/{filename}"
+            for filename in sorted(os.listdir(f"assets/themes/{themedir}")):
+                complete_path = f"assets/themes/{themedir}/{filename}"
                 if os.path.isfile(complete_path):
                     f_name, f_ext = os.path.splitext(filename) 
                     if f_ext in ALLOWED_IMG_EXTENSIONS:

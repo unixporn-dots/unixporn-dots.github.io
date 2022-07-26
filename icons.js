@@ -5,7 +5,7 @@ const icons = [
 		link: "https://github.com/EliverLara/candy-icons",
 		tags: ['candy', 'minimal', 'gradient'],
 		title: "Candy Icons",
-		images: ['iconDir/CandyIcons/icons.png']
+		images: ['assets/icons/CandyIcons/icons.png']
 	}
 ]
 
