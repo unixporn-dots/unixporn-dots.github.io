@@ -37,6 +37,7 @@ class ImagePreview {
 
     // The image
     this.image = document.createElement("img");
+    this.image.classList.add("image-preview");
 
     // Images
     this.img_srcs = [];
@@ -77,10 +78,23 @@ class ImagePreview {
     document.addEventListener("keydown", this.keyHandler);
   }
   next() {
-    this.image.src =
-      this.current_image_index < this.img_srcs.length - 1
-        ? this.img_srcs[++this.current_image_index]
-        : this.image.src;
+    if (this.current_image_index != this.img_srcs.length - 1){
+      this.image.style.opacity = 0;
+
+      setTimeout(() => {
+          this.image.style.opacity = 1;
+      }, 400);
+    }
+
+    setTimeout(() => {
+      this.image.src =
+        this.current_image_index < this.img_srcs.length - 1
+          ? this.img_srcs[++this.current_image_index]
+          : this.image.src;
+    }, 200)
+    
+
+    
 
     let nextButton = this.nextButton;
     let backButton = this.back;
@@ -92,10 +106,22 @@ class ImagePreview {
     }
   }
   prev() {
-    this.image.src =
-      this.current_image_index > 0
-        ? this.img_srcs[--this.current_image_index]
-        : this.image.src;
+    if (this.current_image_index != 0) {
+      this.image.style.opacity = 0;
+
+      setTimeout(() => {
+        this.image.style.opacity = 1;
+      }, 400);
+    }
+
+    setTimeout(() => {
+      this.image.src =
+        this.current_image_index > 0
+          ? this.img_srcs[--this.current_image_index]
+          : this.image.src;
+    }, 200);
+
+    
 
     let backButton = this.back;
     let nextButton = this.nextButton;

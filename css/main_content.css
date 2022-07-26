@@ -221,6 +221,10 @@
   cursor: not-allowed
 }
 
+.image-preview {
+  transition: 0.2s ease-in-out;
+}
+
 @media screen and (max-width: 1100px) {
   .img-viewer img {
     width: 100%;
