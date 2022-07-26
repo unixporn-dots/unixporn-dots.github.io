@@ -1,13 +1,11 @@
 const icons = [
 	{
-		author: "Rahuletto",
-		description: "An Icon to test",
-		link: "https://github.com/Rahuletto",
-		reddit: "https://www.reddit.com/r/unixporn",
-		tags: ['simple'],
-		title: "Simple Icons",
-		wm: "simplicity",
-		images: ['iconDir/Simple_Icons/thumbnail.png']
+		author: "EliverLara",
+		description: "Sweet gradient icons",
+		link: "https://github.com/EliverLara/candy-icons",
+		tags: ['candy', 'minimal', 'gradient'],
+		title: "Candy Icons",
+		images: ['iconDir/CandyIcons/icons.png']
 	}
 ]
 
