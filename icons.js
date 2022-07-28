@@ -16,6 +16,14 @@ const icons = [
 		images: ['assets/icons/Flat Remix/thumbnail.png']
 	},
 	{
+		author: "cbrnix",
+		description: "Linux icon theme",
+		link: "https://github.com/cbrnix/Newaita",
+		tags: ['cartoony'],
+		title: "Newaita",
+		images: ['assets/icons/Newaita/thumbnail.png']
+	},
+	{
 		author: "numixproject",
 		description: "Circle is an icon theme for Linux from the Numix project.",
 		link: "https://github.com/numixproject/numix-icon-theme-circle",
