@@ -24,20 +24,20 @@ const icons = [
 		images: ['assets/icons/Candy Icons/thumbnail.png']
 	},
 	{
-		author: "daniruiz",
-		description: "Flat Remix is an icon theme inspired by material design. It is mostly flat using a colorful palette with some shadows, highlights, and gradients for some depth.",
-		link: "https://github.com/daniruiz/flat-remix",
-		tags: ['material', 'gradient', 'flat', 'colorful'],
-		title: "Flat Remix",
-		images: ['assets/icons/Flat Remix/thumbnail.png']
-	},
-	{
 		author: "cbrnix",
 		description: "Linux icon theme",
 		link: "https://github.com/cbrnix/Newaita",
 		tags: ['cartoony'],
 		title: "Newaita",
 		images: ['assets/icons/Newaita/thumbnail.png']
+	},
+	{
+		author: "daniruiz",
+		description: "Flat Remix is an icon theme inspired by material design. It is mostly flat using a colorful palette with some shadows, highlights, and gradients for some depth.",
+		link: "https://github.com/daniruiz/flat-remix",
+		tags: ['material', 'gradient', 'flat', 'colorful'],
+		title: "Flat Remix",
+		images: ['assets/icons/Flat Remix/thumbnail.png']
 	},
 	{
 		author: "numixproject",
