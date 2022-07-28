@@ -65,7 +65,7 @@ for thing in arr:
     # Export the dotfiles
     content += f"\n\nexport ( {elem.replace('-', '')} );".replace('(', '{').replace(')', '}')
 
-    with open(f"{elem}.js", "w", encoding="utf-8") as jsfile:
+    with open(f"{elem}.js", "w",  encoding="utf8") as jsfile:
         jsfile.write(content)
 
 """

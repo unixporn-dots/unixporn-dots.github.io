@@ -1,27 +1,19 @@
 const icons = [
 	{
-		author: "vinceliuice",
-		description: "A colorful design icon theme for linux desktops",
-		link: "https://github.com/vinceliuice/Qogir-icon-theme",
-		tags: ['colorful', 'flat'],
-		title: "Qogir Icons",
-		images: ['assets/icons/Qogir Icons/thumbnail.png', 'assets/icons/Qogir Icons/1.png', 'assets/icons/Qogir Icons/2.png']
-	},
-	{
-		author: "PapirusDevelopmentTeam",
-		description: "Papirus icon theme for Linux",
-		link: "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme",
-		tags: ['material', 'vector'],
-		title: "Papirus Icon theme",
-		images: ['assets/icons/Papirus/thumbnail.png', 'assets/icons/Papirus/1.png']
-	},
-	{
 		author: "EliverLara",
 		description: "Sweet gradient icons",
 		link: "https://github.com/EliverLara/candy-icons",
 		tags: ['candy', 'minimal', 'gradient'],
 		title: "Candy Icons",
 		images: ['assets/icons/Candy Icons/thumbnail.png']
+	},
+	{
+		author: "franksouza183",
+		description: "A linux icon theme, part of Evolvere Suit",
+		link: "https://github.com/franksouza183/Evolvere-Icons",
+		tags: ['realism', 'gnu'],
+		title: "Evolvere Icons",
+		images: ['assets/icons/Evolvere Icons/thumbnail.png']
 	},
 	{
 		author: "daniruiz",
@@ -54,6 +46,38 @@ const icons = [
 		tags: ['dark', 'gnome'],
 		title: "Obsidian",
 		images: ['assets/icons/Obsidian/thumbnail.png', 'assets/icons/Obsidian/1.png']
+	},
+	{
+		author: "OrancheloTeam",
+		description: "Oranchelo icon theme",
+		link: "https://github.com/OrancheloTeam/oranchelo-icon-theme",
+		tags: ['orange'],
+		title: "Oranchelo Icons",
+		images: ['assets/icons/Oranchelo Icons/thumbnail.png']
+	},
+	{
+		author: "PapirusDevelopmentTeam",
+		description: "Papirus icon theme for Linux",
+		link: "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme",
+		tags: ['material', 'vector'],
+		title: "Papirus Icon theme",
+		images: ['assets/icons/Papirus/thumbnail.png', 'assets/icons/Papirus/1.png']
+	},
+	{
+		author: "vinceliuice",
+		description: "A colorful design icon theme for linux desktops",
+		link: "https://github.com/vinceliuice/Qogir-icon-theme",
+		tags: ['colorful', 'flat'],
+		title: "Qogir Icons",
+		images: ['assets/icons/Qogir Icons/thumbnail.png', 'assets/icons/Qogir Icons/1.png', 'assets/icons/Qogir Icons/2.png']
+	},
+	{
+		author: "ju1464",
+		description: "Monochrome icons with some brush strokes of color.",
+		link: "https://github.com/ju1464/Simply_Circles_Icons",
+		tags: ['circles', 'color'],
+		title: "Simply Circles",
+		images: ['assets/icons/Simply Circles/thumbnail.png']
 	}
 ]
 
