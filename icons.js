@@ -5,7 +5,7 @@ const icons = [
 		link: "https://github.com/vinceliuice/Qogir-icon-theme",
 		tags: ['colorful', 'flat'],
 		title: "Qogir Icons",
-		images: ['assets/icons/Qogir Icons/thumbnail.png', 'assets/icons/Qogir Icons/1.png']
+		images: ['assets/icons/Qogir Icons/thumbnail.png', 'assets/icons/Qogir Icons/1.png', 'assets/icons/Qogir Icons/2.png']
 	},
 	{
 		author: "PapirusDevelopmentTeam",
@@ -45,7 +45,7 @@ const icons = [
 		link: "https://github.com/madmaxms/iconpack-obsidian",
 		tags: ['dark', 'gnome'],
 		title: "Obsidian",
-		images: ['assets/icons/Obsidian/thumbnail.png']
+		images: ['assets/icons/Obsidian/thumbnail.png', 'assets/icons/Obsidian/1.png']
 	}
 ]
 
