@@ -6,7 +6,8 @@ class Page {
         this.number = page_num;
         this.parent =
           document.getElementById("themes_container") ||
-          document.getElementById("icons_container");
+          document.getElementById("icons_container") ||
+          document.getElementById("gtk_container");
     }
     disappear() {
         this.parent.style.opacity = 0;

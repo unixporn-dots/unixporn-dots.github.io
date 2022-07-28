@@ -16,7 +16,8 @@ function shuffle() {
         loaded = false; // Close the lock
         let frame =
           document.getElementById("icons_container") ||
-          document.getElementById("themes_container");
+          document.getElementById("themes_container") ||
+          document.getElementById("gtk_container");
         frame.style.opacity = 0;
         var current_items = GlobalContext.page_manager.get_current_items(); // Randomize the search results, not all items
         randomize(current_items);

@@ -9,12 +9,12 @@
     <link href="css/footer.css" rel="stylesheet" />
 
     <!-- OpenGraph element -->
-    <meta property="og:title" content="Unixporn Icons" />
+    <meta property="og:title" content="Unixporn GTK-Themes" />
     <meta property="og:site_name" content="Unixporn Dots" />
-    <meta property="og:url" content="https://unixporn-dots.github.io/icons" />
+    <meta property="og:url" content="https://unixporn-dots.github.io/gtk-themes" />
     <meta
       property="og:description"
-      content="A collection of everything from the r/unixporn community. Find your perfect *nix setup"
+      content="A collection of everything from the r/unixporn community. Find your perfect gtk theme"
     />
     <meta property="og:type" content="website" />
     <meta
@@ -63,8 +63,8 @@
         </button>
         <select class="category-box" onchange="slct(event)">
           <option value="dotfiles">Dotfiles</option>
-          <option value="icons" selected>Icons</option>
-          <option value="gtk-themes">GTK-Themes</option>
+          <option value="icons">Icons</option>
+          <option value="gtk-themes" selected>GTK-Themes</option>
         </select>
         <div class="searchform">
           <div class="inputgroup">
@@ -82,12 +82,12 @@
       </nav>
       <select class="category-box mobil" onchange="slct(event)">
           <option value="dotfiles">Dotfiles</option>
-          <option value="icons" selected>Icons</option>
-          <option value="gtk-themes">GTK-Themes</option>
+          <option value="icons">Icons</option>
+          <option value="gtk-themes" selected>GTK-Themes</option>
         </select>
     </header>
     <main id="main_content">
-      <div id="icons_container">
+      <div id="gtk_container">
         <!-- Will be filled dynamically -->
       </div>
     </main>
@@ -151,8 +151,8 @@
 
         if(value == 'dotfiles') {
           window.location = '/'
-        } else if(value == 'gtk-themes') {
-          window.location = '/gtk-themes.html'
+        } else if(value == 'icons') {
+          window.location = '/icons.html'
         }
       }
     </script>

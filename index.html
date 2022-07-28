@@ -64,6 +64,7 @@
         <select class="category-box" onchange="slct(event)">
           <option value="dotfiles" selected>Dotfiles</option>
           <option value="icons">Icons</option>
+          <option value="gtk-themes">GTK-Themes</option>
         </select>
         <div class="searchform">
           <div class="inputgroup">
@@ -82,6 +83,7 @@
       <select class="category-box mobil" onchange="slct(event)">
           <option value="dotfiles" selected>Dotfiles</option>
           <option value="icons">Icons</option>
+          <option value="gtk-themes">GTK-Themes</option>
         </select>
     </header>
     <main id="main_content">
@@ -149,6 +151,8 @@
 
         if(value == 'icons') {
           window.location = '/icons.html'
+        } else if(value == 'gtk-themes') {
+          window.location = '/gtk-themes.html'
         }
       }
     </script>

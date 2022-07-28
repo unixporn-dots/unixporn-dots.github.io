@@ -6,9 +6,12 @@ import { generateCards } from "./cardGenerator.js";
 import { PageManager } from "./page.js";
 import { dotfiles } from "../dotfiles.js";
 import { icons } from '../icons.js'
+import { gtkthemes } from "../gtk-themes.js";
 
 if (document.getElementById("icons_container")) {
     GlobalContext.cards = generateCards(icons);
+} else if (document.getElementById("gtk_container")) {
+    GlobalContext.cards = generateCards(gtkthemes);
 } else {
     GlobalContext.cards = generateCards(dotfiles);
 }
