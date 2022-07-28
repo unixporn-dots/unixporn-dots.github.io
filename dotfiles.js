@@ -368,6 +368,16 @@ const dotfiles = [
 		images: ['themes/Retro-Spectronum/thumbnail.png']
 	},
 	{
+		author: "Stardust-kyun",
+		description: "Comfy personal dotfiles 🌸",
+		link: "https://github.com/stardust-kyun/dotfiles",
+		reddit: "https://www.reddit.com/r/unixporn/comments/vzdn6l/awesome_sakura/?utm_source=share&utm_medium=web2x&context=3",
+		tags: ['awesomewm', 'st', 'nautilus', 'firefox'],
+		title: "Sakura Dotfiles",
+		wm: "awesomewm",
+		images: ['themes/Sakura_Dotfiles/thumbnail.png']
+	},
+	{
 		author: "potamides",
 		description: "My personal dotfiles for most of the programs I use on a daily basis.",
 		link: "https://github.com/potamides/dotfiles",
