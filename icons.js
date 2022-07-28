@@ -1,5 +1,13 @@
 const icons = [
 	{
+		title: "Qogir Icons",
+		images: ['assets/icons/Qogir Icons/thumbnail.png', 'assets/icons/Qogir Icons/1.png']
+	},
+	{
+		title: "Papirus Icon theme",
+		images: ['assets/icons/Papirus/thumbnail.png', 'assets/icons/Papirus/1.png']
+	},
+	{
 		title: "Candy Icons",
 		images: ['assets/icons/Candy Icons/thumbnail.png']
 	},
@@ -14,15 +22,7 @@ const icons = [
 	{
 		title: "Obsidian",
 		images: ['assets/icons/Obsidian/thumbnail.png']
-	},
-	{
-		title: "Papirus Icon theme",
-		images: ['assets/icons/Papirus/thumbnail.png', 'assets/icons/Papirus/1.png']
-	},
-	{
-		title: "Qogir Icons",
-		images: ['assets/icons/Qogir Icons/thumbnail.png', 'assets/icons/Qogir Icons/1.png']
 	}
 ]
 
-export {icons};
+export { icons };
