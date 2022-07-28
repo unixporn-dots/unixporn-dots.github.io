@@ -32,6 +32,14 @@ const icons = [
 		images: ['assets/icons/Newaita/thumbnail.png']
 	},
 	{
+		author: "daniruiz",
+		description: "Flat Remix is an icon theme inspired by material design. It is mostly flat using a colorful palette with some shadows, highlights, and gradients for some depth.",
+		link: "https://github.com/daniruiz/flat-remix",
+		tags: ['material', 'gradient', 'flat', 'colorful'],
+		title: "Flat Remix",
+		images: ['assets/icons/Flat Remix/thumbnail.png']
+	},
+	{
 		author: "numixproject",
 		description: "Circle is an icon theme for Linux from the Numix project.",
 		link: "https://github.com/numixproject/numix-icon-theme-circle",
