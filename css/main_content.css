@@ -203,7 +203,6 @@
   position: absolute;
   top: 15px;
   background-color: var(--body-background-lighter);
-  color: white;
   cursor: pointer;
 }
 
