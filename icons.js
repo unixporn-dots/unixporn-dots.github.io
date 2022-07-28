@@ -1,5 +1,21 @@
 const icons = [
 	{
+		author: "vinceliuice",
+		description: "A colorful design icon theme for linux desktops",
+		link: "https://github.com/vinceliuice/Qogir-icon-theme",
+		tags: ['colorful', 'flat'],
+		title: "Qogir Icons",
+		images: ['assets/icons/Qogir Icons/thumbnail.png', 'assets/icons/Qogir Icons/1.png', 'assets/icons/Qogir Icons/2.png']
+	},
+	{
+		author: "PapirusDevelopmentTeam",
+		description: "Papirus icon theme for Linux",
+		link: "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme",
+		tags: ['material', 'vector'],
+		title: "Papirus Icon theme",
+		images: ['assets/icons/Papirus/thumbnail.png', 'assets/icons/Papirus/1.png']
+	},
+	{
 		author: "EliverLara",
 		description: "Sweet gradient icons",
 		link: "https://github.com/EliverLara/candy-icons",
@@ -37,23 +53,7 @@ const icons = [
 		link: "https://github.com/madmaxms/iconpack-obsidian",
 		tags: ['dark', 'gnome'],
 		title: "Obsidian",
-		images: ['assets/icons/Obsidian/thumbnail.png']
-	},
-	{
-		author: "PapirusDevelopmentTeam",
-		description: "Papirus icon theme for Linux",
-		link: "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme",
-		tags: ['material', 'vector'],
-		title: "Papirus Icon theme",
-		images: ['assets/icons/Papirus/thumbnail.png', 'assets/icons/Papirus/1.png']
-	},
-	{
-		author: "vinceliuice",
-		description: "A colorful design icon theme for linux desktops",
-		link: "https://github.com/vinceliuice/Qogir-icon-theme",
-		tags: ['colorful', 'flat'],
-		title: "Qogir Icons",
-		images: ['assets/icons/Qogir Icons/thumbnail.png', 'assets/icons/Qogir Icons/1.png']
+		images: ['assets/icons/Obsidian/thumbnail.png', 'assets/icons/Obsidian/1.png']
 	}
 ]
 
