@@ -12,7 +12,7 @@ A collection of dotfiles from the r/unixporn community
 # Adding your Dotfiles
 To add your dots simply open a pull request:
   1. Fork this repository.
-  2. Add your entry to the `themes` folder. Add the `mainfest.yaml` file, then add 1 to 5 images.
+  2. Add your entry to the `assets/*` folder. Add the `mainfest.yaml` file, then add 1 to 5 images.
   3. If you want a particular image to be shown on the main page preview rename it to `thumbnail`. This is optional.
   4. Open a pull request and it's done!
 
