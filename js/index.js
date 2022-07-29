@@ -4,7 +4,7 @@ import { GlobalContext } from "./global_ctx.js";
 import { search } from "./search.js";
 import { generateCards } from "./cardGenerator.js";
 import { PageManager } from "./page.js";
-import { dotfiles } from "../dotfiles.js";
+import { dotfiles } from "./assets/dotfiles.js";
 
 GlobalContext.cards = generateCards(dotfiles);
 randomize(GlobalContext.cards);
