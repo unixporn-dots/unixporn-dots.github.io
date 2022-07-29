@@ -11,7 +11,7 @@ import yaml
 COLLECTION_PATHS = [
     "assets/gtk-themes",
     "assets/icons",
-    "assets/themes"
+    "assets/dotfiles"
 ]
 
 ALLOWED_IMG_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.webp']
