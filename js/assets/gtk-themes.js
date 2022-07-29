@@ -1,19 +1,19 @@
 const gtkthemes = [
 	{
-		author: "vinceliuice",
-		description: "Mojave is a macos Mojave like theme for GTK 3, GTK 2 and Gnome-Shell",
-		link: "https://github.com/vinceliuice/Mojave-gtk-theme",
-		tags: ['macos', 'round'],
-		title: "Mojave",
-		images: ['assets/gtk-themes/Mojave/thumbnail.jpeg']
-	},
-	{
 		author: "Eliver Lara",
 		description: "Dark theme for GTK",
 		link: "https://github.com/dracula/gtk",
 		tags: ['dark', 'dracula', 'minimal'],
 		title: "Dracula",
 		images: ['assets/gtk-themes/Dracula/thumbnail.png']
+	},
+	{
+		author: "vinceliuice",
+		description: "Mojave is a macos Mojave like theme for GTK 3, GTK 2 and Gnome-Shell",
+		link: "https://github.com/vinceliuice/Mojave-gtk-theme",
+		tags: ['macos', 'round'],
+		title: "Mojave",
+		images: ['assets/gtk-themes/Mojave/thumbnail.jpeg']
 	},
 	{
 		author: "Jannomag",
