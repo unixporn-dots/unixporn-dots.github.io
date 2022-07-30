@@ -8,7 +8,7 @@ class Card {
         img_urls,
         repo_link,
         reddit_link = null,
-        wm,
+        wm = null,
         author,
         tags
     ) {

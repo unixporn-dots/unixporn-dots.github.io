@@ -14,14 +14,18 @@ function shuffle() {
     if (loaded) {
         // Only shuffle if the lock is open
         loaded = false; // Close the lock
-        document.getElementById("themes_container").style.opacity = 0;
+        let frame =
+          document.getElementById("icons_container") ||
+          document.getElementById("themes_container") ||
+          document.getElementById("gtk_container");
+        frame.style.opacity = 0;
         var current_items = GlobalContext.page_manager.get_current_items(); // Randomize the search results, not all items
         randomize(current_items);
 
         setTimeout(() => {
             GlobalContext.page_manager.generate_pages(current_items);
             GlobalContext.page_manager.current_page.render();
-            document.getElementById("themes_container").style.opacity = 1;
+            frame.style.opacity = 1;
 
             // Open the lock after a certain timeout
             // This time includes the opactiy change to 1 too,

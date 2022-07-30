@@ -6,9 +6,19 @@
   #main_content {
     padding: 10px;
   }
+
+  .category-box {
+    display: none;
+  }
+
+  .mobil {
+    display: block !important;
+    margin-top: 12px;
+  }
 }
 
-#themes_container {
+#themes_container,
+#icons_container, #gtk_container {
   transition: 0.2s ease-in-out;
   display: grid;
   gap: 20px;
@@ -106,6 +116,24 @@
   border-radius: 14px;
 }
 
+.category-box {
+  border-radius: 10px;
+  font-size: 16px;
+  border: 1px solid var(--body-background-darker);
+  padding: 6px 16px;
+  font-family: "Jost";
+  background: var(--body-background-lighter);
+  color: var(--font-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-align: center;
+  /* text-overflow: ""; */
+}
+
+.mobil {
+  display: none;
+}
 /* =========== Card Header Buttons =========== */
 .buttons {
   opacity: 0;
@@ -114,8 +142,7 @@
   align-items: center;
   transform-origin: bottom;
   transform: translateY(50%);
-  transition: transform 200ms ease-in-out,
-    opacity 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
 }
 
 .card:hover .buttons {
@@ -217,7 +244,11 @@
 }
 
 .disable-img-btn:hover {
-  cursor: not-allowed
+  cursor: not-allowed;
+}
+
+.image-preview {
+  transition: 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 1100px) {
