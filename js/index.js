@@ -4,9 +4,9 @@ import { GlobalContext } from "./global_ctx.js";
 import { search } from "./search.js";
 import { generateCards } from "./cardGenerator.js";
 import { PageManager } from "./page.js";
-import { dotfiles } from "../dotfiles.js";
-import { icons } from '../icons.js'
-import { gtkthemes } from "../gtk-themes.js";
+import { dotfiles } from "./assets/dotfiles.js";
+import { icons } from './assets/icons.js'
+import { gtkthemes } from "./assets/gtk-themes.js";
 
 if (document.getElementById("icons_container")) {
     GlobalContext.cards = generateCards(icons);
