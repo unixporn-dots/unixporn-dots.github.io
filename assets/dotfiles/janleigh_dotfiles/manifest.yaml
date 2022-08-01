@@ -1,7 +1,7 @@
 author: janleigh
 description: My desktop configuration files.
 link: https://github.com/janleigh/dotfiles
-reddit: https://www.reddit.com/r/unixporn/comments/vlqhzb/bspwm_comfy_rocky_beach/
+reddit: https://www.reddit.com/r/unixporn/comments/wda0b8/bspwm_gloomy_and_simple/
 tags: [bspwm, alacritty, zsh, eww, picom, dunst, thunar, rofi, firefox]
 title: janleigh's dotfiles
 wm: bspwm
