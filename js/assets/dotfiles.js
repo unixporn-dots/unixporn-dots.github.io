@@ -378,6 +378,15 @@ const dotfiles = [
 		images: ['assets/dotfiles/Sakura_Dotfiles/thumbnail.png']
 	},
 	{
+		author: "rklyz",
+		description: "My cozy little dotfiles",
+		link: "https://github.com/rklyz/MyRice",
+		tags: ['awesome', 'picom', 'wezterm', 'zsh'],
+		title: "rklyz\'s dotfiles",
+		wm: "awesome",
+		images: ['assets/dotfiles/rklyz_dotfiles/thumbnail.png']
+	},
+	{
 		author: "potamides",
 		description: "My personal dotfiles for most of the programs I use on a daily basis.",
 		link: "https://github.com/potamides/dotfiles",
