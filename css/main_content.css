@@ -191,7 +191,8 @@
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.884);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
 }
 
 .viewer-close,
