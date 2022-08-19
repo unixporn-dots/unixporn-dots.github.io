@@ -131,6 +131,10 @@
   /* text-overflow: ""; */
 }
 
+.category-box:hover {
+  cursor: pointer;
+}
+
 .mobil {
   display: none;
 }
