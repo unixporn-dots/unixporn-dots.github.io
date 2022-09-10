@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import os
 import yaml
-from io import StringIO
 
 # NOTE: Naming used:
 # - Item: a folder containing a manifest, images, maybe other stuff in the future
