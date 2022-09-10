@@ -38,9 +38,19 @@ class ImagePreview {
     // The image
     this.image = document.createElement("img");
 
+    this.slidr = document.createElement("input");
+    this.slidr.classList.add("img-slider");
+    this.slidr.type = "range";
+    this.slidr.min = "0";
+    this.slidr.max = "100";
+    this.slidr.addEventListener("change", (e) => {
+      this.image.style.width =
+        (Number(this.slidr.value.replace("%", "")) + 100).toString() + "%";
+    });
+
     this.holdr = document.createElement('div');
     this.holdr.classList.add("image-preview");
-    this.holdr.appendChild(this.image)
+    this.holdr.appendChild(this.image);
 
     // Images
     this.img_srcs = [];
@@ -50,6 +60,7 @@ class ImagePreview {
     this.element.appendChild(closeButton);
     this.element.appendChild(nextButton);
     this.element.appendChild(backButton);
+    this.element.appendChild(this.slidr);
     this.element.appendChild(this.holdr);
   }
 
@@ -148,6 +159,8 @@ class ImagePreview {
   close() {
     this.element.classList.remove("popin");
     this.element.classList.add("popout");
+    this.slidr.value = '0';
+
     document.removeEventListener("keydown", this.keyHandler);
     this.element.addEventListener(
       "animationend",
