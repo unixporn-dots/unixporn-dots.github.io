@@ -62,6 +62,7 @@
   border-radius: inherit;
   transform: translateY(0);
   transition: transform 200ms ease-in-out;
+  object-fit: cover;
 }
 
 .card:focus-within img,
@@ -253,6 +254,9 @@
 }
 
 .image-preview {
+  overflow: overlay;
+  max-height: 75%;
+  object-fit: cover;
   transition: 0.2s ease-in-out;
 }
 

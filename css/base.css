@@ -3,35 +3,39 @@
     --font-color: #fff;
     --body-background-lighter: #404045;
     --body-background-darker: #202025;
+    --theme-color: #add8e6;
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 14px;
     -webkit-appearance: none;
 
     background: var(--body-background-darker);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(rgba(255, 17, 17) 0%,
-            rgb(255, 167, 35) 10%,
-            rgb(213, 224, 54) 20%,
-            rgb(86, 214, 81) 30%,
-            rgba(63, 218, 216, 1) 40%,
-            rgb(58, 202, 224) 50%,
-            rgb(44, 134, 238) 60%,
-            rgb(108, 46, 233) 70%,
-            rgb(189, 42, 243) 80%,
-            rgb(250, 55, 224) 90%,
-            rgb(255, 20, 20) 100%);
-    border: 1px var(--body-background-darker) solid;
+    background: var(--theme-color);
+    border: 5.5px solid var(--body-background-darker);
     border-radius: 30px;
+}
 
+::-webkit-scrollbar-thumb:hover {
+    border: 4px solid var(--body-background-darker);
 }
 
 ::-webkit-scrollbar:horizontal {
-    height: 5px;
+    height: 14px;
     background: transparent;
+}
+
+::-webkit-scrollbar-thumb:horizonta {
+    background: var(--theme-color);
+    border: 3px solid var(--body-background-darker);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-corner{
+   background: var(--body-background-darker); 
 }
 
 ::-webkit-scrollbar-track {

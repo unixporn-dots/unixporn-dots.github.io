@@ -37,7 +37,10 @@ class ImagePreview {
 
     // The image
     this.image = document.createElement("img");
-    this.image.classList.add("image-preview");
+
+    this.holdr = document.createElement('div');
+    this.holdr.classList.add("image-preview");
+    this.holdr.appendChild(this.image)
 
     // Images
     this.img_srcs = [];
@@ -47,7 +50,7 @@ class ImagePreview {
     this.element.appendChild(closeButton);
     this.element.appendChild(nextButton);
     this.element.appendChild(backButton);
-    this.element.appendChild(this.image);
+    this.element.appendChild(this.holdr);
   }
 
   open(img_srcs) {
@@ -76,6 +79,15 @@ class ImagePreview {
     this.parent.appendChild(this.element);
     this.element.classList.add("popin");
     document.addEventListener("keydown", this.keyHandler);
+
+    this.element.addEventListener("click", (event) => {
+
+      if (
+        event.target.className.split(' ')[0] == "img-viewer"
+      )
+        this.close();
+    });
+    
   }
   next() {
     if (this.current_image_index != this.img_srcs.length - 1){
