@@ -5,7 +5,7 @@ const icons = [
 		link: "https://github.com/cbrnix/Newaita",
 		tags: ['cartoony'],
 		title: "Newaita",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Newaita/thumbnail.png']
+		images: ['./assets/icons/Newaita/thumbnail.png']
 	},
 	{
 		author: "PapirusDevelopmentTeam",
@@ -13,7 +13,7 @@ const icons = [
 		link: "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme",
 		tags: ['material', 'vector'],
 		title: "Papirus Icon theme",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Papirus/thumbnail.png', '/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Papirus/1.png']
+		images: ['./assets/icons/Papirus/thumbnail.png', './assets/icons/Papirus/1.png']
 	},
 	{
 		author: "ju1464",
@@ -21,7 +21,7 @@ const icons = [
 		link: "https://github.com/ju1464/Simply_Circles_Icons",
 		tags: ['circles', 'color'],
 		title: "Simply Circles",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Simply Circles/thumbnail.png']
+		images: ['./assets/icons/Simply Circles/thumbnail.png']
 	},
 	{
 		author: "franksouza183",
@@ -29,7 +29,7 @@ const icons = [
 		link: "https://github.com/franksouza183/Evolvere-Icons",
 		tags: ['realism', 'gnu'],
 		title: "Evolvere Icons",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Evolvere Icons/thumbnail.png']
+		images: ['./assets/icons/Evolvere Icons/thumbnail.png']
 	},
 	{
 		author: "EliverLara",
@@ -37,7 +37,7 @@ const icons = [
 		link: "https://github.com/EliverLara/candy-icons",
 		tags: ['candy', 'minimal', 'gradient'],
 		title: "Candy Icons",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Candy Icons/thumbnail.png']
+		images: ['./assets/icons/Candy Icons/thumbnail.png']
 	},
 	{
 		author: "madmaxms",
@@ -45,7 +45,7 @@ const icons = [
 		link: "https://github.com/madmaxms/iconpack-obsidian",
 		tags: ['dark', 'gnome'],
 		title: "Obsidian",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Obsidian/thumbnail.png', '/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Obsidian/1.png']
+		images: ['./assets/icons/Obsidian/thumbnail.png', './assets/icons/Obsidian/1.png']
 	},
 	{
 		author: "vinceliuice",
@@ -53,7 +53,7 @@ const icons = [
 		link: "https://github.com/vinceliuice/Qogir-icon-theme",
 		tags: ['colorful', 'flat'],
 		title: "Qogir Icons",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Qogir Icons/thumbnail.png', '/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Qogir Icons/1.png', '/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Qogir Icons/2.png']
+		images: ['./assets/icons/Qogir Icons/thumbnail.png', './assets/icons/Qogir Icons/1.png', './assets/icons/Qogir Icons/2.png']
 	},
 	{
 		author: "OrancheloTeam",
@@ -61,7 +61,7 @@ const icons = [
 		link: "https://github.com/OrancheloTeam/oranchelo-icon-theme",
 		tags: ['orange'],
 		title: "Oranchelo Icons",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Oranchelo Icons/thumbnail.png']
+		images: ['./assets/icons/Oranchelo Icons/thumbnail.png']
 	},
 	{
 		author: "daniruiz",
@@ -69,7 +69,7 @@ const icons = [
 		link: "https://github.com/daniruiz/flat-remix",
 		tags: ['material', 'gradient', 'flat', 'colorful'],
 		title: "Flat Remix",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Flat Remix/thumbnail.png']
+		images: ['./assets/icons/Flat Remix/thumbnail.png']
 	},
 	{
 		author: "numixproject",
@@ -77,7 +77,7 @@ const icons = [
 		link: "https://github.com/numixproject/numix-icon-theme-circle",
 		tags: ['circle', 'numix'],
 		title: "Numix Circle",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/icons/Numix Circle/thumbnail.png']
+		images: ['./assets/icons/Numix Circle/thumbnail.png']
 	}
 ]
 

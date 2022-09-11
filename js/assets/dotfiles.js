@@ -7,7 +7,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'alacritty', 'conky'],
 		title: "Potamides\' Dotfiles",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Potamides_Dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/Potamides_Dotfiles/thumbnail.png']
 	},
 	{
 		author: "rxyhn",
@@ -17,7 +17,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'alacritty', 'rofi', 'ncmpcpp'],
 		title: "rxyhn\'s dotfiles",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/rxyhns_dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/rxyhns_dotfiles/thumbnail.png']
 	},
 	{
 		author: "ChocolateBread799",
@@ -27,7 +27,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'hilbish', 'wezterm'],
 		title: "ChocolateBread799\'s dotfiles",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/ChocolateBread799s_dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/ChocolateBread799s_dotfiles/thumbnail.png']
 	},
 	{
 		author: "3r3bu5x9",
@@ -37,7 +37,7 @@ const dotfiles = [
 		tags: ['openbox', 'urxvt', 'firefox', 'tint2', 'jgmenu'],
 		title: "Prismatic Night",
 		wm: "openbox",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Prismatic_Night/thumbnail.png']
+		images: ['./assets/dotfiles/Prismatic_Night/thumbnail.png']
 	},
 	{
 		author: "alba4k",
@@ -47,7 +47,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'polybar'],
 		title: "alba4k\'s dotfiles",
 		wm: "i3-gaps",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/alba4ks_dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/alba4ks_dotfiles/thumbnail.png']
 	},
 	{
 		author: "nekonako",
@@ -57,7 +57,7 @@ const dotfiles = [
 		tags: ['openbox', 'conky', 'tint2'],
 		title: "Sweetness",
 		wm: "openbox",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Sweetness/thumbnail.png']
+		images: ['./assets/dotfiles/Sweetness/thumbnail.png']
 	},
 	{
 		author: "fahimfaisal42",
@@ -67,7 +67,7 @@ const dotfiles = [
 		tags: ['bspwm', 'dunst', 'kitty', 'polybar'],
 		title: "fahimfaisal42\'s dotfiles",
 		wm: "bspwm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/fahimfaisal42s_dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/fahimfaisal42s_dotfiles/thumbnail.png']
 	},
 	{
 		author: "AFreidz",
@@ -77,7 +77,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'urxvt', 'rofi', 'zsh'],
 		title: "AFreidz\'s Dotfiles",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/AFreidzs_Dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/AFreidzs_Dotfiles/thumbnail.png']
 	},
 	{
 		author: "obliviousofcraps",
@@ -87,7 +87,7 @@ const dotfiles = [
 		tags: ['openbox', 'rofi', 'kitty', 'slim', 'eww', 'tint2', 'dunst'],
 		title: "mf-dots",
 		wm: "openbox",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/mf-dots/thumbnail.png']
+		images: ['./assets/dotfiles/mf-dots/thumbnail.png']
 	},
 	{
 		author: "CodeHeister",
@@ -97,7 +97,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'rofi', 'nvim', 'ranger', 'dunst', 'flameshot'],
 		title: "CodeHeister\'s Dotfiles",
 		wm: "i3-gaps",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/CodeHeisters_Dotfiles/thumbnail.png', '/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/CodeHeisters_Dotfiles/1.png', '/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/CodeHeisters_Dotfiles/2.png', '/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/CodeHeisters_Dotfiles/3.png']
+		images: ['./assets/dotfiles/CodeHeisters_Dotfiles/thumbnail.png', './assets/dotfiles/CodeHeisters_Dotfiles/1.png', './assets/dotfiles/CodeHeisters_Dotfiles/2.png', './assets/dotfiles/CodeHeisters_Dotfiles/3.png']
 	},
 	{
 		author: "leetApe",
@@ -107,7 +107,7 @@ const dotfiles = [
 		tags: ['bspwm', 'alacritty', 'polybar', 'rofi'],
 		title: "leetApe\'s dotfiles",
 		wm: "bspwm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/leetApes_dotfiles/thumbnail.png', '/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/leetApes_dotfiles/1.png']
+		images: ['./assets/dotfiles/leetApes_dotfiles/thumbnail.png', './assets/dotfiles/leetApes_dotfiles/1.png']
 	},
 	{
 		author: "manilarome",
@@ -117,7 +117,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'rofi', 'kitty', 'fish'],
 		title: "Floppy",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Floppy/thumbnail.webp']
+		images: ['./assets/dotfiles/Floppy/thumbnail.webp']
 	},
 	{
 		author: "k-vernooy",
@@ -127,7 +127,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'polybar', 'dunst', 'urxvt', 'rofi'],
 		title: "k-vernooy\'s dotfiles",
 		wm: "i3-gaps",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/k-vernooys_dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/k-vernooys_dotfiles/thumbnail.png']
 	},
 	{
 		author: "Miusaky",
@@ -137,7 +137,7 @@ const dotfiles = [
 		tags: ['bspwm', 'SAGA'],
 		title: "SAGA bspwm",
 		wm: "bspwm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/SAGA_bspwm/thumbnail.png']
+		images: ['./assets/dotfiles/SAGA_bspwm/thumbnail.png']
 	},
 	{
 		author: "ChocolateBread799",
@@ -147,7 +147,7 @@ const dotfiles = [
 		tags: ['herbstluftwm', 'eww'],
 		title: "macintosh",
 		wm: "herbstluftwm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/macintosh/thumbnail.png']
+		images: ['./assets/dotfiles/macintosh/thumbnail.png']
 	},
 	{
 		author: "SwiftyChicken",
@@ -157,7 +157,7 @@ const dotfiles = [
 		tags: ['bspwm', 'dunst', 'rofi', 'polybar', 'eww'],
 		title: "SwiftyChicken\'s dotfiles",
 		wm: "bspwm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/SwiftyChickens_dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/SwiftyChickens_dotfiles/thumbnail.png']
 	},
 	{
 		author: "Amog-OS",
@@ -167,7 +167,7 @@ const dotfiles = [
 		tags: ['openbox', 'lxde', 'xfce4-panel'],
 		title: "AmogOS",
 		wm: "openbox",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/AmogOS/thumbnail.webp']
+		images: ['./assets/dotfiles/AmogOS/thumbnail.webp']
 	},
 	{
 		author: "saimoomedits",
@@ -177,7 +177,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'alacritty', 'wibar', 'mpd'],
 		title: "M3 Dotfiles",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/M3_Dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/M3_Dotfiles/thumbnail.png']
 	},
 	{
 		author: "manilarome",
@@ -187,7 +187,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'rofi', 'kitty', 'fish'],
 		title: "Linear",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Linear/thumbnail.webp']
+		images: ['./assets/dotfiles/Linear/thumbnail.webp']
 	},
 	{
 		author: "owl4ce",
@@ -197,7 +197,7 @@ const dotfiles = [
 		tags: ['openbox', 'tint2', 'obmenu-generator', 'rofi', 'dunst', 'urxvt'],
 		title: "Bright Sky",
 		wm: "openbox",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Bright_Sky/thumbnail.webp']
+		images: ['./assets/dotfiles/Bright_Sky/thumbnail.webp']
 	},
 	{
 		author: "LucyUwI",
@@ -207,7 +207,7 @@ const dotfiles = [
 		tags: ['kde', 'kvantum', 'latte'],
 		title: "LucyUwI\'s Dotfiles",
 		wm: "kde",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/LucyUwIs_Dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/LucyUwIs_Dotfiles/thumbnail.png']
 	},
 	{
 		author: "elenapan",
@@ -217,7 +217,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'zsh', 'kitty', 'rofi'],
 		title: "Elena\'s Dotfiles",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Elenas_Dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/Elenas_Dotfiles/thumbnail.png']
 	},
 	{
 		author: "mahancoder",
@@ -226,7 +226,7 @@ const dotfiles = [
 		tags: ['qtile', 'alacritty', 'ulauncher', 'deadd-notification-center', 'rounded-corners', 'dark', 'dracula', 'arch'],
 		title: "Mahancoder\'s dotfiles",
 		wm: "qtile",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Mahancoders_dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/Mahancoders_dotfiles/thumbnail.png']
 	},
 	{
 		author: "rklyz",
@@ -235,7 +235,7 @@ const dotfiles = [
 		tags: ['awesome', 'picom', 'wezterm', 'zsh'],
 		title: "rklyz\'s dotfiles",
 		wm: "awesome",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/rklyz_dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/rklyz_dotfiles/thumbnail.png']
 	},
 	{
 		author: "Stardust-kyun",
@@ -245,7 +245,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'st', 'nautilus', 'firefox'],
 		title: "Sakura Dotfiles",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Sakura_Dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/Sakura_Dotfiles/thumbnail.png']
 	},
 	{
 		author: "ilham25",
@@ -255,7 +255,7 @@ const dotfiles = [
 		tags: ['openbox', 'urxvt', 'dunst', 'tint2', 'rofi'],
 		title: "Aether Desktop",
 		wm: "openbox",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Aether_Desktop/thumbnail.png']
+		images: ['./assets/dotfiles/Aether_Desktop/thumbnail.png']
 	},
 	{
 		author: "manilarome",
@@ -265,7 +265,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'rofi', 'kitty', 'fish'],
 		title: "Surreal",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Surreal/thumbnail.webp']
+		images: ['./assets/dotfiles/Surreal/thumbnail.webp']
 	},
 	{
 		author: "JinPots",
@@ -275,7 +275,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'polybar'],
 		title: "JinPots\'s Dotfiles",
 		wm: "i3-gaps",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/JinPotss_Dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/JinPotss_Dotfiles/thumbnail.png']
 	},
 	{
 		author: "Syndrizzle",
@@ -285,7 +285,7 @@ const dotfiles = [
 		tags: ['bspwm', 'kitty', 'eww', 'rofi', 'dunst', 'conky', 'slim', 'polybar', 'tokyonight'],
 		title: "Hotfiles",
 		wm: "bspwm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Hotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/Hotfiles/thumbnail.png']
 	},
 	{
 		author: "Barbaross93",
@@ -295,7 +295,7 @@ const dotfiles = [
 		tags: ['qtile', 'alacritty', 'zsh', 'eww', 'dunst'],
 		title: "Nebula",
 		wm: "qtile",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Nebula/thumbnail.png']
+		images: ['./assets/dotfiles/Nebula/thumbnail.png']
 	},
 	{
 		author: "Rashad-707",
@@ -305,7 +305,7 @@ const dotfiles = [
 		tags: ['dwm', 'kde', 'dunst', 'eww', 'polybar', 'rofi'],
 		title: "Rashad-707\'s dotfiles",
 		wm: "dwm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Rashad-707s_dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/Rashad-707s_dotfiles/thumbnail.png']
 	},
 	{
 		author: "Miusaky",
@@ -315,7 +315,7 @@ const dotfiles = [
 		tags: ['dwm', 'SAGA'],
 		title: "SAGA dwm",
 		wm: "dwm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/SAGA_dwm/thumbnail.png']
+		images: ['./assets/dotfiles/SAGA_dwm/thumbnail.png']
 	},
 	{
 		author: "janleigh",
@@ -325,7 +325,7 @@ const dotfiles = [
 		tags: ['bspwm', 'alacritty', 'zsh', 'eww', 'picom', 'dunst', 'thunar', 'rofi', 'firefox'],
 		title: "janleigh\'s dotfiles",
 		wm: "bspwm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/janleigh_dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/janleigh_dotfiles/thumbnail.png']
 	},
 	{
 		author: "manilarome",
@@ -335,7 +335,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'rofi', 'kitty', 'fish'],
 		title: "GNawesoME",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/GNawesoME/thumbnail.webp']
+		images: ['./assets/dotfiles/GNawesoME/thumbnail.webp']
 	},
 	{
 		author: "elenapan",
@@ -345,7 +345,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'kitty', 'firefox', 'rofi'],
 		title: "Elena\'s configuration files",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Elenas_configuration_files/thumbnail.png']
+		images: ['./assets/dotfiles/Elenas_configuration_files/thumbnail.png']
 	},
 	{
 		author: "ParallaxWave",
@@ -355,7 +355,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'xfce4-terminal', 'dunst', 'rofi', 'up-clock', 'tint2'],
 		title: "Serene Dusk",
 		wm: "i3-gaps",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Serene_Dusk/thumbnail.png']
+		images: ['./assets/dotfiles/Serene_Dusk/thumbnail.png']
 	},
 	{
 		author: "DebianOwO",
@@ -365,7 +365,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'polybar', 'fish', 'alacritty'],
 		title: "Retro-Spectronum",
 		wm: "i3-gaps",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Retro-Spectronum/thumbnail.png']
+		images: ['./assets/dotfiles/Retro-Spectronum/thumbnail.png']
 	},
 	{
 		author: "EvanKoe",
@@ -375,7 +375,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'rofi', 'nvim', 'ranger', 'asm', 'arch'],
 		title: "Evan\'s Glassmorphism",
 		wm: "i3-gaps",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Evans_Glassmorphism/thumbnail.png']
+		images: ['./assets/dotfiles/Evans_Glassmorphism/thumbnail.png']
 	},
 	{
 		author: "drahenprofi",
@@ -385,7 +385,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'rofi', 'kitty', 'sp'],
 		title: "drahenprofi\'s dotfiles",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/drahenprofis_dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/drahenprofis_dotfiles/thumbnail.png']
 	},
 	{
 		author: "Vista1nik",
@@ -395,7 +395,7 @@ const dotfiles = [
 		tags: ['i3-gaps', 'kitty', 'i3blocks'],
 		title: "Neon 80s",
 		wm: "i3-gaps",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Neon_80s/thumbnail.png']
+		images: ['./assets/dotfiles/Neon_80s/thumbnail.png']
 	},
 	{
 		author: "Axarva",
@@ -405,7 +405,7 @@ const dotfiles = [
 		tags: ['xmonad', 'eww', 'rofi', 'alacritty', 'tint2'],
 		title: "Axarva\'s Dotfiles",
 		wm: "xmonad",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Axarvas_Dotfiles/thumbnail.png', '/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Axarvas_Dotfiles/1.png', '/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Axarvas_Dotfiles/2.png']
+		images: ['./assets/dotfiles/Axarvas_Dotfiles/thumbnail.png', './assets/dotfiles/Axarvas_Dotfiles/1.png', './assets/dotfiles/Axarvas_Dotfiles/2.png']
 	},
 	{
 		author: "Mofiqul",
@@ -415,7 +415,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'i3lock-fancy', 'rofi'],
 		title: "AwesomeShell",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/AwesomeShell/thumbnail.png']
+		images: ['./assets/dotfiles/AwesomeShell/thumbnail.png']
 	},
 	{
 		author: "beyond9thousand",
@@ -424,7 +424,7 @@ const dotfiles = [
 		tags: ['bspwm', 'nvim', 'rofi', 'ranger', 'dunst', 'blender', 'dmenu', 'polybar', 'alacritty', 'tokyonight'],
 		title: "b9k\'s dotfiles",
 		wm: "bspwm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/b9ks_dotfiles/thumbnail.png']
+		images: ['./assets/dotfiles/b9ks_dotfiles/thumbnail.png']
 	},
 	{
 		author: "Crylia",
@@ -434,7 +434,7 @@ const dotfiles = [
 		tags: ['awesomewm', 'rofi', 'alacritty'],
 		title: "Crylia Theme",
 		wm: "awesomewm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Crylia_Theme/thumbnail.png']
+		images: ['./assets/dotfiles/Crylia_Theme/thumbnail.png']
 	},
 	{
 		author: "b4skyx",
@@ -444,7 +444,7 @@ const dotfiles = [
 		tags: ['bspwm', 'polybar', 'rofi', 'st'],
 		title: "Serenade",
 		wm: "bspwm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/Serenade/thumbnail.png']
+		images: ['./assets/dotfiles/Serenade/thumbnail.png']
 	},
 	{
 		author: "alba4k",
@@ -454,7 +454,7 @@ const dotfiles = [
 		tags: ['dwm', 'neovim', 'mpd'],
 		title: "GG\'s IDLE",
 		wm: "dwm",
-		images: ['/home/runner/work/unixporn-dots.github.io/unixporn-dots.github.io/assets/dotfiles/GGs_IDLE/thumbnail.png']
+		images: ['./assets/dotfiles/GGs_IDLE/thumbnail.png']
 	}
 ]
 
