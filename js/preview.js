@@ -62,6 +62,10 @@ class ImagePreview {
     this.holdr.classList.add("image-preview");
     this.holdr.appendChild(this.image);
 
+    this.viewr = document.createElement('h2')
+    this.viewr.classList.add('img-count')
+    this.viewr.textContent = "0/0";
+
     // Images
     this.img_srcs = [];
     this.current_image_index = 0;
@@ -72,6 +76,7 @@ class ImagePreview {
     this.element.appendChild(backButton);
     this.element.appendChild(this.slidr);
     this.element.appendChild(this.holdr);
+    this.element.appendChild(this.viewr)
   }
 
   open(img_srcs) {
@@ -106,6 +111,10 @@ class ImagePreview {
     this.element.addEventListener("click", (event) => {
       if (event.target.className.split(" ")[0] == "img-viewer") this.close();
     });
+
+    this.viewr.textContent = `${this.current_image_index + 1}/${
+      this.img_srcs.length
+    }`;
   }
   next() {
     if (this.current_image_index != this.img_srcs.length - 1) {
@@ -121,6 +130,10 @@ class ImagePreview {
         this.current_image_index < this.img_srcs.length - 1
           ? this.img_srcs[++this.current_image_index]
           : this.image.src;
+      
+      this.viewr.textContent = `${this.current_image_index + 1}/${
+        this.img_srcs.length
+      }`;
     }, 200);
 
     let nextButton = this.nextButton;
@@ -146,6 +159,10 @@ class ImagePreview {
         this.current_image_index > 0
           ? this.img_srcs[--this.current_image_index]
           : this.image.src;
+      
+      this.viewr.textContent = `${this.current_image_index + 1}/${
+        this.img_srcs.length
+      }`;
     }, 200);
 
     let backButton = this.back;
@@ -162,6 +179,9 @@ class ImagePreview {
     this.element.classList.remove("popin");
     this.element.classList.add("popout");
     this.slidr.value = "0";
+
+    setTimeout(() => { this.viewr.textContent = "0/0"; }, 200)
+    
 
     document.removeEventListener("keydown", this.keyHandler);
     this.element.addEventListener(

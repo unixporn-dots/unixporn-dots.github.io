@@ -255,6 +255,13 @@
   cursor: not-allowed;
 }
 
+.img-count {
+  position: absolute;
+  top: 87%;
+  font-family: 'Jost';
+  transition: 0.2s ease-in-out;
+}
+
 .image-preview {
   transition: 0.2s ease-in-out;
   display: flex;
