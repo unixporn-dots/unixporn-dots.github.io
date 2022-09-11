@@ -4,7 +4,6 @@ import yaml
 
 
 # python3 ./scripts/generateJS.py -> ROOT = .
-REPO_ROOT = os.getcwd() 
 
 
 # NOTE: Naming used:
@@ -14,9 +13,9 @@ REPO_ROOT = os.getcwd()
 
 # NOTE: explicitly not listing os.listdir("assets") since a collection folder may not be under assets (may be nested) 
 COLLECTION_PATHS = [
-    f"{REPO_ROOT}/assets/gtk-themes",
-    f"{REPO_ROOT}/assets/icons",
-    f"{REPO_ROOT}/assets/dotfiles"
+    f"./assets/gtk-themes",
+    f"./assets/icons",
+    f"./assets/dotfiles"
 ]
 
 ALLOWED_IMG_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.webp']
@@ -98,7 +97,7 @@ def main():
     for collection_path in COLLECTION_PATHS:
 
         collection_name = os.path.basename(collection_path)
-        js_file_path = f"{REPO_ROOT}/js/assets/{collection_name}.js"
+        js_file_path = f"./js/assets/{collection_name}.js"
         js_array_name = collection_name.replace('-', '')
 
         collection_to_js_file(collection_path, js_file_path, js_array_name)
