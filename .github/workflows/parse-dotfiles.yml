@@ -20,7 +20,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install PyYAML
     - name: Generate JS
-      run: python ./generateJS.py
+      run: python ./scripts/generateJS.py
       
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
