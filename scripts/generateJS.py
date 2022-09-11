@@ -2,10 +2,6 @@
 import os
 import yaml
 
-
-# python3 ./scripts/generateJS.py -> ROOT = .
-
-
 # NOTE: Naming used:
 # - Item: a folder containing a manifest, images, maybe other stuff in the future
 # - Collection: a folder containing items 
@@ -19,8 +15,6 @@ COLLECTION_PATHS = [
 ]
 
 ALLOWED_IMG_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.webp']
-
-
 
 def item_to_js_object(item_path):
     

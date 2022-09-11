@@ -30,7 +30,8 @@ function setDark()
     document.documentElement.style.setProperty("--body-background", "#303035");
     document.documentElement.style.setProperty("--font-color", "#fff");
     document.documentElement.style.setProperty("--body-background-lighter","#404045");
-    document.documentElement.style.setProperty("--body-background-darker","#202025");
+    document.documentElement.style.setProperty("--body-background-darker", "#202025");
+    document.documentElement.style.setProperty("--theme-color", "#add8e6"); 
     
     setCookie('theme', 'dark', 365);
 }
@@ -43,7 +44,8 @@ function setLight()
     document.documentElement.style.setProperty("--body-background", "##FAFAFC");
     document.documentElement.style.setProperty("--font-color", "#303035");
     document.documentElement.style.setProperty("--body-background-lighter","#fff");
-    document.documentElement.style.setProperty("--body-background-darker","#DADADC");
+    document.documentElement.style.setProperty("--body-background-darker", "#DADADC");
+    document.documentElement.style.setProperty("--theme-color", "#3b6e80");
 
     setCookie('theme', 'light', 365);
 }

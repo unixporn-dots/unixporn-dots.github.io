@@ -37,7 +37,34 @@ class ImagePreview {
 
     // The image
     this.image = document.createElement("img");
-    this.image.classList.add("image-preview");
+
+    this.slidr = document.createElement("input");
+    this.slidr.classList.add("img-slider");
+    this.slidr.type = "range";
+    this.slidr.min = "0";
+    this.slidr.max = "100";
+    this.slidr.addEventListener("change", (e) => {
+      this.holdr.style.overflow = "scroll";
+      
+
+      this.image.style.transform =
+        "scale(" +
+        (Number(this.slidr.value) / 20 <= 1
+          ? 1
+          : Number(this.slidr.value) / 20) +
+        ")";
+
+      setTimeout(() => this.holdr.style.overflow = "auto" ,1)
+      
+    });
+
+    this.holdr = document.createElement("div");
+    this.holdr.classList.add("image-preview");
+    this.holdr.appendChild(this.image);
+
+    this.viewr = document.createElement('h2')
+    this.viewr.classList.add('img-count')
+    this.viewr.textContent = "0/0";
 
     // Images
     this.img_srcs = [];
@@ -47,10 +74,14 @@ class ImagePreview {
     this.element.appendChild(closeButton);
     this.element.appendChild(nextButton);
     this.element.appendChild(backButton);
-    this.element.appendChild(this.image);
+    this.element.appendChild(this.slidr);
+    this.element.appendChild(this.holdr);
+    this.element.appendChild(this.viewr)
   }
 
   open(img_srcs) {
+    this.slidr.value = "0";
+    this.image.style.transform = "scale(1)";
     if (img_srcs != this.img_srcs) {
       this.img_srcs = img_srcs;
       this.current_image_index = 0;
@@ -76,13 +107,21 @@ class ImagePreview {
     this.parent.appendChild(this.element);
     this.element.classList.add("popin");
     document.addEventListener("keydown", this.keyHandler);
+
+    this.element.addEventListener("click", (event) => {
+      if (event.target.className.split(" ")[0] == "img-viewer") this.close();
+    });
+
+    this.viewr.textContent = `${this.current_image_index + 1}/${
+      this.img_srcs.length
+    }`;
   }
   next() {
-    if (this.current_image_index != this.img_srcs.length - 1){
+    if (this.current_image_index != this.img_srcs.length - 1) {
       this.image.style.opacity = 0;
 
       setTimeout(() => {
-          this.image.style.opacity = 1;
+        this.image.style.opacity = 1;
       }, 400);
     }
 
@@ -91,10 +130,11 @@ class ImagePreview {
         this.current_image_index < this.img_srcs.length - 1
           ? this.img_srcs[++this.current_image_index]
           : this.image.src;
-    }, 200)
-    
-
-    
+      
+      this.viewr.textContent = `${this.current_image_index + 1}/${
+        this.img_srcs.length
+      }`;
+    }, 200);
 
     let nextButton = this.nextButton;
     let backButton = this.back;
@@ -119,9 +159,11 @@ class ImagePreview {
         this.current_image_index > 0
           ? this.img_srcs[--this.current_image_index]
           : this.image.src;
+      
+      this.viewr.textContent = `${this.current_image_index + 1}/${
+        this.img_srcs.length
+      }`;
     }, 200);
-
-    
 
     let backButton = this.back;
     let nextButton = this.nextButton;
@@ -136,6 +178,11 @@ class ImagePreview {
   close() {
     this.element.classList.remove("popin");
     this.element.classList.add("popout");
+    this.slidr.value = "0";
+
+    setTimeout(() => { this.viewr.textContent = "0/0"; }, 200)
+    
+
     document.removeEventListener("keydown", this.keyHandler);
     this.element.addEventListener(
       "animationend",
