@@ -5,7 +5,7 @@ const gtkthemes = [
 		link: "https://github.com/dracula/gtk",
 		tags: ['dark', 'dracula', 'minimal'],
 		title: "Dracula",
-		images: ['assets/gtk-themes/Dracula/thumbnail.png']
+		images: ['./assets/gtk-themes/Dracula/thumbnail.png']
 	},
 	{
 		author: "vinceliuice",
@@ -13,7 +13,7 @@ const gtkthemes = [
 		link: "https://github.com/vinceliuice/Mojave-gtk-theme",
 		tags: ['macos', 'round'],
 		title: "Mojave",
-		images: ['assets/gtk-themes/Mojave/thumbnail.jpeg']
+		images: ['./assets/gtk-themes/Mojave/thumbnail.jpeg']
 	},
 	{
 		author: "Vinceliuice",
@@ -21,7 +21,7 @@ const gtkthemes = [
 		link: "https://github.com/vinceliuice/Orchis-theme",
 		tags: ['minimal', 'material', 'gnome'],
 		title: "Orchis theme",
-		images: ['assets/gtk-themes/Orchis theme/thumbnail.png']
+		images: ['./assets/gtk-themes/Orchis theme/thumbnail.png']
 	},
 	{
 		author: "Jannomag",
@@ -29,7 +29,7 @@ const gtkthemes = [
 		link: "https://github.com/Jannomag/Yaru-Colors",
 		tags: ['colors', 'minimal'],
 		title: "Yaru-Colors",
-		images: ['assets/gtk-themes/Yaru-Colors/thumbnail.png', 'assets/gtk-themes/Yaru-Colors/1.png']
+		images: ['./assets/gtk-themes/Yaru-Colors/thumbnail.png', './assets/gtk-themes/Yaru-Colors/1.png']
 	}
 ]
 

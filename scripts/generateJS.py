@@ -6,11 +6,12 @@ import yaml
 # - Item: a folder containing a manifest, images, maybe other stuff in the future
 # - Collection: a folder containing items 
 
+
 # NOTE: explicitly not listing os.listdir("assets") since a collection folder may not be under assets (may be nested) 
 COLLECTION_PATHS = [
-    "assets/gtk-themes",
-    "assets/icons",
-    "assets/dotfiles"
+    f"./assets/gtk-themes",
+    f"./assets/icons",
+    f"./assets/dotfiles"
 ]
 
 ALLOWED_IMG_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.webp']
@@ -90,7 +91,7 @@ def main():
     for collection_path in COLLECTION_PATHS:
 
         collection_name = os.path.basename(collection_path)
-        js_file_path = f"js/assets/{collection_name}.js"
+        js_file_path = f"./js/assets/{collection_name}.js"
         js_array_name = collection_name.replace('-', '')
 
         collection_to_js_file(collection_path, js_file_path, js_array_name)
