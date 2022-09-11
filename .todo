@@ -1,7 +1,6 @@
 Todos:
-  New:
-    ☐ Indicator for multi-image @low
   Done:
+    ✔ Indicator for multi-image @low
     ✔ Hover effect in gtk/icons/dotfiles select box @done
     ✔ Fix Stretched images @high @done
     ✔ Ability to zoom in images @today @low @done
