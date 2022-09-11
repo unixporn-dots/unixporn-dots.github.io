@@ -44,11 +44,21 @@ class ImagePreview {
     this.slidr.min = "0";
     this.slidr.max = "100";
     this.slidr.addEventListener("change", (e) => {
-      this.image.style.width =
-        (Number(this.slidr.value.replace("%", "")) + 100).toString() + "%";
+      this.holdr.style.overflow = "scroll";
+      
+
+      this.image.style.transform =
+        "scale(" +
+        (Number(this.slidr.value) / 20 <= 1
+          ? 1
+          : Number(this.slidr.value) / 20) +
+        ")";
+
+      setTimeout(() => this.holdr.style.overflow = "auto" ,1)
+      
     });
 
-    this.holdr = document.createElement('div');
+    this.holdr = document.createElement("div");
     this.holdr.classList.add("image-preview");
     this.holdr.appendChild(this.image);
 
@@ -65,6 +75,8 @@ class ImagePreview {
   }
 
   open(img_srcs) {
+    this.slidr.value = "0";
+    this.image.style.transform = "scale(1)";
     if (img_srcs != this.img_srcs) {
       this.img_srcs = img_srcs;
       this.current_image_index = 0;
@@ -92,20 +104,15 @@ class ImagePreview {
     document.addEventListener("keydown", this.keyHandler);
 
     this.element.addEventListener("click", (event) => {
-
-      if (
-        event.target.className.split(' ')[0] == "img-viewer"
-      )
-        this.close();
+      if (event.target.className.split(" ")[0] == "img-viewer") this.close();
     });
-    
   }
   next() {
-    if (this.current_image_index != this.img_srcs.length - 1){
+    if (this.current_image_index != this.img_srcs.length - 1) {
       this.image.style.opacity = 0;
 
       setTimeout(() => {
-          this.image.style.opacity = 1;
+        this.image.style.opacity = 1;
       }, 400);
     }
 
@@ -114,10 +121,7 @@ class ImagePreview {
         this.current_image_index < this.img_srcs.length - 1
           ? this.img_srcs[++this.current_image_index]
           : this.image.src;
-    }, 200)
-    
-
-    
+    }, 200);
 
     let nextButton = this.nextButton;
     let backButton = this.back;
@@ -144,8 +148,6 @@ class ImagePreview {
           : this.image.src;
     }, 200);
 
-    
-
     let backButton = this.back;
     let nextButton = this.nextButton;
     if (this.current_image_index == 0) {
@@ -159,7 +161,7 @@ class ImagePreview {
   close() {
     this.element.classList.remove("popin");
     this.element.classList.add("popout");
-    this.slidr.value = '0';
+    this.slidr.value = "0";
 
     document.removeEventListener("keydown", this.keyHandler);
     this.element.addEventListener(
