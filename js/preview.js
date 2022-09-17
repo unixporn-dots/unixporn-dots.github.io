@@ -8,7 +8,7 @@ class ImagePreview {
     this.element.classList.add("img-viewer");
 
     // The close button
-    const closeButton = document.createElement("a"); // TODO: Make this a button instead of an anchor
+    const closeButton = document.createElement("a");
     closeButton.classList.add("viewer-close");
     closeButton.addEventListener("click", () => this.close());
     const closeButton_ico = document.createElement("i");

@@ -296,9 +296,11 @@
   cursor: pointer;
   border: none;
   width: 15rem;
+  transition: 0.2s ease-in-out;
 
   position: absolute;
   top: 7%;
+  z-index: 20;
 }
 
 .img-slider::-webkit-slider-runnable-track {
@@ -386,5 +388,35 @@
   .prev-img {
     top: 74%;
     left: 30%;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .img-slider {
+    top: 3%;
+    right: 45vw;
+    z-index: 20;
+  }
+
+  .img-count {
+    top: 3.5vh;
+    margin: 0px;
+    right: 40vw;
+    text-shadow: 0px 0px 8px var(--body-background-darker);
+  }
+
+  .next-img {
+    top: 50vh;
+    right: 15vw;
+  }
+  .prev-img {
+    top: 50vh;
+    left: 15vw;
+  }
+
+  .image-preview {
+    width: 45%;
+    position: absolute;
+    bottom: 20px;
   }
 }
