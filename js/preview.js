@@ -8,7 +8,7 @@ class ImagePreview {
     this.element.classList.add("img-viewer");
 
     // The close button
-    const closeButton = document.createElement("a"); // TODO: Make this a button instead of an anchor
+    const closeButton = document.createElement("a");
     closeButton.classList.add("viewer-close");
     closeButton.addEventListener("click", () => this.close());
     const closeButton_ico = document.createElement("i");
@@ -31,6 +31,18 @@ class ImagePreview {
     backButton_ico.classList.add("fa-solid", "fa-angle-left");
 
     backButton.appendChild(backButton_ico);
+
+
+    const enlargeBtn = document.createElement("a");
+    enlargeBtn.classList.add("enlarge-img");
+    enlargeBtn.addEventListener("click", () => this.redir());
+    const enlarge_ico = document.createElement("i");
+    enlarge_ico.classList.add(
+      "fa-solid",
+      "fa-up-right-and-down-left-from-center"
+    );
+
+    enlargeBtn.appendChild(enlarge_ico);
 
     this.nextButton = nextButton;
     this.back = backButton;
@@ -74,6 +86,7 @@ class ImagePreview {
     this.element.appendChild(closeButton);
     this.element.appendChild(nextButton);
     this.element.appendChild(backButton);
+    this.element.appendChild(enlargeBtn);
     this.element.appendChild(this.slidr);
     this.element.appendChild(this.holdr);
     this.element.appendChild(this.viewr)
@@ -109,12 +122,17 @@ class ImagePreview {
     document.addEventListener("keydown", this.keyHandler);
 
     this.element.addEventListener("click", (event) => {
-      if (event.target.className.split(" ")[0] == "img-viewer") this.close();
+      if (event.target.className && event.target?.className?.split(" ")[0] == "img-viewer") this.close();
     });
 
     this.viewr.textContent = `${this.current_image_index + 1}/${
       this.img_srcs.length
     }`;
+  }
+  redir() {
+    const url = this.img_srcs[this.current_image_index];
+
+    window.open(url, "_blank").focus();
   }
   next() {
     if (this.current_image_index != this.img_srcs.length - 1) {
