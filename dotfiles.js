@@ -179,6 +179,16 @@ const dotfiles = [
         wm: "bspwm",
         tags: ['bspwm', 'polybar', 'rofi', 'st']
     },
+  {
+    title: "Mangeshrex's dotfiles",
+    author: 'mangeshrex',
+    link: "https://github.com/Mangeshrex/dotfiles",
+    reddit: 'https://www.reddit.com/r/unixporn/comments/w5u9pj/bspwm_everblush_showcase/',
+    description: 'Everblush bspwm rice',
+    image: 'assets/mangeshrex_dotfiles.png',
+    wm: 'Bspwm',
+    tags: ['Bspwm', 'tint2', 'Everblush', 'rofi', 'typioca']
+    },
     {
         title: "Bright Sky",
         author: "owl4ce",
