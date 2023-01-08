@@ -255,6 +255,15 @@ const dotfiles = [
 		images: ['./assets/dotfiles/leetApes_dotfiles/thumbnail.png', './assets/dotfiles/leetApes_dotfiles/1.png']
 	},
 	{
+		author: "ahmadhabibi14",
+		description: "Xfce rice with Tokyo Night color scheme",
+		link: "https://github.com/ahmadhabibi14/dotfile",
+		tags: ['xfce', 'plank', 'tokyonight', 'alacritty'],
+		title: "ahmadhabibi14 dotfiles",
+		wm: "xfwm",
+		images: ['./assets/dotfiles/ahmadhabibi14_dotfile/thumbnail.png']
+	},
+	{
 		author: "ParallaxWave",
 		description: "Trying to escape the stereotypical i3wm desktop...",
 		link: "https://github.com/ParallaxWave/blood_i3",
