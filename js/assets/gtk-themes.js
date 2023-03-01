@@ -1,19 +1,19 @@
 const gtkthemes = [
 	{
-		author: "Vinceliuice",
-		description: "Orchis is a Material Design theme for GNOME/GTK based desktop environments. Based on nana-4",
-		link: "https://github.com/vinceliuice/Orchis-theme",
-		tags: ['minimal', 'material', 'gnome'],
-		title: "Orchis theme",
-		images: ['./assets/gtk-themes/Orchis theme/thumbnail.png']
-	},
-	{
 		author: "Eliver Lara",
 		description: "Dark theme for GTK",
 		link: "https://github.com/dracula/gtk",
 		tags: ['dark', 'dracula', 'minimal'],
 		title: "Dracula",
 		images: ['./assets/gtk-themes/Dracula/thumbnail.png']
+	},
+	{
+		author: "Vinceliuice",
+		description: "Orchis is a Material Design theme for GNOME/GTK based desktop environments. Based on nana-4",
+		link: "https://github.com/vinceliuice/Orchis-theme",
+		tags: ['minimal', 'material', 'gnome'],
+		title: "Orchis theme",
+		images: ['./assets/gtk-themes/Orchis theme/thumbnail.png']
 	},
 	{
 		author: "Jannomag",
