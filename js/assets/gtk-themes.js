@@ -1,13 +1,5 @@
 const gtkthemes = [
 	{
-		author: "Eliver Lara",
-		description: "Dark theme for GTK",
-		link: "https://github.com/dracula/gtk",
-		tags: ['dark', 'dracula', 'minimal'],
-		title: "Dracula",
-		images: ['./assets/gtk-themes/Dracula/thumbnail.png']
-	},
-	{
 		author: "vinceliuice",
 		description: "Mojave is a macos Mojave like theme for GTK 3, GTK 2 and Gnome-Shell",
 		link: "https://github.com/vinceliuice/Mojave-gtk-theme",
@@ -22,6 +14,14 @@ const gtkthemes = [
 		tags: ['minimal', 'material', 'gnome'],
 		title: "Orchis theme",
 		images: ['./assets/gtk-themes/Orchis theme/thumbnail.png']
+	},
+	{
+		author: "Eliver Lara",
+		description: "Dark theme for GTK",
+		link: "https://github.com/dracula/gtk",
+		tags: ['dark', 'dracula', 'minimal'],
+		title: "Dracula",
+		images: ['./assets/gtk-themes/Dracula/thumbnail.png']
 	},
 	{
 		author: "Jannomag",
