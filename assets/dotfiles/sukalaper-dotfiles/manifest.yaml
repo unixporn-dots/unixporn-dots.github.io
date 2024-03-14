@@ -1,6 +1,6 @@
 author: Sukalaper
-title: Sukalaper Dotfiles
-description: i3gaps (maybe) simple, xixi.
+title: Little girl
+description: Tiny setup i3wm on Arch Linux.
 link: https://github.com/sukalaper/dotfiles  
-tags: []
+tags: [i3wm, windowmanager]
 wm: i3wm
