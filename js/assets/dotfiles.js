@@ -449,6 +449,8 @@ const dotfiles = [
 		title: "NeKoRoDOTS",
 		description: "Lightweight Arch Linux Hyprland rice, built with modularity and daily-driving in mind.",
 		link: "https://github.com/NeKoRoSYS/NeKoRoDOTS",
+		wm: "hyprland",
+		tags: ['hyprland', 'nekorosys', 'nekorodots'],
 		images: ['./assets/dotfiles/NeKoRoDOTS/thumbnail.png']
 	},
 	{
