@@ -16,20 +16,20 @@ const gtkthemes = [
 		images: ['./assets/gtk-themes/Mojave/thumbnail.jpeg']
 	},
 	{
-		author: "Eliver Lara",
-		description: "Dark theme for GTK",
-		link: "https://github.com/dracula/gtk",
-		tags: ['dark', 'dracula', 'minimal'],
-		title: "Dracula",
-		images: ['./assets/gtk-themes/Dracula/thumbnail.png']
-	},
-	{
 		author: "Jannomag",
 		description: "A fork of Ubuntu\'s Yaru theme - in different colors",
 		link: "https://github.com/Jannomag/Yaru-Colors",
 		tags: ['colors', 'minimal'],
 		title: "Yaru-Colors",
 		images: ['./assets/gtk-themes/Yaru-Colors/thumbnail.png', './assets/gtk-themes/Yaru-Colors/1.png']
+	},
+	{
+		author: "Eliver Lara",
+		description: "Dark theme for GTK",
+		link: "https://github.com/dracula/gtk",
+		tags: ['dark', 'dracula', 'minimal'],
+		title: "Dracula",
+		images: ['./assets/gtk-themes/Dracula/thumbnail.png']
 	}
 ]
 
