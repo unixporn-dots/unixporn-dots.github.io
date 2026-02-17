@@ -258,6 +258,15 @@ const dotfiles = [
 		images: ['./assets/dotfiles/alba4ks_dotfiles/thumbnail.png']
 	},
 	{
+		author: "NeKoRoSYS",
+		title: "NeKoRoSHELL",
+		description: "Lightweight Hyprland rice for Arch Linux, built with modularity and daily-driving in mind.",
+		link: "https://github.com/NeKoRoSYS/NeKoRoSHELL",
+		wm: "hyprland",
+		tags: ['hyprland', 'nekorosys', 'nekoroshell'],
+		images: ['./assets/dotfiles/NeKoRoSHELL/thumbnail.png']
+	},
+	{
 		author: "k-vernooy",
 		description: "An organizational repository for my dotfiles and scripts",
 		link: "https://github.com/k-vernooy/dotfiles",
@@ -443,15 +452,6 @@ const dotfiles = [
 		tags: ['bspwm', 'alacritty', 'polybar'],
 		wm: "bspwm",
 		images: ['./assets/dotfiles/penguinRice/thumbnail.png', './assets/dotfiles/penguinRice/img1.png']
-	},
-	{
-		author: "NeKoRoSYS",
-		title: "NeKoRoDOTS",
-		description: "Lightweight Arch Linux Hyprland rice, built with modularity and daily-driving in mind.",
-		link: "https://github.com/NeKoRoSYS/NeKoRoDOTS",
-		wm: "hyprland",
-		tags: ['hyprland', 'nekorosys', 'nekorodots'],
-		images: ['./assets/dotfiles/NeKoRoDOTS/thumbnail.png']
 	},
 	{
 		author: "owl4ce",
