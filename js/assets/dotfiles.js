@@ -264,7 +264,7 @@ const dotfiles = [
 		link: "https://github.com/NeKoRoSYS/NeKoRoSHELL",
 		wm: "hyprland",
 		tags: ['hyprland', 'nekorosys', 'nekoroshell'],
-		images: ['./assets/dotfiles/NeKoRoSHELL/thumbnail.png']
+		images: ['./assets/dotfiles/NeKoRoSHELL/thumbnail.png', './assets/dotfiles/NeKoRoSHELL/1.png', './assets/dotfiles/NeKoRoSHELL/2.png', './assets/dotfiles/NeKoRoSHELL/3.png', './assets/dotfiles/NeKoRoSHELL/4.png']
 	},
 	{
 		author: "k-vernooy",
