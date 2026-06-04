@@ -328,7 +328,7 @@ const dotfiles = [
 	},
 	{
 		author: "atrskv",
-		description: "A clean-looking everyday setup by deiban13 with Catppuccin Mocha",
+		description: "A clean-looking everyday setup on debian13 with Catppuccin Mocha",
 		link: "https://github.com/atrskv/dotfiles",
 		tags: ['debian', 'sway', 'catppuccin', 'wofi', 'waybar'],
 		title: "atrskv\'s dotfiles",
