@@ -1,7 +1,0 @@
-author: markart25
-title: markdots
-description: my arch linux Hyprland setup with waybar, hyprlock, pywal16 and custom wallpaper scripts. an install guide is included
-link:  https://github.com/markart25/markdots
-reddit: # Optional link to UnixPorn post
-wm: Hyprland
-tags: ['Hyprland', 'Waybar', 'pywal16'] 
