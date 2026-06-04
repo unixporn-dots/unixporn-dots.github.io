@@ -89,6 +89,13 @@ const dotfiles = [
 		images: ['./assets/dotfiles/AwesomeShell/thumbnail.png']
 	},
 	{
+		author: "markart25",
+		title: "markdots",
+		description: "my arch linux Hyprland setup with waybar, hyprlock, pywal16 and custom wallpaper scripts. an install guide is included",
+		link: "https://github.com/markart25/markdots",
+		images: ['./assets/dotfiles/markdots/thumbnail.png']
+	},
+	{
 		author: "alba4k",
 		description: "Just a random catppuccin rice",
 		link: "https://github.com/alba4k/.dotfiles",
