@@ -93,6 +93,8 @@ const dotfiles = [
 		title: "markdots",
 		description: "my arch linux Hyprland setup with waybar, hyprlock, pywal16 and custom wallpaper scripts. an install guide is included",
 		link: "https://github.com/markart25/markdots",
+		wm: "Hyprland",
+		tags: ['Hyprland', 'Waybar', 'pywal16'],
 		images: ['./assets/dotfiles/markdots/thumbnail.png']
 	},
 	{
