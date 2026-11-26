@@ -24,15 +24,23 @@
 }
 
 .support-menu summary {
-    display: grid;
-    place-items: center;
-    inline-size: 2rem;
-    block-size: 2rem;
-    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    min-block-size: 2rem;
+    padding: 0 .65rem;
+    border: 1px solid var(--body-background-darker);
+    border-radius: .45rem;
     list-style: none;
     cursor: pointer;
+    background: var(--body-background-lighter);
+    color: var(--font-color);
+    font: 500 .9rem "Jost", sans-serif;
+}
+
+.support-heart {
     color: var(--theme-color);
-    font-size: 1.25rem;
+    font: 1.15rem sans-serif;
     line-height: 1;
 }
 
@@ -42,7 +50,7 @@
 
 .support-menu[open] summary,
 .support-menu summary:hover {
-    background: var(--body-background-lighter);
+    border-color: var(--theme-color);
 }
 
 .support-links {
