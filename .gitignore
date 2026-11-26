@@ -1,0 +1,4 @@
+/dist/
+/.site-build-*/
+/.venv/
+__pycache__/

@@ -41,7 +41,7 @@ function setLight()
     themeIcon.classList.remove("bi-sun");
     themeIcon.classList.add("bi-moon-stars-fill");
 
-    document.documentElement.style.setProperty("--body-background", "##FAFAFC");
+    document.documentElement.style.setProperty("--body-background", "#FAFAFC");
     document.documentElement.style.setProperty("--font-color", "#303035");
     document.documentElement.style.setProperty("--body-background-lighter","#fff");
     document.documentElement.style.setProperty("--body-background-darker", "#DADADC");
@@ -70,5 +70,10 @@ function toggleTheme() {
     }
 }
 
-export {toggleTheme, setSavedTheme};
+function initializeThemeSwitcher() {
+    document.getElementById("js-themeSwitcher").addEventListener("click", toggleTheme);
+    setSavedTheme();
+}
+
+export { initializeThemeSwitcher };
 

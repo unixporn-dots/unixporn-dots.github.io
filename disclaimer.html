@@ -17,22 +17,22 @@
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/105546120?s=200&v=4">
     <meta property="og:color" content="#303035" />
 
-    <!-- imoprt sourcecode pro -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:wght@300;700&display=swap"
-        rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico">
     <!-- import fontawesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <script src="https://kit.fontawesome.com/afcb698043.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/afcb698043.js" crossorigin="anonymous" defer></script>
     <!-- Jost semibold -->
-    <link href="https://fonts.googleapis.com/css?family=Jost:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
     <link href="css/base.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/main_content.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
 
-    <script type="text/javascript" src="dotfiles.js"></script>
+    <script type="module">
+        import { initializeThemeSwitcher } from "./js/themeSwitcher.js";
+        initializeThemeSwitcher();
+    </script>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
         <h3 class="header-branding">Unixporn Dots</h3>
         <nav id="main_nav">
             <a href="index.html">Home</a>
-            <button id="js-themeSwitcher" class="link-like-button">
+            <button id="js-themeSwitcher" class="link-like-button" aria-label="Toggle theme">
                 <i id="themeIcon" class="bi bi-sun" aria-hidden="true"></i>
             </button>
             <div class="searchform">
@@ -91,6 +91,15 @@
             <a class="social_links-icon" href="https://reddit.com/r/unixporn">
                 <i class="fab fa-reddit" aria-hidden="true"></i>
             </a>
+            <details class="support-menu">
+                <summary aria-label="Support armoredvortex" title="Support armoredvortex">
+                    <span aria-hidden="true">♥</span>
+                </summary>
+                <div class="support-links">
+                    <a href="https://ko-fi.com/armoredvortex">Ko-fi</a>
+                    <a href="https://github.com/sponsors/armoredvortex">GitHub Sponsors</a>
+                </div>
+            </details>
         </div>
         <p>
             <strong>Unixporn-Dots</strong> is maintained by the community with&nbsp;<i class="fas fa-heart"
@@ -104,11 +113,6 @@
             </a>
         </div>
     </footer>
-
-    <script src="js/index.js"></script>
-    <script src="js/themeSwitcher.js"></script>
-    <script src="js/random.js"></script>
-    <script src="js/search.js"></script>
 </body>
 
 </html>

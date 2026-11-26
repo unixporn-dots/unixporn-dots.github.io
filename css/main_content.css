@@ -20,7 +20,6 @@
 #themes_container,
 #icons_container,
 #gtk_container {
-  transition: 0.2s ease-in-out;
   display: grid;
   gap: 20px;
   grid-template: auto/repeat(auto-fit, minmax(360px, 1fr));
@@ -57,7 +56,8 @@
 
 .card img {
   z-index: 0;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   /* Force resize images to use 16:9 ratio */
   aspect-ratio: 16 / 9;
   border-radius: inherit;

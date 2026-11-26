@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unixporn Dots</title>
+    <link rel="icon" href="assets/favicon.ico" />
     <link href="css/main_content.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
 
@@ -23,11 +24,6 @@
     />
     <meta property="og:color" content="#303035" />
 
-    <!-- imoprt sourcecode pro -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:wght@300;700&display=swap"
-      rel="stylesheet"
-    />
     <!-- import fontawesome -->
     <link
       rel="stylesheet"
@@ -36,10 +32,11 @@
     <script
       src="https://kit.fontawesome.com/afcb698043.js"
       crossorigin="anonymous"
+      defer
     ></script>
     <!-- Jost semibold -->
     <link
-      href="https://fonts.googleapis.com/css?family=Jost:400,500,600,700"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
 
@@ -47,65 +44,70 @@
     <link href="css/header.css" rel="stylesheet" />
     <link href="css/pageSwitcher.css" rel="stylesheet" />
 
-    <script type="module" src="icons.js"></script>
+    <script type="module">
+      import { initializeGallery } from "./js/index.js";
+      import entries from "./js/assets/icons.js";
+      initializeGallery(entries);
+    </script>
   </head>
 
   <body>
     <header id="main_header">
       <h3 class="header-branding">Unixporn Dots</h3>
       <nav id="main_nav">
-        <a href="/">Home</a>
-        <button id="js-themeSwitcher" class="link-like-button">
+        <a href="./">Home</a>
+        <button id="js-themeSwitcher" class="link-like-button" aria-label="Toggle theme">
           <i id="themeIcon" class="bi bi-sun" aria-hidden="true"></i>
         </button>
         <button id="js-sortSwitcher" class="link-like-button" title="Shuffle">
           <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
         </button>
-        <select class="category-box" onchange="slct(event)">
+        <select class="category-box" aria-label="Gallery category">
           <option value="dotfiles">Dotfiles</option>
           <option value="icons" selected>Icons</option>
           <option value="gtk-themes">GTK-Themes</option>
         </select>
-        <div class="searchform">
+        <form class="searchform" id="gallerySearch" role="search">
           <div class="inputgroup">
             <input
               class="searchinput"
               id="searchInput"
               type="text"
               placeholder="Search"
+              aria-label="Search gallery"
             />
-            <button class="btn-submit searchsubmit" id="searchSubmit">
+            <button class="btn-submit searchsubmit" type="submit" aria-label="Search">
               <i class="bi bi-search" aria-hidden="true"></i>
             </button>
           </div>
-        </div>
+        </form>
       </nav>
-      <select class="category-box mobil" onchange="slct(event)">
+      <select class="category-box mobil" aria-label="Gallery category">
           <option value="dotfiles">Dotfiles</option>
           <option value="icons" selected>Icons</option>
           <option value="gtk-themes">GTK-Themes</option>
         </select>
     </header>
     <main id="main_content">
-      <div id="icons_container">
+      <div id="icons_container" data-gallery>
         <!-- Will be filled dynamically -->
       </div>
     </main>
     <div class="page-switcher">
       <div class="previous-container">
-        <a id="firstPage" class="page-button" href="#main_header">
+        <a id="firstPage" class="page-button" aria-label="First page" href="#main_header">
           <i class="fas fa-angle-double-left"></i>
         </a>
-        <a id="prevPage" class="page-button" href="#main_header">
+        <a id="prevPage" class="page-button" aria-label="Previous page" href="#main_header">
           <i class="fas fa-angle-left"></i>
         </a>
       </div>
       <div id="page-number" class="page-numbers"></div>
       <div class="next-container">
-        <a id="nextPage" class="page-button" href="#main_header">
+        <a id="nextPage" class="page-button" aria-label="Next page" href="#main_header">
           <i class="fas fa-angle-right"></i>
         </a>
-        <a id="lastPage" class="page-button" href="#main_header">
+        <a id="lastPage" class="page-button" aria-label="Last page" href="#main_header">
           <i class="fas fa-angle-double-right"></i>
         </a>
       </div>
@@ -118,6 +120,15 @@
         <a class="social_links-icon" href="https://reddit.com/r/unixporn">
           <i class="fab fa-reddit" aria-hidden="true"></i>
         </a>
+        <details class="support-menu">
+          <summary aria-label="Support armoredvortex" title="Support armoredvortex">
+            <span aria-hidden="true">♥</span>
+          </summary>
+          <div class="support-links">
+            <a href="https://ko-fi.com/armoredvortex">Ko-fi</a>
+            <a href="https://github.com/sponsors/armoredvortex">GitHub Sponsors</a>
+          </div>
+        </details>
       </div>
       <p>
         <strong>Unixporn-Dots</strong> is maintained by the community
@@ -135,27 +146,5 @@
         </a>
       </div>
     </footer>
-
-    <script type="module" src="js/themeSwitcher.js"></script>
-    <script type="module" src="js/random.js"></script>
-    <!--<script src="js/search.js"></script>-->
-    <script type="module" src="js/cardGenerator.js"></script>
-    <script type="module" src="js/card.js"></script>
-    <script type="module" src="js/page.js"></script>
-    <script type="module" src="js/index.js"></script>
-
-    <script>
-      function slct(event) {
-        let selectElement = event.target
-        let value = selectElement.value || selectElement.options[selectElement.selectedIndex].value
-
-        if(value == 'dotfiles') {
-          window.location = '/'
-        } else if(value == 'gtk-themes') {
-          window.location = '/gtk-themes.html'
-        }
-      }
-    </script>
-
   </body>
 </html>

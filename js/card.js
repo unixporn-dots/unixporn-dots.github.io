@@ -6,6 +6,7 @@ class Card {
         title,
         desc,
         img_urls,
+        thumbnails,
         repo_link,
         reddit_link = null,
         wm = null,
@@ -15,6 +16,7 @@ class Card {
         this.title = title;
         this.desc = desc;
         this.img_urls = img_urls;
+        this.thumbnails = thumbnails;
         this.repo_link = repo_link;
         if (reddit_link) {
             this.reddit_link = reddit_link;
@@ -26,6 +28,14 @@ class Card {
 
     get html_element() {
         return this.generateHTML();
+    }
+
+    loadThumbnail(image, eager) {
+        const sizes = "(max-width: 520px) calc(100vw - 20px), 500px";
+        image.loading = eager ? "eager" : "lazy";
+        image.sizes = eager ? sizes : `auto, ${sizes}`;
+        image.srcset = this.thumbnails.map(({ src, width }) => `${src} ${width}w`).join(", ");
+        image.src = this.thumbnails[0].src;
     }
 
     generateHTML() {
@@ -75,15 +85,13 @@ class Card {
 
         // Title
         const title = document.createElement("h3");
-        title.innerHTML = this.title;
+        title.textContent = this.title;
         title.classList.add("theme-title");
-        header.appendChild(title);
 
         // Desc
         const desc = document.createElement("h3");
-        desc.innerHTML = this.desc;
+        desc.textContent = this.desc;
         desc.classList.add("theme-desc");
-        header.appendChild(desc);
 
         // Add header items
         header.appendChild(title);
@@ -95,11 +103,15 @@ class Card {
         // WM
         const wm = document.createElement("h3");
         wm.classList.add("tags");
-        wm.innerHTML = this.wm;
+        wm.textContent = this.wm;
 
         // Image
         const img = document.createElement("img");
-        img.src = this.img_urls[0];
+        const { width, height } = this.thumbnails[0];
+        img.width = width;
+        img.height = height;
+        img.alt = `${this.title} screenshot`;
+        img.decoding = "async";
         img.classList.add("card-img");
         
         // Image preview icon container
